@@ -1,0 +1,16 @@
+{
+  "$id": "23",
+  "_modules": {
+    "$id": "24",
+    "$values": []
+  },
+  "AssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5",
+  "BackgroundColor": {
+    "R": 0,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  },
+  "Name": "Default",
+  "ComponentsForSaving": []
+}

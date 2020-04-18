@@ -1,0 +1,208 @@
+{
+  "$id": "25",
+  "_assetFolder": {
+    "$id": "26",
+    "_project": {
+      "$ref": "25"
+    },
+    "_children": {
+      "$id": "27",
+      "$values": [
+        {
+          "$id": "28",
+          "$type": "Macabre2D.UI.Library.Models.SceneAsset, Macabre2D.UI.Library",
+          "_camera": {
+            "$id": "29",
+            "_children": {
+              "$id": "30",
+              "$values": []
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": null,
+            "Update Order": 0,
+            "Layers to Render": 65535,
+            "Sampler State": 5,
+            "Shader": null,
+            "Snap to Pixels": false,
+            "View Height": 10.0,
+            "Id": "d098102a-9cdc-47b6-a858-876bd102461f",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": null
+          },
+          "_savableValue": {
+            "$id": "31",
+            "_modules": {
+              "$id": "32",
+              "$values": []
+            },
+            "AssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5",
+            "BackgroundColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0,
+              "A": 255
+            },
+            "Name": "Default",
+            "ComponentsForSaving": []
+          },
+          "_name": "Default.m2dscene",
+          "Id": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5"
+        }
+      ]
+    },
+    "_name": "Assets",
+    "Id": "dcecfc8b-1a62-483d-b1df-80d7739695df"
+  },
+  "_version": {
+    "$id": "33",
+    "Major": 0,
+    "Minor": 0,
+    "Build": -1,
+    "Revision": -1,
+    "MajorRevision": -1,
+    "MinorRevision": -1
+  },
+  "AssetManager": {
+    "$id": "34",
+    "_idToPathMapping": {
+      "$id": "35",
+      "$values": [
+        {
+          "Key": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5",
+          "Value": "Assets\\Default"
+        }
+      ]
+    }
+  },
+  "BuildConfigurations": {
+    "$type": "System.Collections.Generic.List`1[[Macabre2D.UI.Library.Models.BuildConfiguration, Macabre2D.UI.Library]], mscorlib",
+    "$values": [
+      {
+        "$id": "36",
+        "Platform": 0
+      }
+    ]
+  },
+  "GameSettings": {
+    "_customSettings": {
+      "$id": "37",
+      "$values": []
+    },
+    "DefaultGraphicsSettings": {
+      "_displayMode": 2,
+      "_resolution": {
+        "$id": "38",
+        "X": 1024,
+        "Y": 1080
+      },
+      "TypeName": "GraphicsSettings",
+      "Version": null
+    },
+    "DefaultResolution": {
+      "$id": "39",
+      "X": 0,
+      "Y": 0
+    },
+    "ErrorSpritesColor": {
+      "R": 255,
+      "G": 105,
+      "B": 180,
+      "A": 255
+    },
+    "FallbackBackgroundColor": {
+      "R": 0,
+      "G": 0,
+      "B": 0,
+      "A": 255
+    },
+    "Layers": {
+      "_layersToName": {
+        "$id": "40",
+        "$values": []
+      },
+      "_layerToCollisionMask": {
+        "$id": "41",
+        "$values": [
+          {
+            "Key": 1,
+            "Value": 65535
+          },
+          {
+            "Key": 2,
+            "Value": 65535
+          },
+          {
+            "Key": 4,
+            "Value": 65535
+          },
+          {
+            "Key": 8,
+            "Value": 65535
+          },
+          {
+            "Key": 16,
+            "Value": 65535
+          },
+          {
+            "Key": 32,
+            "Value": 65535
+          },
+          {
+            "Key": 64,
+            "Value": 65535
+          },
+          {
+            "Key": 128,
+            "Value": 65535
+          },
+          {
+            "Key": 256,
+            "Value": 65535
+          },
+          {
+            "Key": 512,
+            "Value": 65535
+          },
+          {
+            "Key": 1024,
+            "Value": 65535
+          },
+          {
+            "Key": 2048,
+            "Value": 65535
+          },
+          {
+            "Key": 4096,
+            "Value": 65535
+          },
+          {
+            "Key": 8192,
+            "Value": 65535
+          },
+          {
+            "Key": 16384,
+            "Value": 65535
+          },
+          {
+            "Key": 32768,
+            "Value": 65535
+          }
+        ]
+      }
+    },
+    "PixelsPerUnit": 8,
+    "ProjectName": "Keep It Alive",
+    "StartupSceneAssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5"
+  },
+  "LastSceneOpened": {
+    "$ref": "28"
+  },
+  "LastTimeSaved": "2020-04-17T20:09:09.8040562-05:00",
+  "StartUpSceneAsset": {
+    "$ref": "28"
+  }
+}

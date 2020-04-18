@@ -1,0 +1,112 @@
+{
+  "$id": "17",
+  "_customSettings": {
+    "$id": "18",
+    "$values": []
+  },
+  "DefaultGraphicsSettings": {
+    "_displayMode": 2,
+    "_resolution": {
+      "$id": "19",
+      "X": 1920,
+      "Y": 1080
+    },
+    "TypeName": "GraphicsSettings",
+    "Version": null
+  },
+  "DefaultResolution": {
+    "$id": "20",
+    "X": 0,
+    "Y": 0
+  },
+  "ErrorSpritesColor": {
+    "R": 255,
+    "G": 105,
+    "B": 180,
+    "A": 255
+  },
+  "FallbackBackgroundColor": {
+    "R": 0,
+    "G": 0,
+    "B": 0,
+    "A": 255
+  },
+  "Layers": {
+    "_layersToName": {
+      "$id": "21",
+      "$values": []
+    },
+    "_layerToCollisionMask": {
+      "$id": "22",
+      "$values": [
+        {
+          "Key": 1,
+          "Value": 65535
+        },
+        {
+          "Key": 2,
+          "Value": 65535
+        },
+        {
+          "Key": 4,
+          "Value": 65535
+        },
+        {
+          "Key": 8,
+          "Value": 65535
+        },
+        {
+          "Key": 16,
+          "Value": 65535
+        },
+        {
+          "Key": 32,
+          "Value": 65535
+        },
+        {
+          "Key": 64,
+          "Value": 65535
+        },
+        {
+          "Key": 128,
+          "Value": 65535
+        },
+        {
+          "Key": 256,
+          "Value": 65535
+        },
+        {
+          "Key": 512,
+          "Value": 65535
+        },
+        {
+          "Key": 1024,
+          "Value": 65535
+        },
+        {
+          "Key": 2048,
+          "Value": 65535
+        },
+        {
+          "Key": 4096,
+          "Value": 65535
+        },
+        {
+          "Key": 8192,
+          "Value": 65535
+        },
+        {
+          "Key": 16384,
+          "Value": 65535
+        },
+        {
+          "Key": 32768,
+          "Value": 65535
+        }
+      ]
+    }
+  },
+  "PixelsPerUnit": 32,
+  "ProjectName": "ProjectName",
+  "StartupSceneAssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5"
+}
