@@ -1,21 +1,21 @@
 {
-  "$id": "17",
+  "$id": "3",
   "_customSettings": {
-    "$id": "18",
+    "$id": "4",
     "$values": []
   },
   "DefaultGraphicsSettings": {
     "_displayMode": 2,
     "_resolution": {
-      "$id": "19",
-      "X": 1920,
-      "Y": 1080
+      "$id": "5",
+      "X": 1024,
+      "Y": 768
     },
     "TypeName": "GraphicsSettings",
     "Version": null
   },
   "DefaultResolution": {
-    "$id": "20",
+    "$id": "6",
     "X": 0,
     "Y": 0
   },
@@ -33,80 +33,105 @@
   },
   "Layers": {
     "_layersToName": {
-      "$id": "21",
-      "$values": []
-    },
-    "_layerToCollisionMask": {
-      "$id": "22",
+      "$id": "7",
       "$values": [
         {
           "Key": 1,
-          "Value": 65535
+          "Value": "Ground"
         },
         {
           "Key": 2,
-          "Value": 65535
-        },
-        {
-          "Key": 4,
-          "Value": 65535
-        },
-        {
-          "Key": 8,
-          "Value": 65535
-        },
-        {
-          "Key": 16,
-          "Value": 65535
-        },
-        {
-          "Key": 32,
-          "Value": 65535
-        },
-        {
-          "Key": 64,
-          "Value": 65535
-        },
-        {
-          "Key": 128,
-          "Value": 65535
-        },
-        {
-          "Key": 256,
-          "Value": 65535
-        },
-        {
-          "Key": 512,
-          "Value": 65535
-        },
-        {
-          "Key": 1024,
-          "Value": 65535
-        },
-        {
-          "Key": 2048,
-          "Value": 65535
-        },
-        {
-          "Key": 4096,
-          "Value": 65535
-        },
-        {
-          "Key": 8192,
-          "Value": 65535
-        },
-        {
-          "Key": 16384,
-          "Value": 65535
+          "Value": "Wall"
         },
         {
           "Key": 32768,
-          "Value": 65535
+          "Value": "Player"
+        },
+        {
+          "Key": 4,
+          "Value": "Ceiling"
+        },
+        {
+          "Key": 8,
+          "Value": "Food"
+        },
+        {
+          "Key": 16,
+          "Value": "Mouth"
+        }
+      ]
+    },
+    "_layerToCollisionMask": {
+      "$id": "8",
+      "$values": [
+        {
+          "Key": 1,
+          "Value": 32776
+        },
+        {
+          "Key": 2,
+          "Value": 32777
+        },
+        {
+          "Key": 4,
+          "Value": 32795
+        },
+        {
+          "Key": 8,
+          "Value": 32775
+        },
+        {
+          "Key": 16,
+          "Value": 32783
+        },
+        {
+          "Key": 32,
+          "Value": 31
+        },
+        {
+          "Key": 64,
+          "Value": 63
+        },
+        {
+          "Key": 128,
+          "Value": 127
+        },
+        {
+          "Key": 256,
+          "Value": 255
+        },
+        {
+          "Key": 512,
+          "Value": 511
+        },
+        {
+          "Key": 1024,
+          "Value": 1023
+        },
+        {
+          "Key": 2048,
+          "Value": 2047
+        },
+        {
+          "Key": 4096,
+          "Value": 4095
+        },
+        {
+          "Key": 8192,
+          "Value": 8191
+        },
+        {
+          "Key": 16384,
+          "Value": 16383
+        },
+        {
+          "Key": 32768,
+          "Value": 32767
         }
       ]
     }
   },
-  "PixelsPerUnit": 32,
-  "ProjectName": "ProjectName",
+  "PixelsPerUnit": 8,
+  "ProjectName": "Keep It Alive",
   "StartupSceneAssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5"
 }

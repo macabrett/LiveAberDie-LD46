@@ -1,11 +1,39 @@
 {
-  "$id": "15",
+  "$id": "1",
   "_idToPathMapping": {
-    "$id": "16",
+    "$id": "2",
     "$values": [
+      {
+        "Key": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+        "Value": "Assets\\Creature\\CreatureSpriteSheet"
+      },
+      {
+        "Key": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+        "Value": "Assets\\Environment\\GroundTilesSpriteSheet"
+      },
+      {
+        "Key": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
+        "Value": "Assets\\Environment\\OneWayGroundTilesSpriteSheet"
+      },
+      {
+        "Key": "dc00f3da-fc30-497e-b1a9-e4b6e3725fad",
+        "Value": "Assets\\Environment\\PureBlackSprite"
+      },
+      {
+        "Key": "093886cc-0630-4acc-a85d-fc218d4133f8",
+        "Value": "Assets\\Food\\FoodSpriteSheet"
+      },
+      {
+        "Key": "674230aa-203e-4d03-a816-b8a3a941744b",
+        "Value": "Assets\\Player\\PlayerSpriteSheet"
+      },
       {
         "Key": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5",
         "Value": "Assets\\Default"
+      },
+      {
+        "Key": "ce6a4162-3798-454c-a67a-2fcdb7fc1781",
+        "Value": "Assets\\silkscreen"
       }
     ]
   }

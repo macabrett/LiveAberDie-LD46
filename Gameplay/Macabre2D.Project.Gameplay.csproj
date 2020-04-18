@@ -59,7 +59,7 @@
       <HintPath>..\..\packages\MonoGame.Framework.Portable.3.7.1.189\lib\portable-net45+win8+wpa81\MonoGame.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -72,7 +72,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Creature\CreatureComponent.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Food\FoodComponent.cs" />
+    <Compile Include="Food\FoodSpawner.cs" />
+    <Compile Include="HorizontalDirection.cs" />
+    <Compile Include="IConsumable.cs" />
+    <Compile Include="InputManager.cs" />
+    <Compile Include="Player\BaseStance.cs" />
+    <Compile Include="Player\PlayerAnimation.cs" />
+    <Compile Include="Player\PlayerComponent.cs" />
+    <Compile Include="Player\PlayerMovementValues.cs" />
+    <Compile Include="Player\PlayerStance.cs" />
+    <Compile Include="Player\PlayerState.cs" />
+    <Compile Include="Player\Stances\FallingStance.cs" />
+    <Compile Include="Player\Stances\GroundedStance.cs" />
+    <Compile Include="Player\Stances\IdleStance.cs" />
+    <Compile Include="Player\Stances\JumpingStance.cs" />
+    <Compile Include="Player\Stances\WalkingStance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimerComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -83,6 +103,7 @@
       <Name>Macabre2D.Framework</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

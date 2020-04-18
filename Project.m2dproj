@@ -1,20 +1,1717 @@
 {
-  "$id": "25",
+  "$id": "373",
   "_assetFolder": {
-    "$id": "26",
+    "$id": "374",
     "_project": {
-      "$ref": "25"
+      "$ref": "373"
     },
     "_children": {
-      "$id": "27",
+      "$id": "375",
       "$values": [
         {
-          "$id": "28",
+          "$id": "376",
+          "$type": "Macabre2D.UI.Library.Models.FolderAsset, Macabre2D.UI.Library",
+          "_children": {
+            "$id": "377",
+            "$values": [
+              {
+                "$id": "378",
+                "$type": "Macabre2D.UI.Library.Models.ImageAsset, Macabre2D.UI.Library",
+                "_children": {
+                  "$id": "379",
+                  "$values": [
+                    {
+                      "$id": "380",
+                      "_imageAsset": {
+                        "$ref": "378"
+                      },
+                      "_sprite": {
+                        "$id": "381",
+                        "_id": "f4627b0d-18d4-4fb7-baac-81048a5a00c6",
+                        "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                        "Location": {
+                          "$id": "382",
+                          "X": 0,
+                          "Y": 0
+                        },
+                        "Name": "CreatureIdle1",
+                        "Size": {
+                          "$id": "383",
+                          "X": 8,
+                          "Y": 32
+                        }
+                      }
+                    },
+                    {
+                      "$id": "384",
+                      "_imageAsset": {
+                        "$ref": "378"
+                      },
+                      "_sprite": {
+                        "$id": "385",
+                        "_id": "437ce3ad-055c-4d15-9f59-479e5a624530",
+                        "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                        "Location": {
+                          "$id": "386",
+                          "X": 8,
+                          "Y": 0
+                        },
+                        "Name": "CreatureIdle2",
+                        "Size": {
+                          "$id": "387",
+                          "X": 8,
+                          "Y": 32
+                        }
+                      }
+                    },
+                    {
+                      "$id": "388",
+                      "_imageAsset": {
+                        "$ref": "378"
+                      },
+                      "_sprite": {
+                        "$id": "389",
+                        "_id": "d27889f2-e5f5-4725-bc25-893bde560d55",
+                        "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                        "Location": {
+                          "$id": "390",
+                          "X": 16,
+                          "Y": 0
+                        },
+                        "Name": "CreatureChomp",
+                        "Size": {
+                          "$id": "391",
+                          "X": 8,
+                          "Y": 32
+                        }
+                      }
+                    },
+                    {
+                      "$id": "392",
+                      "_imageAsset": {
+                        "$ref": "378"
+                      },
+                      "_sprite": {
+                        "$id": "393",
+                        "_id": "4521c167-799a-49d4-b8a5-e46a44a283ac",
+                        "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                        "Location": {
+                          "$id": "394",
+                          "X": 24,
+                          "Y": 0
+                        },
+                        "Name": "CreatureDead",
+                        "Size": {
+                          "$id": "395",
+                          "X": 8,
+                          "Y": 32
+                        }
+                      }
+                    }
+                  ]
+                },
+                "_height": 32,
+                "_width": 32,
+                "_name": "CreatureSpriteSheet.png",
+                "Id": "19fdc91f-a94e-492f-af5f-20969e644e0a"
+              }
+            ]
+          },
+          "_name": "Creature",
+          "Id": "ac955c80-739c-46c4-a612-15f0fc175395"
+        },
+        {
+          "$id": "396",
+          "$type": "Macabre2D.UI.Library.Models.FolderAsset, Macabre2D.UI.Library",
+          "_children": {
+            "$id": "397",
+            "$values": [
+              {
+                "$id": "398",
+                "$type": "Macabre2D.UI.Library.Models.ImageAsset, Macabre2D.UI.Library",
+                "_children": {
+                  "$id": "399",
+                  "$values": [
+                    {
+                      "$id": "400",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "401",
+                        "_id": "d7c946ae-13f4-4953-b466-4be29c5c7fbb",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "402",
+                          "X": 0,
+                          "Y": 0
+                        },
+                        "Name": "GroundTiles-000",
+                        "Size": {
+                          "$id": "403",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "404",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "405",
+                        "_id": "3cb43b2a-6742-4a03-9359-06541b521230",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "406",
+                          "X": 8,
+                          "Y": 0
+                        },
+                        "Name": "GroundTiles-001",
+                        "Size": {
+                          "$id": "407",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "408",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "409",
+                        "_id": "0fe7e266-a55a-4cea-98cf-967d9b7e9459",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "410",
+                          "X": 16,
+                          "Y": 0
+                        },
+                        "Name": "GroundTiles-002",
+                        "Size": {
+                          "$id": "411",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "412",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "413",
+                        "_id": "e42fdc8a-d057-4b4b-85f4-400063116020",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "414",
+                          "X": 24,
+                          "Y": 0
+                        },
+                        "Name": "GroundTiles-003",
+                        "Size": {
+                          "$id": "415",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "416",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "417",
+                        "_id": "02be30dd-c19e-4c48-8fce-6a68188d31ce",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "418",
+                          "X": 0,
+                          "Y": 8
+                        },
+                        "Name": "GroundTiles-004",
+                        "Size": {
+                          "$id": "419",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "420",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "421",
+                        "_id": "4e03793b-3f08-4151-abf0-d2f64e7e21b3",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "422",
+                          "X": 8,
+                          "Y": 8
+                        },
+                        "Name": "GroundTiles-005",
+                        "Size": {
+                          "$id": "423",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "424",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "425",
+                        "_id": "0faefe81-a0d9-46c9-8694-863cb57f6662",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "426",
+                          "X": 16,
+                          "Y": 8
+                        },
+                        "Name": "GroundTiles-006",
+                        "Size": {
+                          "$id": "427",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "428",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "429",
+                        "_id": "0b1b14d2-8d6e-45ff-baaa-e01ca6ed0e9c",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "430",
+                          "X": 24,
+                          "Y": 8
+                        },
+                        "Name": "GroundTiles-007",
+                        "Size": {
+                          "$id": "431",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "432",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "433",
+                        "_id": "a9ca912e-585d-42f2-a11c-b21d5d234091",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "434",
+                          "X": 0,
+                          "Y": 16
+                        },
+                        "Name": "GroundTiles-008",
+                        "Size": {
+                          "$id": "435",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "436",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "437",
+                        "_id": "84b6ff27-d04f-4e18-a417-4b19813d4cd9",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "438",
+                          "X": 8,
+                          "Y": 16
+                        },
+                        "Name": "GroundTiles-009",
+                        "Size": {
+                          "$id": "439",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "440",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "441",
+                        "_id": "dff54acb-78e8-4761-8408-11aa8f0a43ff",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "442",
+                          "X": 16,
+                          "Y": 16
+                        },
+                        "Name": "GroundTiles-010",
+                        "Size": {
+                          "$id": "443",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "444",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "445",
+                        "_id": "a1296a22-f049-4d71-b45d-211e53ecb62a",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "446",
+                          "X": 24,
+                          "Y": 16
+                        },
+                        "Name": "GroundTiles-011",
+                        "Size": {
+                          "$id": "447",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "448",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "449",
+                        "_id": "7977423c-5ece-4408-acdf-e003fecdd4ae",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "450",
+                          "X": 0,
+                          "Y": 24
+                        },
+                        "Name": "GroundTiles-012",
+                        "Size": {
+                          "$id": "451",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "452",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "453",
+                        "_id": "2cb5c664-152f-409d-a806-846a1e812d36",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "454",
+                          "X": 8,
+                          "Y": 24
+                        },
+                        "Name": "GroundTiles-013",
+                        "Size": {
+                          "$id": "455",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "456",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "457",
+                        "_id": "ae9f39c6-2250-4d9e-bb24-bebd6425fc64",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "458",
+                          "X": 16,
+                          "Y": 24
+                        },
+                        "Name": "GroundTiles-014",
+                        "Size": {
+                          "$id": "459",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "460",
+                      "_imageAsset": {
+                        "$ref": "398"
+                      },
+                      "_sprite": {
+                        "$id": "461",
+                        "_id": "d4c5f167-fc54-4f68-9fa1-730e67b1cf60",
+                        "AssetId": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+                        "Location": {
+                          "$id": "462",
+                          "X": 24,
+                          "Y": 24
+                        },
+                        "Name": "GroundTiles-015",
+                        "Size": {
+                          "$id": "463",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    }
+                  ]
+                },
+                "_height": 32,
+                "_width": 32,
+                "_name": "GroundTilesSpriteSheet.png",
+                "Id": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb"
+              },
+              {
+                "$id": "464",
+                "$type": "Macabre2D.UI.Library.Models.ImageAsset, Macabre2D.UI.Library",
+                "_children": {
+                  "$id": "465",
+                  "$values": [
+                    {
+                      "$id": "466",
+                      "_imageAsset": {
+                        "$ref": "464"
+                      },
+                      "_sprite": {
+                        "$id": "467",
+                        "_id": "c4c38450-bd49-4321-9d3f-13cf4a3a8fcf",
+                        "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
+                        "Location": {
+                          "$id": "468",
+                          "X": 0,
+                          "Y": 0
+                        },
+                        "Name": "OneWayGroundTilesSpriteSheet-000",
+                        "Size": {
+                          "$id": "469",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "470",
+                      "_imageAsset": {
+                        "$ref": "464"
+                      },
+                      "_sprite": {
+                        "$id": "471",
+                        "_id": "d92a1155-319c-446c-98c6-731af5eebb35",
+                        "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
+                        "Location": {
+                          "$id": "472",
+                          "X": 8,
+                          "Y": 0
+                        },
+                        "Name": "OneWayGroundTilesSpriteSheet-001",
+                        "Size": {
+                          "$id": "473",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "474",
+                      "_imageAsset": {
+                        "$ref": "464"
+                      },
+                      "_sprite": {
+                        "$id": "475",
+                        "_id": "a3fe3835-458d-4862-ba79-473a6bcfdbca",
+                        "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
+                        "Location": {
+                          "$id": "476",
+                          "X": 16,
+                          "Y": 0
+                        },
+                        "Name": "OneWayGroundTilesSpriteSheet-002",
+                        "Size": {
+                          "$id": "477",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "478",
+                      "_imageAsset": {
+                        "$ref": "464"
+                      },
+                      "_sprite": {
+                        "$id": "479",
+                        "_id": "70703134-f2e2-4aa6-8c73-4d0b14895c54",
+                        "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
+                        "Location": {
+                          "$id": "480",
+                          "X": 24,
+                          "Y": 0
+                        },
+                        "Name": "OneWayGroundTilesSpriteSheet-003",
+                        "Size": {
+                          "$id": "481",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    }
+                  ]
+                },
+                "_height": 8,
+                "_width": 32,
+                "_name": "OneWayGroundTilesSpriteSheet.png",
+                "Id": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed"
+              },
+              {
+                "$id": "482",
+                "$type": "Macabre2D.UI.Library.Models.ImageAsset, Macabre2D.UI.Library",
+                "_children": {
+                  "$id": "483",
+                  "$values": [
+                    {
+                      "$id": "484",
+                      "_imageAsset": {
+                        "$ref": "482"
+                      },
+                      "_sprite": {
+                        "$id": "485",
+                        "_id": "57dc11ba-9508-4b26-b65e-074184430b47",
+                        "AssetId": "dc00f3da-fc30-497e-b1a9-e4b6e3725fad",
+                        "Location": {
+                          "$id": "486",
+                          "X": 0,
+                          "Y": 0
+                        },
+                        "Name": "PureBlack",
+                        "Size": {
+                          "$id": "487",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    }
+                  ]
+                },
+                "_height": 8,
+                "_width": 8,
+                "_name": "PureBlackSprite.png",
+                "Id": "dc00f3da-fc30-497e-b1a9-e4b6e3725fad"
+              },
+              {
+                "$id": "488",
+                "$type": "Macabre2D.UI.Library.Models.AutoTileSetAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "489",
+                  "_indexToSprites": {
+                    "$id": "490",
+                    "$values": [
+                      {
+                        "Key": 0,
+                        "Value": {
+                          "$ref": "479"
+                        }
+                      },
+                      {
+                        "Key": 2,
+                        "Value": {
+                          "$ref": "475"
+                        }
+                      },
+                      {
+                        "Key": 6,
+                        "Value": {
+                          "$ref": "471"
+                        }
+                      },
+                      {
+                        "Key": 4,
+                        "Value": {
+                          "$ref": "467"
+                        }
+                      },
+                      {
+                        "Key": 8,
+                        "Value": {
+                          "$ref": "479"
+                        }
+                      },
+                      {
+                        "Key": 10,
+                        "Value": {
+                          "$ref": "475"
+                        }
+                      },
+                      {
+                        "Key": 14,
+                        "Value": {
+                          "$ref": "471"
+                        }
+                      },
+                      {
+                        "Key": 12,
+                        "Value": {
+                          "$ref": "467"
+                        }
+                      }
+                    ]
+                  },
+                  "_useIntermediateDirections": false,
+                  "_id": "49d38980-034a-4dda-a400-5981037f4392",
+                  "AssetId": "4f721933-69be-45ef-9601-74b6ac11c820"
+                },
+                "_name": "OneWayGroundTileSet.m2dautotile",
+                "Id": "4f721933-69be-45ef-9601-74b6ac11c820"
+              },
+              {
+                "$id": "491",
+                "$type": "Macabre2D.UI.Library.Models.AutoTileSetAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "492",
+                  "_indexToSprites": {
+                    "$id": "493",
+                    "$values": [
+                      {
+                        "Key": 12,
+                        "Value": {
+                          "$ref": "401"
+                        }
+                      },
+                      {
+                        "Key": 14,
+                        "Value": {
+                          "$ref": "405"
+                        }
+                      },
+                      {
+                        "Key": 10,
+                        "Value": {
+                          "$ref": "409"
+                        }
+                      },
+                      {
+                        "Key": 8,
+                        "Value": {
+                          "$ref": "413"
+                        }
+                      },
+                      {
+                        "Key": 13,
+                        "Value": {
+                          "$ref": "417"
+                        }
+                      },
+                      {
+                        "Key": 15,
+                        "Value": {
+                          "$ref": "421"
+                        }
+                      },
+                      {
+                        "Key": 11,
+                        "Value": {
+                          "$ref": "425"
+                        }
+                      },
+                      {
+                        "Key": 9,
+                        "Value": {
+                          "$ref": "429"
+                        }
+                      },
+                      {
+                        "Key": 5,
+                        "Value": {
+                          "$ref": "433"
+                        }
+                      },
+                      {
+                        "Key": 7,
+                        "Value": {
+                          "$ref": "437"
+                        }
+                      },
+                      {
+                        "Key": 3,
+                        "Value": {
+                          "$ref": "441"
+                        }
+                      },
+                      {
+                        "Key": 1,
+                        "Value": {
+                          "$ref": "445"
+                        }
+                      },
+                      {
+                        "Key": 4,
+                        "Value": {
+                          "$ref": "449"
+                        }
+                      },
+                      {
+                        "Key": 6,
+                        "Value": {
+                          "$ref": "453"
+                        }
+                      },
+                      {
+                        "Key": 2,
+                        "Value": {
+                          "$ref": "457"
+                        }
+                      },
+                      {
+                        "Key": 0,
+                        "Value": {
+                          "$ref": "461"
+                        }
+                      }
+                    ]
+                  },
+                  "_useIntermediateDirections": false,
+                  "_id": "979a786f-de5a-4aec-b77a-98699ba3b053",
+                  "AssetId": "cf4692ba-7432-4e18-a0ac-3e3e014d96fa"
+                },
+                "_name": "GroundTileSet.m2dautotile",
+                "Id": "cf4692ba-7432-4e18-a0ac-3e3e014d96fa"
+              }
+            ]
+          },
+          "_name": "Environment",
+          "Id": "a3956f3e-71d3-46f6-b2bd-24ef1c4bc25b"
+        },
+        {
+          "$id": "494",
+          "$type": "Macabre2D.UI.Library.Models.FolderAsset, Macabre2D.UI.Library",
+          "_children": {
+            "$id": "495",
+            "$values": [
+              {
+                "$id": "496",
+                "$type": "Macabre2D.UI.Library.Models.ImageAsset, Macabre2D.UI.Library",
+                "_children": {
+                  "$id": "497",
+                  "$values": [
+                    {
+                      "$id": "498",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "499",
+                        "_id": "7a131a4f-a370-4b11-8743-5afa06b56509",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "500",
+                          "X": 0,
+                          "Y": 0
+                        },
+                        "Name": "Bread1",
+                        "Size": {
+                          "$id": "501",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "502",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "503",
+                        "_id": "a503bf17-7c80-4d34-83a0-b8f3de74b61f",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "504",
+                          "X": 8,
+                          "Y": 0
+                        },
+                        "Name": "Bread2",
+                        "Size": {
+                          "$id": "505",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "506",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "507",
+                        "_id": "d9881d21-b0a1-4fe2-b5d3-44ab6a5cdf5c",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "508",
+                          "X": 16,
+                          "Y": 0
+                        },
+                        "Name": "Bread3",
+                        "Size": {
+                          "$id": "509",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "510",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "511",
+                        "_id": "c0d446a9-c8ce-49c5-bee1-a9f2c90446aa",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "512",
+                          "X": 24,
+                          "Y": 0
+                        },
+                        "Name": "Bread4",
+                        "Size": {
+                          "$id": "513",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "514",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "515",
+                        "_id": "e3179d74-c541-48bd-95db-57856c8524d3",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "516",
+                          "X": 0,
+                          "Y": 8
+                        },
+                        "Name": "Plum1",
+                        "Size": {
+                          "$id": "517",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "518",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "519",
+                        "_id": "70b8b8ce-d76a-45a3-9d94-1e5fa3bc64a2",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "520",
+                          "X": 8,
+                          "Y": 8
+                        },
+                        "Name": "Plum2",
+                        "Size": {
+                          "$id": "521",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "522",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "523",
+                        "_id": "ba254f74-f164-4d25-83a3-2ab93e1be7d8",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "524",
+                          "X": 16,
+                          "Y": 8
+                        },
+                        "Name": "Plum3",
+                        "Size": {
+                          "$id": "525",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "526",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "527",
+                        "_id": "240ac913-f535-4150-b74f-39217ada050f",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "528",
+                          "X": 24,
+                          "Y": 8
+                        },
+                        "Name": "Plum4",
+                        "Size": {
+                          "$id": "529",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "530",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "531",
+                        "_id": "9d10a1dc-2a9d-46ca-b408-090917c467a1",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "532",
+                          "X": 0,
+                          "Y": 16
+                        },
+                        "Name": "Melon1",
+                        "Size": {
+                          "$id": "533",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "534",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "535",
+                        "_id": "dae2f402-4ebd-43c4-b1a8-f04ed65670b9",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "536",
+                          "X": 8,
+                          "Y": 16
+                        },
+                        "Name": "Melon2",
+                        "Size": {
+                          "$id": "537",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "538",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "539",
+                        "_id": "cb486115-0f1f-457c-b7e9-67663387aaca",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "540",
+                          "X": 16,
+                          "Y": 16
+                        },
+                        "Name": "Melon3",
+                        "Size": {
+                          "$id": "541",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "542",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "543",
+                        "_id": "ee8ea6e6-81a8-4750-8dcf-3ee705566199",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "544",
+                          "X": 24,
+                          "Y": 16
+                        },
+                        "Name": "Melon4",
+                        "Size": {
+                          "$id": "545",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "546",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "547",
+                        "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "548",
+                          "X": 0,
+                          "Y": 24
+                        },
+                        "Name": "Donut1",
+                        "Size": {
+                          "$id": "549",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "550",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "551",
+                        "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "552",
+                          "X": 8,
+                          "Y": 24
+                        },
+                        "Name": "Donut2",
+                        "Size": {
+                          "$id": "553",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "554",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "555",
+                        "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "556",
+                          "X": 16,
+                          "Y": 24
+                        },
+                        "Name": "Donut3",
+                        "Size": {
+                          "$id": "557",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "558",
+                      "_imageAsset": {
+                        "$ref": "496"
+                      },
+                      "_sprite": {
+                        "$id": "559",
+                        "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
+                        "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                        "Location": {
+                          "$id": "560",
+                          "X": 24,
+                          "Y": 24
+                        },
+                        "Name": "Donut4",
+                        "Size": {
+                          "$id": "561",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    }
+                  ]
+                },
+                "_height": 32,
+                "_width": 32,
+                "_name": "FoodSpriteSheet.png",
+                "Id": "093886cc-0630-4acc-a85d-fc218d4133f8"
+              },
+              {
+                "$id": "562",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "563",
+                  "_steps": {
+                    "$id": "564",
+                    "$values": [
+                      {
+                        "$id": "565",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "499"
+                        }
+                      },
+                      {
+                        "$id": "566",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "503"
+                        }
+                      },
+                      {
+                        "$id": "567",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "507"
+                        }
+                      },
+                      {
+                        "$id": "568",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "511"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "277c285b-354a-412b-9b14-41219f99c3fa",
+                  "AssetId": "cb78c232-11e9-449b-a282-a51b7c6f1128"
+                },
+                "_name": "BreadAnimation.m2dspranim",
+                "Id": "cb78c232-11e9-449b-a282-a51b7c6f1128"
+              },
+              {
+                "$id": "569",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "570",
+                  "_steps": {
+                    "$id": "571",
+                    "$values": [
+                      {
+                        "$id": "572",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "547"
+                        }
+                      },
+                      {
+                        "$id": "573",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "551"
+                        }
+                      },
+                      {
+                        "$id": "574",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "555"
+                        }
+                      },
+                      {
+                        "$id": "575",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "559"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "9505f6fd-e448-4182-9605-c775d402325c",
+                  "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
+                },
+                "_name": "DonutAnimation.m2dspranim",
+                "Id": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
+              },
+              {
+                "$id": "576",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "577",
+                  "_steps": {
+                    "$id": "578",
+                    "$values": [
+                      {
+                        "$id": "579",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "531"
+                        }
+                      },
+                      {
+                        "$id": "580",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "535"
+                        }
+                      },
+                      {
+                        "$id": "581",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "539"
+                        }
+                      },
+                      {
+                        "$id": "582",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "543"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "b9b532f9-4e8c-4a37-aff4-f65742222a21",
+                  "AssetId": "b6244948-7689-4f2b-a0b5-e6ad3a727eb3"
+                },
+                "_name": "MelonAnimation.m2dspranim",
+                "Id": "b6244948-7689-4f2b-a0b5-e6ad3a727eb3"
+              },
+              {
+                "$id": "583",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "584",
+                  "_steps": {
+                    "$id": "585",
+                    "$values": [
+                      {
+                        "$id": "586",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "515"
+                        }
+                      },
+                      {
+                        "$id": "587",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "519"
+                        }
+                      },
+                      {
+                        "$id": "588",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "523"
+                        }
+                      },
+                      {
+                        "$id": "589",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "527"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "23d8bd1a-2c3b-4385-b6a2-56aa7c1d21b3",
+                  "AssetId": "80bbc0db-6e8e-4826-8c74-3c44c12e3053"
+                },
+                "_name": "PlumAnimation.m2dspranim",
+                "Id": "80bbc0db-6e8e-4826-8c74-3c44c12e3053"
+              }
+            ]
+          },
+          "_name": "Food",
+          "Id": "d9868849-4f84-4097-9a54-37b4d343f297"
+        },
+        {
+          "$id": "590",
+          "$type": "Macabre2D.UI.Library.Models.FolderAsset, Macabre2D.UI.Library",
+          "_children": {
+            "$id": "591",
+            "$values": [
+              {
+                "$id": "592",
+                "$type": "Macabre2D.UI.Library.Models.ImageAsset, Macabre2D.UI.Library",
+                "_children": {
+                  "$id": "593",
+                  "$values": [
+                    {
+                      "$id": "594",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "595",
+                        "_id": "a07d3862-2218-4d04-9fb8-33ac6da339dd",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "596",
+                          "X": 0,
+                          "Y": 0
+                        },
+                        "Name": "PlayerIdle1",
+                        "Size": {
+                          "$id": "597",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "598",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "599",
+                        "_id": "782d8144-b534-4443-9ab2-5610f3663b07",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "600",
+                          "X": 8,
+                          "Y": 0
+                        },
+                        "Name": "PlayerIdle2",
+                        "Size": {
+                          "$id": "601",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "602",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "603",
+                        "_id": "d287f1a5-84d7-4281-8f58-d693f0cd582f",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "604",
+                          "X": 16,
+                          "Y": 0
+                        },
+                        "Name": "PlayerRunning1",
+                        "Size": {
+                          "$id": "605",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "606",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "607",
+                        "_id": "f0faa7b4-c4e0-4d38-b667-0083e5a8ba92",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "608",
+                          "X": 24,
+                          "Y": 0
+                        },
+                        "Name": "PlayerRunning2",
+                        "Size": {
+                          "$id": "609",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "610",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "611",
+                        "_id": "c612ee28-7360-45f2-aef8-02778ced88b9",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "612",
+                          "X": 0,
+                          "Y": 8
+                        },
+                        "Name": "PlayerJumping1",
+                        "Size": {
+                          "$id": "613",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "614",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "615",
+                        "_id": "be30bf40-68b2-4337-bb76-f7823dc13ca4",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "616",
+                          "X": 8,
+                          "Y": 8
+                        },
+                        "Name": "PlayerJumping2",
+                        "Size": {
+                          "$id": "617",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "618",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "619",
+                        "_id": "d81bca8d-af9d-47af-b54a-73e290bf1ebb",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "620",
+                          "X": 16,
+                          "Y": 8
+                        },
+                        "Name": "PlayerFalling",
+                        "Size": {
+                          "$id": "621",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    },
+                    {
+                      "$id": "622",
+                      "_imageAsset": {
+                        "$ref": "592"
+                      },
+                      "_sprite": {
+                        "$id": "623",
+                        "_id": "77f2b9e0-636b-497e-b381-ee75428d7790",
+                        "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
+                        "Location": {
+                          "$id": "624",
+                          "X": 24,
+                          "Y": 8
+                        },
+                        "Name": "PlayerSliding",
+                        "Size": {
+                          "$id": "625",
+                          "X": 8,
+                          "Y": 8
+                        }
+                      }
+                    }
+                  ]
+                },
+                "_height": 16,
+                "_width": 32,
+                "_name": "PlayerSpriteSheet.png",
+                "Id": "674230aa-203e-4d03-a816-b8a3a941744b"
+              },
+              {
+                "$id": "626",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "627",
+                  "_steps": {
+                    "$id": "628",
+                    "$values": [
+                      {
+                        "$id": "629",
+                        "Frames": 1,
+                        "Sprite": {
+                          "$ref": "619"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "a7d86f12-1cf5-484c-ab38-9852c3ddbc84",
+                  "AssetId": "fa36a3df-84a7-491d-adbc-4001b40ccf71"
+                },
+                "_name": "PlayerFall.m2dspranim",
+                "Id": "fa36a3df-84a7-491d-adbc-4001b40ccf71"
+              },
+              {
+                "$id": "630",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "631",
+                  "_steps": {
+                    "$id": "632",
+                    "$values": [
+                      {
+                        "$id": "633",
+                        "Frames": 28,
+                        "Sprite": {
+                          "$ref": "595"
+                        }
+                      },
+                      {
+                        "$id": "634",
+                        "Frames": 4,
+                        "Sprite": {
+                          "$ref": "599"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "a628b433-c285-4c2c-8be2-094a69efac35",
+                  "AssetId": "3f6398a3-cc06-469c-9d89-d771bcbacd46"
+                },
+                "_name": "PlayerIdle.m2dspranim",
+                "Id": "3f6398a3-cc06-469c-9d89-d771bcbacd46"
+              },
+              {
+                "$id": "635",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "636",
+                  "_steps": {
+                    "$id": "637",
+                    "$values": [
+                      {
+                        "$id": "638",
+                        "Frames": 1,
+                        "Sprite": {
+                          "$ref": "611"
+                        }
+                      },
+                      {
+                        "$id": "639",
+                        "Frames": 2,
+                        "Sprite": {
+                          "$ref": "615"
+                        }
+                      },
+                      {
+                        "$id": "640",
+                        "Frames": 1,
+                        "Sprite": {
+                          "$ref": "619"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "72056dee-3729-4e1b-8a7b-ff313ae56c54",
+                  "AssetId": "7abca9dc-5860-4df5-8717-858f97ab86e1"
+                },
+                "_name": "PlayerJumping.m2dspranim",
+                "Id": "7abca9dc-5860-4df5-8717-858f97ab86e1"
+              },
+              {
+                "$id": "641",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "642",
+                  "_steps": {
+                    "$id": "643",
+                    "$values": [
+                      {
+                        "$id": "644",
+                        "Frames": 2,
+                        "Sprite": {
+                          "$ref": "603"
+                        }
+                      },
+                      {
+                        "$id": "645",
+                        "Frames": 2,
+                        "Sprite": {
+                          "$ref": "607"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "4d7360f7-fe15-425b-a664-839cd506ac1a",
+                  "AssetId": "c257aa94-6330-43e6-8944-aa16851ccf33"
+                },
+                "_name": "PlayerMoving.m2dspranim",
+                "Id": "c257aa94-6330-43e6-8944-aa16851ccf33"
+              },
+              {
+                "$id": "646",
+                "$type": "Macabre2D.UI.Library.Models.SpriteAnimationAsset, Macabre2D.UI.Library",
+                "_savableValue": {
+                  "$id": "647",
+                  "_steps": {
+                    "$id": "648",
+                    "$values": [
+                      {
+                        "$id": "649",
+                        "Frames": 8,
+                        "Sprite": {
+                          "$ref": "623"
+                        }
+                      }
+                    ]
+                  },
+                  "_id": "901ed14b-2760-477a-a21b-faf155a0533b",
+                  "AssetId": "fb5223ee-09ca-4d0b-a361-f3ffd75dbbe8"
+                },
+                "_name": "PlayerSliding.m2dspranim",
+                "Id": "fb5223ee-09ca-4d0b-a361-f3ffd75dbbe8"
+              }
+            ]
+          },
+          "_name": "Player",
+          "Id": "363fce8a-3f6d-4292-9bc8-ebc6c3bc1fd2"
+        },
+        {
+          "$id": "650",
           "$type": "Macabre2D.UI.Library.Models.SceneAsset, Macabre2D.UI.Library",
           "_camera": {
-            "$id": "29",
+            "$id": "651",
             "_children": {
-              "$id": "30",
+              "$id": "652",
               "$values": []
             },
             "Draw Order": 0,
@@ -26,31 +1723,1285 @@
             "Sampler State": 5,
             "Shader": null,
             "Snap to Pixels": false,
-            "View Height": 10.0,
+            "View Height": 38.5374336,
             "Id": "d098102a-9cdc-47b6-a858-876bd102461f",
             "Layers": 1,
-            "Local Position": "0, 0",
+            "Local Position": "3.690915, 5.39613342",
             "Local Scale": "1, 1",
             "Name": null
           },
           "_savableValue": {
-            "$id": "31",
+            "$id": "653",
             "_modules": {
-              "$id": "32",
-              "$values": []
+              "$id": "654",
+              "$values": [
+                {
+                  "$id": "655",
+                  "$type": "Macabre2D.Framework.GridModule, Macabre2D.Framework",
+                  "_id": "9fff0109-69af-4eb5-a476-2ac110e7fa27",
+                  "Grid": {
+                    "$id": "656",
+                    "Tile Size": "1, 1",
+                    "Offset": "0, 0"
+                  },
+                  "Name": "GridModule"
+                },
+                {
+                  "$id": "657",
+                  "$type": "Macabre2D.Project.Gameplay.InputManager, Macabre2D.Project.Gameplay",
+                  "_isEnabled": true,
+                  "_updateOrder": 0,
+                  "_id": "9e3f5e44-994f-4fa2-b475-ad0826d814f6",
+                  "Name": "Input"
+                },
+                {
+                  "$id": "658",
+                  "$type": "Macabre2D.Framework.SimplePhysicsModule, Macabre2D.Framework",
+                  "_timeStep": 0.0333333351,
+                  "_isEnabled": true,
+                  "_updateOrder": 0,
+                  "_id": "89365281-e9f4-449f-974d-99b427f17ce0",
+                  "Name": "Physics"
+                }
+              ]
             },
             "AssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5",
             "BackgroundColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0,
+              "R": 17,
+              "G": 17,
+              "B": 17,
               "A": 255
             },
             "Name": "Default",
-            "ComponentsForSaving": []
+            "ComponentsForSaving": [
+              {
+                "$id": "659",
+                "$type": "Macabre2D.Framework.Camera, Macabre2D.Framework",
+                "_children": {
+                  "$id": "660",
+                  "$values": []
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "Layers to Render": 65535,
+                "Sampler State": 5,
+                "Shader": null,
+                "Snap to Pixels": false,
+                "View Height": 12.0,
+                "Id": "a24577bd-6300-4896-9d05-72ae937199fd",
+                "Layers": 1,
+                "Local Position": "0, 7",
+                "Local Scale": "1, 1",
+                "Name": "Camera"
+              },
+              {
+                "$id": "661",
+                "$type": "Macabre2D.Framework.AutoTileMap, Macabre2D.Framework",
+                "_activeTileToIndex": {
+                  "$id": "662",
+                  "$values": [
+                    {
+                      "Key": {
+                        "$id": "663",
+                        "X": -6,
+                        "Y": 1
+                      },
+                      "Value": 12
+                    },
+                    {
+                      "Key": {
+                        "$id": "664",
+                        "X": -5,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "665",
+                        "X": -4,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "666",
+                        "X": -3,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "667",
+                        "X": -2,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "668",
+                        "X": -1,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "669",
+                        "X": 0,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "670",
+                        "X": 1,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "671",
+                        "X": 2,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "672",
+                        "X": 3,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "673",
+                        "X": 4,
+                        "Y": 1
+                      },
+                      "Value": 14
+                    },
+                    {
+                      "Key": {
+                        "$id": "674",
+                        "X": 5,
+                        "Y": 1
+                      },
+                      "Value": 10
+                    },
+                    {
+                      "Key": {
+                        "$id": "675",
+                        "X": -6,
+                        "Y": 0
+                      },
+                      "Value": 5
+                    },
+                    {
+                      "Key": {
+                        "$id": "676",
+                        "X": -5,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "677",
+                        "X": -4,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "678",
+                        "X": -3,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "679",
+                        "X": -2,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "680",
+                        "X": -1,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "681",
+                        "X": 0,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "682",
+                        "X": 1,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "683",
+                        "X": 2,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "684",
+                        "X": 3,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "685",
+                        "X": 4,
+                        "Y": 0
+                      },
+                      "Value": 7
+                    },
+                    {
+                      "Key": {
+                        "$id": "686",
+                        "X": 5,
+                        "Y": 0
+                      },
+                      "Value": 3
+                    }
+                  ]
+                },
+                "_children": {
+                  "$id": "687",
+                  "$values": [
+                    {
+                      "$id": "688",
+                      "$type": "Macabre2D.Framework.TileableBodyComponent, Macabre2D.Framework",
+                      "_children": {
+                        "$id": "689",
+                        "$values": []
+                      },
+                      "Draw Order": 0,
+                      "Enable": true,
+                      "Visible": true,
+                      "_parent": {
+                        "$ref": "661"
+                      },
+                      "Update Order": 0,
+                      "Id": "f47dcacf-0c7a-4e44-98da-a6662f13884b",
+                      "Layers": 3,
+                      "Local Position": "0, 0",
+                      "Local Scale": "1, 1",
+                      "Name": "GroundColliders",
+                      "Use as Trigger": false,
+                      "Physics Material": {
+                        "$id": "690",
+                        "Bounce": 0.5,
+                        "Friction": 1.0
+                      },
+                      "Left Layers": 2,
+                      "Top Layers": 1,
+                      "Right Layers": 2,
+                      "Bottom Layers": 4
+                    }
+                  ]
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "GridConfiguration": {
+                  "$id": "691",
+                  "Use Local Grid": true,
+                  "Grid Module": null,
+                  "Local Grid": {
+                    "$id": "692",
+                    "Tile Size": "1, 1",
+                    "Offset": "0, 0"
+                  }
+                },
+                "Id": "7c74a918-46a7-4020-a4c3-830f6b199b9c",
+                "Layers": 3,
+                "Local Position": "0, 0",
+                "Local Scale": "1, 1",
+                "Name": "Ground",
+                "Tile Set": {
+                  "$ref": "492"
+                },
+                "Color": {
+                  "R": 255,
+                  "G": 255,
+                  "B": 255,
+                  "A": 255
+                }
+              },
+              {
+                "$id": "693",
+                "$type": "Macabre2D.Framework.BinaryTileMap, Macabre2D.Framework",
+                "_activeTiles": {
+                  "$id": "694",
+                  "$values": [
+                    {
+                      "$id": "695",
+                      "X": -3,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "696",
+                      "X": -3,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "697",
+                      "X": -3,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "698",
+                      "X": -3,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "699",
+                      "X": -3,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "700",
+                      "X": -2,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "701",
+                      "X": -1,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "702",
+                      "X": 0,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "703",
+                      "X": 1,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "704",
+                      "X": 2,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "705",
+                      "X": 2,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "706",
+                      "X": 2,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "707",
+                      "X": 2,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "708",
+                      "X": 2,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "709",
+                      "X": 1,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "710",
+                      "X": 0,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "711",
+                      "X": -1,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "712",
+                      "X": -2,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "713",
+                      "X": -5,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "714",
+                      "X": -5,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "715",
+                      "X": -5,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "716",
+                      "X": -5,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "717",
+                      "X": -5,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "718",
+                      "X": -4,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "719",
+                      "X": -4,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "720",
+                      "X": -4,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "721",
+                      "X": -4,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "722",
+                      "X": -4,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "723",
+                      "X": -6,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "724",
+                      "X": -7,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "725",
+                      "X": -8,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "726",
+                      "X": 3,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "727",
+                      "X": 3,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "728",
+                      "X": 3,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "729",
+                      "X": 3,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "730",
+                      "X": 3,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "731",
+                      "X": 4,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "732",
+                      "X": 4,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "733",
+                      "X": 4,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "734",
+                      "X": 4,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "735",
+                      "X": 4,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "736",
+                      "X": -10,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "737",
+                      "X": -9,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "738",
+                      "X": -10,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "739",
+                      "X": -9,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "740",
+                      "X": -8,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "741",
+                      "X": 9,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "742",
+                      "X": 9,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "743",
+                      "X": 9,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "744",
+                      "X": 9,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "745",
+                      "X": 9,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "746",
+                      "X": 8,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "747",
+                      "X": 7,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "748",
+                      "X": 6,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "749",
+                      "X": 5,
+                      "Y": 3
+                    },
+                    {
+                      "$id": "750",
+                      "X": 5,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "751",
+                      "X": 5,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "752",
+                      "X": 5,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "753",
+                      "X": 5,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "754",
+                      "X": 6,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "755",
+                      "X": 7,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "756",
+                      "X": 8,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "757",
+                      "X": 8,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "758",
+                      "X": 8,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "759",
+                      "X": 8,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "760",
+                      "X": 7,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "761",
+                      "X": 6,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "762",
+                      "X": 6,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "763",
+                      "X": 6,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "764",
+                      "X": 7,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "765",
+                      "X": 7,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "766",
+                      "X": -7,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "767",
+                      "X": -6,
+                      "Y": -1
+                    },
+                    {
+                      "$id": "768",
+                      "X": -6,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "769",
+                      "X": -6,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "770",
+                      "X": -6,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "771",
+                      "X": -7,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "772",
+                      "X": -8,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "773",
+                      "X": -9,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "774",
+                      "X": -10,
+                      "Y": 2
+                    },
+                    {
+                      "$id": "775",
+                      "X": -10,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "776",
+                      "X": -9,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "777",
+                      "X": -8,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "778",
+                      "X": -7,
+                      "Y": 0
+                    },
+                    {
+                      "$id": "779",
+                      "X": -7,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "780",
+                      "X": -8,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "781",
+                      "X": -9,
+                      "Y": 1
+                    },
+                    {
+                      "$id": "782",
+                      "X": -10,
+                      "Y": 1
+                    }
+                  ]
+                },
+                "_children": {
+                  "$id": "783",
+                  "$values": []
+                },
+                "Draw Order": 999,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "GridConfiguration": {
+                  "$id": "784",
+                  "Use Local Grid": true,
+                  "Grid Module": null,
+                  "Local Grid": {
+                    "$id": "785",
+                    "Tile Size": "4, 4",
+                    "Offset": "0, 0"
+                  }
+                },
+                "Id": "063ffb49-9296-4182-847e-7f2d28c7cc3e",
+                "Layers": 1,
+                "Local Position": "0, 0",
+                "Local Scale": "1, 1",
+                "Name": "BlackTileMap",
+                "Sprite": {
+                  "$ref": "485"
+                },
+                "Color": {
+                  "R": 255,
+                  "G": 255,
+                  "B": 255,
+                  "A": 255
+                }
+              },
+              {
+                "$id": "786",
+                "$type": "Macabre2D.Project.Gameplay.Player.PlayerComponent, Macabre2D.Project.Gameplay",
+                "_children": {
+                  "$id": "787",
+                  "$values": [
+                    {
+                      "$id": "788",
+                      "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+                      "_children": {
+                        "$id": "789",
+                        "$values": []
+                      },
+                      "Draw Order": 10,
+                      "Enable": true,
+                      "Visible": true,
+                      "_parent": {
+                        "$ref": "786"
+                      },
+                      "Update Order": 0,
+                      "Id": "4e1a5fa8-5be7-45c9-97a7-1ecabf73844f",
+                      "Layers": 32768,
+                      "Local Position": "0, 0",
+                      "Local Scale": "1, 1",
+                      "Name": "PlayerAnimationComponent",
+                      "Sprite": {
+                        "$ref": "595"
+                      },
+                      "Frame Rate": 16,
+                      "Color": {
+                        "R": 255,
+                        "G": 255,
+                        "B": 255,
+                        "A": 255
+                      },
+                      "Snap to Pixels": true,
+                      "Rotation": 0.0,
+                      "Render Settings": {
+                        "$id": "790",
+                        "Flip Horizontal": false,
+                        "Flip Vertical": false,
+                        "Offset Type": 4,
+                        "Offset": "-4, -4"
+                      }
+                    }
+                  ]
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "Id": "68176c4e-e66a-4817-9566-4b467d48df9b",
+                "Layers": 32768,
+                "Local Position": "0, 2.5",
+                "Local Scale": "1, 1",
+                "Name": "PlayerComponent",
+                "IdleAnimation": {
+                  "$ref": "631"
+                },
+                "RunAnimation": {
+                  "$ref": "642"
+                },
+                "FallAnimation": {
+                  "$ref": "627"
+                },
+                "JumpAnimation": {
+                  "$ref": "636"
+                },
+                "SlideAnimation": {
+                  "$ref": "647"
+                },
+                "GroundLayer": 1,
+                "Ceiling Layer": 4,
+                "Wall Layer": 2
+              },
+              {
+                "$id": "791",
+                "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
+                "_children": {
+                  "$id": "792",
+                  "$values": []
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "Id": "1f8d8ec3-2ad3-4c01-b88f-29bfe4ff9980",
+                "Layers": 1,
+                "Local Position": "-8, 8",
+                "Local Scale": "1, 1",
+                "Name": "CreatureSprite",
+                "Sprite": {
+                  "$ref": "381"
+                },
+                "Color": {
+                  "R": 255,
+                  "G": 255,
+                  "B": 255,
+                  "A": 255
+                },
+                "Snap to Pixels": true,
+                "Rotation": 0.0,
+                "Render Settings": {
+                  "$id": "793",
+                  "Flip Horizontal": false,
+                  "Flip Vertical": false,
+                  "Offset Type": 4,
+                  "Offset": "0, 0"
+                }
+              },
+              {
+                "$id": "794",
+                "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
+                "_children": {
+                  "$id": "795",
+                  "$values": []
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "Id": "625d7671-fa43-4e86-9edc-866b98aa69c8",
+                "Layers": 1,
+                "Local Position": "7, 1",
+                "Local Scale": "1, 1",
+                "Name": "CreatureSprite",
+                "Sprite": {
+                  "$ref": "393"
+                },
+                "Color": {
+                  "R": 255,
+                  "G": 255,
+                  "B": 255,
+                  "A": 255
+                },
+                "Snap to Pixels": true,
+                "Rotation": 0.0,
+                "Render Settings": {
+                  "$id": "796",
+                  "Flip Horizontal": true,
+                  "Flip Vertical": false,
+                  "Offset Type": 4,
+                  "Offset": "0, 0"
+                }
+              },
+              {
+                "$id": "797",
+                "$type": "Macabre2D.Framework.AutoTileMap, Macabre2D.Framework",
+                "_activeTileToIndex": {
+                  "$id": "798",
+                  "$values": [
+                    {
+                      "Key": {
+                        "$id": "799",
+                        "X": -4,
+                        "Y": 3
+                      },
+                      "Value": 2
+                    },
+                    {
+                      "Key": {
+                        "$id": "800",
+                        "X": -5,
+                        "Y": 3
+                      },
+                      "Value": 6
+                    },
+                    {
+                      "Key": {
+                        "$id": "801",
+                        "X": 4,
+                        "Y": 7
+                      },
+                      "Value": 6
+                    },
+                    {
+                      "Key": {
+                        "$id": "802",
+                        "X": -1,
+                        "Y": 5
+                      },
+                      "Value": 6
+                    },
+                    {
+                      "Key": {
+                        "$id": "803",
+                        "X": 0,
+                        "Y": 5
+                      },
+                      "Value": 6
+                    },
+                    {
+                      "Key": {
+                        "$id": "804",
+                        "X": 3,
+                        "Y": 7
+                      },
+                      "Value": 4
+                    },
+                    {
+                      "Key": {
+                        "$id": "805",
+                        "X": -2,
+                        "Y": 5
+                      },
+                      "Value": 4
+                    },
+                    {
+                      "Key": {
+                        "$id": "806",
+                        "X": 1,
+                        "Y": 5
+                      },
+                      "Value": 2
+                    },
+                    {
+                      "Key": {
+                        "$id": "807",
+                        "X": -4,
+                        "Y": 7
+                      },
+                      "Value": 2
+                    },
+                    {
+                      "Key": {
+                        "$id": "808",
+                        "X": -5,
+                        "Y": 7
+                      },
+                      "Value": 6
+                    },
+                    {
+                      "Key": {
+                        "$id": "809",
+                        "X": -6,
+                        "Y": 7
+                      },
+                      "Value": 4
+                    },
+                    {
+                      "Key": {
+                        "$id": "810",
+                        "X": -6,
+                        "Y": 3
+                      },
+                      "Value": 4
+                    },
+                    {
+                      "Key": {
+                        "$id": "811",
+                        "X": 3,
+                        "Y": 3
+                      },
+                      "Value": 4
+                    },
+                    {
+                      "Key": {
+                        "$id": "812",
+                        "X": 4,
+                        "Y": 3
+                      },
+                      "Value": 6
+                    },
+                    {
+                      "Key": {
+                        "$id": "813",
+                        "X": 5,
+                        "Y": 3
+                      },
+                      "Value": 2
+                    },
+                    {
+                      "Key": {
+                        "$id": "814",
+                        "X": 5,
+                        "Y": 7
+                      },
+                      "Value": 2
+                    }
+                  ]
+                },
+                "_children": {
+                  "$id": "815",
+                  "$values": [
+                    {
+                      "$id": "816",
+                      "$type": "Macabre2D.Framework.TileableBodyComponent, Macabre2D.Framework",
+                      "_children": {
+                        "$id": "817",
+                        "$values": []
+                      },
+                      "Draw Order": 0,
+                      "Enable": true,
+                      "Visible": true,
+                      "_parent": {
+                        "$ref": "797"
+                      },
+                      "Update Order": 0,
+                      "Id": "5c191684-eefd-4c26-80af-3e54e7d98da8",
+                      "Layers": 0,
+                      "Local Position": "0, 0",
+                      "Local Scale": "1, 1",
+                      "Name": "TileableBodyComponent",
+                      "Use as Trigger": false,
+                      "Physics Material": {
+                        "$id": "818",
+                        "Bounce": 0.5,
+                        "Friction": 1.0
+                      },
+                      "Left Layers": 0,
+                      "Top Layers": 1,
+                      "Right Layers": 0,
+                      "Bottom Layers": 0
+                    }
+                  ]
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "GridConfiguration": {
+                  "$id": "819",
+                  "Use Local Grid": true,
+                  "Grid Module": null,
+                  "Local Grid": {
+                    "$id": "820",
+                    "Tile Size": "1, 1",
+                    "Offset": "0, 0"
+                  }
+                },
+                "Id": "c37885f5-a49d-474b-bb92-d2a21eea0e21",
+                "Layers": 1,
+                "Local Position": "0, 0",
+                "Local Scale": "1, 1",
+                "Name": "OneWayGround",
+                "Tile Set": {
+                  "$ref": "489"
+                },
+                "Color": {
+                  "R": 255,
+                  "G": 255,
+                  "B": 255,
+                  "A": 255
+                }
+              },
+              {
+                "$id": "821",
+                "$type": "Macabre2D.Project.Gameplay.TimerComponent, Macabre2D.Project.Gameplay",
+                "_children": {
+                  "$id": "822",
+                  "$values": [
+                    {
+                      "$id": "823",
+                      "$type": "Macabre2D.Framework.TextRenderComponent, Macabre2D.Framework",
+                      "_children": {
+                        "$id": "824",
+                        "$values": []
+                      },
+                      "Draw Order": 1000,
+                      "Enable": true,
+                      "Visible": true,
+                      "_parent": {
+                        "$ref": "821"
+                      },
+                      "Update Order": 0,
+                      "Id": "5591bf61-54d6-4407-92ce-4128cc13cec2",
+                      "Layers": 1,
+                      "Local Position": "3, 12",
+                      "Local Scale": "1, 1",
+                      "Name": "TimerText",
+                      "Font": {
+                        "$id": "825",
+                        "_id": "ce6a4162-3798-454c-a67a-2fcdb7fc1781"
+                      },
+                      "Color": {
+                        "R": 240,
+                        "G": 248,
+                        "B": 255,
+                        "A": 255
+                      },
+                      "Text": "000000",
+                      "SnapToPixels": true,
+                      "Render Settings": {
+                        "$id": "826",
+                        "Flip Horizontal": false,
+                        "Flip Vertical": false,
+                        "Offset Type": 4,
+                        "Offset": "0, 0"
+                      },
+                      "Rotation": 0.0
+                    }
+                  ]
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "Id": "8ed90a28-003f-4898-86be-e063011f21f2",
+                "Layers": 1,
+                "Local Position": "0, 0",
+                "Local Scale": "1, 1",
+                "Name": "TimerComponent"
+              },
+              {
+                "$id": "827",
+                "$type": "Macabre2D.Project.Gameplay.Food.FoodSpawner, Macabre2D.Project.Gameplay",
+                "_children": {
+                  "$id": "828",
+                  "$values": []
+                },
+                "Draw Order": 0,
+                "Enable": true,
+                "Visible": true,
+                "_parent": null,
+                "Update Order": 0,
+                "Id": "38319a42-873c-4af8-a535-26fadc343e87",
+                "Layers": 1,
+                "Local Position": "0, 0",
+                "Local Scale": "1, 1",
+                "Name": "FoodSpawner",
+                "Bread Animation": {
+                  "$ref": "563"
+                },
+                "Donut Animation": {
+                  "$ref": "570"
+                },
+                "Melon Animation": {
+                  "$ref": "577"
+                },
+                "Plum Animation": {
+                  "$ref": "584"
+                }
+              }
+            ]
           },
           "_name": "Default.m2dscene",
           "Id": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5"
+        },
+        {
+          "$id": "829",
+          "$type": "Macabre2D.UI.Library.Models.FontAsset, Macabre2D.UI.Library",
+          "_savableValue": {
+            "$ref": "825"
+          },
+          "_name": "silkscreen.spritefont",
+          "PremultiplyAlpha": true,
+          "TextureFormat": 2,
+          "Id": "ce6a4162-3798-454c-a67a-2fcdb7fc1781"
+        },
+        {
+          "$id": "830",
+          "_name": "slkscreen.ttf",
+          "Id": "ae9c1ee0-e4b7-4fb4-8033-ebc35105f5f6"
         }
       ]
     },
@@ -58,7 +3009,7 @@
     "Id": "dcecfc8b-1a62-483d-b1df-80d7739695df"
   },
   "_version": {
-    "$id": "33",
+    "$id": "831",
     "Major": 0,
     "Minor": 0,
     "Build": -1,
@@ -67,13 +3018,41 @@
     "MinorRevision": -1
   },
   "AssetManager": {
-    "$id": "34",
+    "$id": "832",
     "_idToPathMapping": {
-      "$id": "35",
+      "$id": "833",
       "$values": [
+        {
+          "Key": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+          "Value": "Assets\\Creature\\CreatureSpriteSheet"
+        },
+        {
+          "Key": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
+          "Value": "Assets\\Environment\\GroundTilesSpriteSheet"
+        },
+        {
+          "Key": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
+          "Value": "Assets\\Environment\\OneWayGroundTilesSpriteSheet"
+        },
+        {
+          "Key": "dc00f3da-fc30-497e-b1a9-e4b6e3725fad",
+          "Value": "Assets\\Environment\\PureBlackSprite"
+        },
+        {
+          "Key": "093886cc-0630-4acc-a85d-fc218d4133f8",
+          "Value": "Assets\\Food\\FoodSpriteSheet"
+        },
+        {
+          "Key": "674230aa-203e-4d03-a816-b8a3a941744b",
+          "Value": "Assets\\Player\\PlayerSpriteSheet"
+        },
         {
           "Key": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5",
           "Value": "Assets\\Default"
+        },
+        {
+          "Key": "ce6a4162-3798-454c-a67a-2fcdb7fc1781",
+          "Value": "Assets\\silkscreen"
         }
       ]
     }
@@ -82,28 +3061,28 @@
     "$type": "System.Collections.Generic.List`1[[Macabre2D.UI.Library.Models.BuildConfiguration, Macabre2D.UI.Library]], mscorlib",
     "$values": [
       {
-        "$id": "36",
+        "$id": "834",
         "Platform": 0
       }
     ]
   },
   "GameSettings": {
     "_customSettings": {
-      "$id": "37",
+      "$id": "835",
       "$values": []
     },
     "DefaultGraphicsSettings": {
       "_displayMode": 2,
       "_resolution": {
-        "$id": "38",
+        "$id": "836",
         "X": 1024,
-        "Y": 1080
+        "Y": 768
       },
       "TypeName": "GraphicsSettings",
       "Version": null
     },
     "DefaultResolution": {
-      "$id": "39",
+      "$id": "837",
       "X": 0,
       "Y": 0
     },
@@ -121,75 +3100,100 @@
     },
     "Layers": {
       "_layersToName": {
-        "$id": "40",
-        "$values": []
-      },
-      "_layerToCollisionMask": {
-        "$id": "41",
+        "$id": "838",
         "$values": [
           {
             "Key": 1,
-            "Value": 65535
+            "Value": "Ground"
           },
           {
             "Key": 2,
-            "Value": 65535
-          },
-          {
-            "Key": 4,
-            "Value": 65535
-          },
-          {
-            "Key": 8,
-            "Value": 65535
-          },
-          {
-            "Key": 16,
-            "Value": 65535
-          },
-          {
-            "Key": 32,
-            "Value": 65535
-          },
-          {
-            "Key": 64,
-            "Value": 65535
-          },
-          {
-            "Key": 128,
-            "Value": 65535
-          },
-          {
-            "Key": 256,
-            "Value": 65535
-          },
-          {
-            "Key": 512,
-            "Value": 65535
-          },
-          {
-            "Key": 1024,
-            "Value": 65535
-          },
-          {
-            "Key": 2048,
-            "Value": 65535
-          },
-          {
-            "Key": 4096,
-            "Value": 65535
-          },
-          {
-            "Key": 8192,
-            "Value": 65535
-          },
-          {
-            "Key": 16384,
-            "Value": 65535
+            "Value": "Wall"
           },
           {
             "Key": 32768,
-            "Value": 65535
+            "Value": "Player"
+          },
+          {
+            "Key": 4,
+            "Value": "Ceiling"
+          },
+          {
+            "Key": 8,
+            "Value": "Food"
+          },
+          {
+            "Key": 16,
+            "Value": "Mouth"
+          }
+        ]
+      },
+      "_layerToCollisionMask": {
+        "$id": "839",
+        "$values": [
+          {
+            "Key": 1,
+            "Value": 32776
+          },
+          {
+            "Key": 2,
+            "Value": 32777
+          },
+          {
+            "Key": 4,
+            "Value": 32795
+          },
+          {
+            "Key": 8,
+            "Value": 32775
+          },
+          {
+            "Key": 16,
+            "Value": 32783
+          },
+          {
+            "Key": 32,
+            "Value": 31
+          },
+          {
+            "Key": 64,
+            "Value": 63
+          },
+          {
+            "Key": 128,
+            "Value": 127
+          },
+          {
+            "Key": 256,
+            "Value": 255
+          },
+          {
+            "Key": 512,
+            "Value": 511
+          },
+          {
+            "Key": 1024,
+            "Value": 1023
+          },
+          {
+            "Key": 2048,
+            "Value": 2047
+          },
+          {
+            "Key": 4096,
+            "Value": 4095
+          },
+          {
+            "Key": 8192,
+            "Value": 8191
+          },
+          {
+            "Key": 16384,
+            "Value": 16383
+          },
+          {
+            "Key": 32768,
+            "Value": 32767
           }
         ]
       }
@@ -199,10 +3203,10 @@
     "StartupSceneAssetId": "4496eef2-bedb-45dd-bc3a-ec7fa64c65b5"
   },
   "LastSceneOpened": {
-    "$ref": "28"
+    "$ref": "650"
   },
-  "LastTimeSaved": "2020-04-17T20:09:09.8040562-05:00",
+  "LastTimeSaved": "2020-04-18T16:42:03.2988225-05:00",
   "StartUpSceneAsset": {
-    "$ref": "28"
+    "$ref": "650"
   }
 }
