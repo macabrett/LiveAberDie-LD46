@@ -111,7 +111,7 @@
       <Name>Macabre2D.Framework</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gameplay\Macabre2D.Project.Gameplay.csproj">
-      <Project>{ce39dfb1-2c80-452f-a799-abc878773b1d}</Project>
+      <Project>{e564b1cf-8dd2-45b8-93e6-ba0268277666}</Project>
       <Name>Macabre2D.Project.Gameplay</Name>
     </ProjectReference>
   </ItemGroup>
