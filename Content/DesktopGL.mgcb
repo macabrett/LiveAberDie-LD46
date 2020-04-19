@@ -120,8 +120,8 @@
 #begin Assets\silkscreen.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
-/processorParam:PremultiplyAlpha = False
-/processorParam:TextureFormat = NoChange
+/processorParam:PremultiplyAlpha = True
+/processorParam:TextureFormat = Color
 /build:Assets\silkscreen.spritefont
 
 

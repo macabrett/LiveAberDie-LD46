@@ -4,22 +4,22 @@ using System.Linq;
 
 namespace Macabre2D.Project.Gameplay {
 
-    public enum StartMenuOptions {
+    public enum MenuOptions {
         Play,
         Exit
     }
 
-    public sealed class StartMenuComponent : BaseComponent, IUpdateableComponent {
+    public sealed class MenuComponent : BaseComponent, IUpdateableComponent {
         private TextRenderComponent _exitTextRenderer;
         private GameStateComponent _gameStateComponent;
         private InputManager _inputManager;
         private TextRenderComponent _playTextRenderer;
-        private StartMenuOptions _selectedOption = StartMenuOptions.Play;
+        private MenuOptions _selectedOption = MenuOptions.Play;
         private SpriteRenderComponent _selectionRenderer;
 
         public void Update(FrameTime frameTime) {
             if (this._inputManager.IsJumpPressed) {
-                if (this._selectedOption == StartMenuOptions.Play) {
+                if (this._selectedOption == MenuOptions.Play) {
                     this._gameStateComponent.State = GameState.Playing;
                 }
                 else {
@@ -40,12 +40,12 @@ namespace Macabre2D.Project.Gameplay {
         }
 
         private void SwapSelectedOption() {
-            if (this._selectedOption == StartMenuOptions.Exit) {
-                this._selectedOption = StartMenuOptions.Play;
+            if (this._selectedOption == MenuOptions.Exit) {
+                this._selectedOption = MenuOptions.Play;
                 this._selectionRenderer.LocalPosition = new Vector2(this._selectionRenderer.LocalPosition.X, this._playTextRenderer.LocalPosition.Y);
             }
             else {
-                this._selectedOption = StartMenuOptions.Exit;
+                this._selectedOption = MenuOptions.Exit;
                 this._selectionRenderer.LocalPosition = new Vector2(this._selectionRenderer.LocalPosition.X, this._exitTextRenderer.LocalPosition.Y);
             }
         }

@@ -81,6 +81,7 @@
     <Compile Include="HorizontalDirection.cs" />
     <Compile Include="InputManager.cs" />
     <Compile Include="IResetable.cs" />
+    <Compile Include="PixelTextRendererComponent.cs" />
     <Compile Include="Player\BaseStance.cs" />
     <Compile Include="Player\PlayerAnimation.cs" />
     <Compile Include="Player\PlayerComponent.cs" />
@@ -93,7 +94,7 @@
     <Compile Include="Player\Stances\JumpingStance.cs" />
     <Compile Include="Player\Stances\WalkingStance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StartMenuComponent.cs" />
+    <Compile Include="MenuComponent.cs" />
     <Compile Include="TimerComponent.cs" />
   </ItemGroup>
   <ItemGroup>

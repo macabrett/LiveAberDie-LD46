@@ -49,7 +49,7 @@
         }
 
         protected override void Initialize() {
-            this._textRenderer = this.GetChild<TextRenderComponent>();
+            this._textRenderer = this.GetChild<PixelTextRendererComponent>();
         }
     }
 }

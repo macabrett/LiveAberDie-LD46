@@ -1568,7 +1568,8 @@
               "$values": [
                 {
                   "$id": "270",
-                  "$type": "Macabre2D.Framework.TextRenderComponent, Macabre2D.Framework",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
                   "_children": {
                     "$id": "271",
                     "$values": []
@@ -1590,9 +1591,9 @@
                     "_id": "ce6a4162-3798-454c-a67a-2fcdb7fc1781"
                   },
                   "Color": {
-                    "R": 240,
-                    "G": 248,
-                    "B": 255,
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
                     "A": 255
                   },
                   "Text": "000000",
@@ -3035,6 +3036,145 @@
               "B": 255,
               "A": 255
             }
+          },
+          {
+            "$id": "516",
+            "$type": "Macabre2D.Project.Gameplay.MenuComponent, Macabre2D.Project.Gameplay",
+            "_children": {
+              "$id": "517",
+              "$values": [
+                {
+                  "$id": "518",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
+                  "_children": {
+                    "$id": "519",
+                    "$values": []
+                  },
+                  "Draw Order": 1000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "516"
+                  },
+                  "Update Order": 0,
+                  "Id": "eda89356-3a20-4825-b73f-9ff13b66c4a9",
+                  "Layers": 1,
+                  "Local Position": "-6, 2",
+                  "Local Scale": "1, 1",
+                  "Name": "ExitText",
+                  "Font": {
+                    "$ref": "272"
+                  },
+                  "Color": {
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
+                    "A": 255
+                  },
+                  "Text": "Quit",
+                  "SnapToPixels": true,
+                  "Render Settings": {
+                    "$id": "520",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Rotation": 0.0
+                },
+                {
+                  "$id": "521",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
+                  "_children": {
+                    "$id": "522",
+                    "$values": []
+                  },
+                  "Draw Order": 1000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "516"
+                  },
+                  "Update Order": 0,
+                  "Id": "55af811d-2431-4f88-86bf-fe537dc70e35",
+                  "Layers": 1,
+                  "Local Position": "-6, 3.25",
+                  "Local Scale": "1, 1",
+                  "Name": "PlayText",
+                  "Font": {
+                    "$ref": "272"
+                  },
+                  "Color": {
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
+                    "A": 255
+                  },
+                  "Text": "Try Again",
+                  "SnapToPixels": true,
+                  "Render Settings": {
+                    "$id": "523",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Rotation": 0.0
+                },
+                {
+                  "$id": "524",
+                  "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
+                  "_children": {
+                    "$id": "525",
+                    "$values": []
+                  },
+                  "Draw Order": 1000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "516"
+                  },
+                  "Update Order": 0,
+                  "Id": "6c607723-5846-448e-9379-3d8dced83813",
+                  "Layers": 1,
+                  "Local Position": "-7, 3.25",
+                  "Local Scale": "1, 1",
+                  "Name": "SelectionIcon",
+                  "Sprite": {
+                    "$ref": "356"
+                  },
+                  "Color": {
+                    "R": 255,
+                    "G": 255,
+                    "B": 255,
+                    "A": 255
+                  },
+                  "Snap to Pixels": false,
+                  "Rotation": 0.0,
+                  "Render Settings": {
+                    "$id": "526",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  }
+                }
+              ]
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "409"
+            },
+            "Update Order": 0,
+            "Id": "bf122c94-02cb-44db-abf5-1215ae6e73f7",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "MenuComponent"
           }
         ]
       },
@@ -3050,536 +3190,536 @@
       "Name": "DeathScreen"
     },
     {
-      "$id": "516",
+      "$id": "527",
       "$type": "Macabre2D.Framework.EmptyComponent, Macabre2D.Framework",
       "_children": {
-        "$id": "517",
+        "$id": "528",
         "$values": [
           {
-            "$id": "518",
+            "$id": "529",
             "$type": "Macabre2D.Framework.BinaryTileMap, Macabre2D.Framework",
             "_activeTiles": {
-              "$id": "519",
+              "$id": "530",
               "$values": [
                 {
-                  "$id": "520",
+                  "$id": "531",
                   "X": -3,
                   "Y": 2
-                },
-                {
-                  "$id": "521",
-                  "X": -3,
-                  "Y": 1
-                },
-                {
-                  "$id": "522",
-                  "X": -3,
-                  "Y": 0
-                },
-                {
-                  "$id": "523",
-                  "X": -3,
-                  "Y": 3
-                },
-                {
-                  "$id": "524",
-                  "X": -3,
-                  "Y": -1
-                },
-                {
-                  "$id": "525",
-                  "X": -2,
-                  "Y": -1
-                },
-                {
-                  "$id": "526",
-                  "X": -1,
-                  "Y": -1
-                },
-                {
-                  "$id": "527",
-                  "X": 0,
-                  "Y": -1
-                },
-                {
-                  "$id": "528",
-                  "X": 1,
-                  "Y": -1
-                },
-                {
-                  "$id": "529",
-                  "X": 2,
-                  "Y": -1
-                },
-                {
-                  "$id": "530",
-                  "X": 2,
-                  "Y": 0
-                },
-                {
-                  "$id": "531",
-                  "X": 2,
-                  "Y": 1
                 },
                 {
                   "$id": "532",
-                  "X": 2,
-                  "Y": 2
+                  "X": -3,
+                  "Y": 1
                 },
                 {
                   "$id": "533",
-                  "X": 2,
-                  "Y": 3
+                  "X": -3,
+                  "Y": 0
                 },
                 {
                   "$id": "534",
-                  "X": 1,
+                  "X": -3,
                   "Y": 3
                 },
                 {
                   "$id": "535",
-                  "X": 0,
-                  "Y": 3
+                  "X": -3,
+                  "Y": -1
                 },
                 {
                   "$id": "536",
-                  "X": -1,
-                  "Y": 3
+                  "X": -2,
+                  "Y": -1
                 },
                 {
                   "$id": "537",
-                  "X": -2,
-                  "Y": 3
+                  "X": -1,
+                  "Y": -1
                 },
                 {
                   "$id": "538",
-                  "X": -5,
-                  "Y": 3
+                  "X": 0,
+                  "Y": -1
                 },
                 {
                   "$id": "539",
-                  "X": -5,
-                  "Y": 2
+                  "X": 1,
+                  "Y": -1
                 },
                 {
                   "$id": "540",
-                  "X": -5,
-                  "Y": 1
+                  "X": 2,
+                  "Y": -1
                 },
                 {
                   "$id": "541",
-                  "X": -5,
+                  "X": 2,
                   "Y": 0
                 },
                 {
                   "$id": "542",
-                  "X": -5,
-                  "Y": -1
+                  "X": 2,
+                  "Y": 1
                 },
                 {
                   "$id": "543",
-                  "X": -4,
-                  "Y": -1
+                  "X": 2,
+                  "Y": 2
                 },
                 {
                   "$id": "544",
-                  "X": -4,
+                  "X": 2,
                   "Y": 3
                 },
                 {
                   "$id": "545",
-                  "X": -4,
-                  "Y": 2
+                  "X": 1,
+                  "Y": 3
                 },
                 {
                   "$id": "546",
-                  "X": -4,
-                  "Y": 1
+                  "X": 0,
+                  "Y": 3
                 },
                 {
                   "$id": "547",
-                  "X": -4,
-                  "Y": 0
+                  "X": -1,
+                  "Y": 3
                 },
                 {
                   "$id": "548",
-                  "X": -6,
+                  "X": -2,
                   "Y": 3
                 },
                 {
                   "$id": "549",
-                  "X": -7,
+                  "X": -5,
                   "Y": 3
                 },
                 {
                   "$id": "550",
-                  "X": -8,
-                  "Y": 3
+                  "X": -5,
+                  "Y": 2
                 },
                 {
                   "$id": "551",
-                  "X": 3,
-                  "Y": -1
+                  "X": -5,
+                  "Y": 1
                 },
                 {
                   "$id": "552",
-                  "X": 3,
+                  "X": -5,
                   "Y": 0
                 },
                 {
                   "$id": "553",
-                  "X": 3,
-                  "Y": 1
+                  "X": -5,
+                  "Y": -1
                 },
                 {
                   "$id": "554",
-                  "X": 3,
-                  "Y": 2
+                  "X": -4,
+                  "Y": -1
                 },
                 {
                   "$id": "555",
-                  "X": 3,
+                  "X": -4,
                   "Y": 3
                 },
                 {
                   "$id": "556",
-                  "X": 4,
-                  "Y": 3
-                },
-                {
-                  "$id": "557",
-                  "X": 4,
+                  "X": -4,
                   "Y": 2
                 },
                 {
-                  "$id": "558",
-                  "X": 4,
+                  "$id": "557",
+                  "X": -4,
                   "Y": 1
                 },
                 {
-                  "$id": "559",
-                  "X": 4,
+                  "$id": "558",
+                  "X": -4,
                   "Y": 0
                 },
                 {
+                  "$id": "559",
+                  "X": -6,
+                  "Y": 3
+                },
+                {
                   "$id": "560",
-                  "X": 4,
-                  "Y": -1
+                  "X": -7,
+                  "Y": 3
                 },
                 {
                   "$id": "561",
-                  "X": -10,
+                  "X": -8,
                   "Y": 3
                 },
                 {
                   "$id": "562",
-                  "X": -9,
-                  "Y": 3
+                  "X": 3,
+                  "Y": -1
                 },
                 {
                   "$id": "563",
-                  "X": -10,
-                  "Y": -1
-                },
-                {
-                  "$id": "564",
-                  "X": -9,
-                  "Y": -1
-                },
-                {
-                  "$id": "565",
-                  "X": -8,
-                  "Y": -1
-                },
-                {
-                  "$id": "566",
-                  "X": 9,
-                  "Y": -1
-                },
-                {
-                  "$id": "567",
-                  "X": 9,
+                  "X": 3,
                   "Y": 0
                 },
                 {
-                  "$id": "568",
-                  "X": 9,
+                  "$id": "564",
+                  "X": 3,
                   "Y": 1
                 },
                 {
-                  "$id": "569",
-                  "X": 9,
+                  "$id": "565",
+                  "X": 3,
                   "Y": 2
                 },
                 {
-                  "$id": "570",
-                  "X": 9,
+                  "$id": "566",
+                  "X": 3,
                   "Y": 3
+                },
+                {
+                  "$id": "567",
+                  "X": 4,
+                  "Y": 3
+                },
+                {
+                  "$id": "568",
+                  "X": 4,
+                  "Y": 2
+                },
+                {
+                  "$id": "569",
+                  "X": 4,
+                  "Y": 1
+                },
+                {
+                  "$id": "570",
+                  "X": 4,
+                  "Y": 0
                 },
                 {
                   "$id": "571",
-                  "X": 8,
-                  "Y": 3
+                  "X": 4,
+                  "Y": -1
                 },
                 {
                   "$id": "572",
-                  "X": 7,
+                  "X": -10,
                   "Y": 3
                 },
                 {
                   "$id": "573",
-                  "X": 6,
+                  "X": -9,
                   "Y": 3
                 },
                 {
                   "$id": "574",
-                  "X": 5,
-                  "Y": 3
+                  "X": -10,
+                  "Y": -1
                 },
                 {
                   "$id": "575",
-                  "X": 5,
-                  "Y": 1
+                  "X": -9,
+                  "Y": -1
                 },
                 {
                   "$id": "576",
-                  "X": 5,
-                  "Y": 0
+                  "X": -8,
+                  "Y": -1
                 },
                 {
                   "$id": "577",
-                  "X": 5,
+                  "X": 9,
                   "Y": -1
                 },
                 {
                   "$id": "578",
-                  "X": 5,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 0
                 },
                 {
                   "$id": "579",
-                  "X": 6,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 1
                 },
                 {
                   "$id": "580",
-                  "X": 7,
+                  "X": 9,
                   "Y": 2
                 },
                 {
                   "$id": "581",
-                  "X": 8,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 3
                 },
                 {
                   "$id": "582",
                   "X": 8,
-                  "Y": 1
+                  "Y": 3
                 },
                 {
                   "$id": "583",
-                  "X": 8,
-                  "Y": 0
+                  "X": 7,
+                  "Y": 3
                 },
                 {
                   "$id": "584",
-                  "X": 8,
-                  "Y": -1
+                  "X": 6,
+                  "Y": 3
                 },
                 {
                   "$id": "585",
-                  "X": 7,
-                  "Y": -1
+                  "X": 5,
+                  "Y": 3
                 },
                 {
                   "$id": "586",
-                  "X": 6,
-                  "Y": -1
+                  "X": 5,
+                  "Y": 1
                 },
                 {
                   "$id": "587",
-                  "X": 6,
+                  "X": 5,
                   "Y": 0
                 },
                 {
                   "$id": "588",
+                  "X": 5,
+                  "Y": -1
+                },
+                {
+                  "$id": "589",
+                  "X": 5,
+                  "Y": 2
+                },
+                {
+                  "$id": "590",
+                  "X": 6,
+                  "Y": 2
+                },
+                {
+                  "$id": "591",
+                  "X": 7,
+                  "Y": 2
+                },
+                {
+                  "$id": "592",
+                  "X": 8,
+                  "Y": 2
+                },
+                {
+                  "$id": "593",
+                  "X": 8,
+                  "Y": 1
+                },
+                {
+                  "$id": "594",
+                  "X": 8,
+                  "Y": 0
+                },
+                {
+                  "$id": "595",
+                  "X": 8,
+                  "Y": -1
+                },
+                {
+                  "$id": "596",
+                  "X": 7,
+                  "Y": -1
+                },
+                {
+                  "$id": "597",
+                  "X": 6,
+                  "Y": -1
+                },
+                {
+                  "$id": "598",
+                  "X": 6,
+                  "Y": 0
+                },
+                {
+                  "$id": "599",
                   "X": 6,
                   "Y": 1
                 },
                 {
-                  "$id": "589",
-                  "X": 7,
-                  "Y": 1
-                },
-                {
-                  "$id": "590",
-                  "X": 7,
-                  "Y": 0
-                },
-                {
-                  "$id": "591",
-                  "X": -7,
-                  "Y": -1
-                },
-                {
-                  "$id": "592",
-                  "X": -6,
-                  "Y": -1
-                },
-                {
-                  "$id": "593",
-                  "X": -6,
-                  "Y": 0
-                },
-                {
-                  "$id": "594",
-                  "X": -6,
-                  "Y": 1
-                },
-                {
-                  "$id": "595",
-                  "X": -6,
-                  "Y": 2
-                },
-                {
-                  "$id": "596",
-                  "X": -7,
-                  "Y": 2
-                },
-                {
-                  "$id": "597",
-                  "X": -8,
-                  "Y": 2
-                },
-                {
-                  "$id": "598",
-                  "X": -9,
-                  "Y": 2
-                },
-                {
-                  "$id": "599",
-                  "X": -10,
-                  "Y": 2
-                },
-                {
                   "$id": "600",
-                  "X": -10,
-                  "Y": 0
+                  "X": 7,
+                  "Y": 1
                 },
                 {
                   "$id": "601",
-                  "X": -9,
+                  "X": 7,
                   "Y": 0
                 },
                 {
                   "$id": "602",
-                  "X": -8,
-                  "Y": 0
+                  "X": -7,
+                  "Y": -1
                 },
                 {
                   "$id": "603",
-                  "X": -7,
-                  "Y": 0
+                  "X": -6,
+                  "Y": -1
                 },
                 {
                   "$id": "604",
-                  "X": -7,
-                  "Y": 1
+                  "X": -6,
+                  "Y": 0
                 },
                 {
                   "$id": "605",
-                  "X": -8,
+                  "X": -6,
                   "Y": 1
                 },
                 {
                   "$id": "606",
-                  "X": -9,
-                  "Y": 1
+                  "X": -6,
+                  "Y": 2
                 },
                 {
                   "$id": "607",
-                  "X": -10,
-                  "Y": 1
+                  "X": -7,
+                  "Y": 2
                 },
                 {
                   "$id": "608",
-                  "X": -2,
+                  "X": -8,
                   "Y": 2
                 },
                 {
                   "$id": "609",
-                  "X": -1,
+                  "X": -9,
                   "Y": 2
                 },
                 {
                   "$id": "610",
-                  "X": 0,
+                  "X": -10,
                   "Y": 2
                 },
                 {
                   "$id": "611",
-                  "X": 1,
-                  "Y": 2
+                  "X": -10,
+                  "Y": 0
                 },
                 {
                   "$id": "612",
-                  "X": 1,
-                  "Y": 1
+                  "X": -9,
+                  "Y": 0
                 },
                 {
                   "$id": "613",
-                  "X": 1,
+                  "X": -8,
                   "Y": 0
                 },
                 {
                   "$id": "614",
-                  "X": 0,
+                  "X": -7,
                   "Y": 0
                 },
                 {
                   "$id": "615",
-                  "X": -1,
-                  "Y": 0
+                  "X": -7,
+                  "Y": 1
                 },
                 {
                   "$id": "616",
-                  "X": -2,
-                  "Y": 0
+                  "X": -8,
+                  "Y": 1
                 },
                 {
                   "$id": "617",
-                  "X": -2,
+                  "X": -9,
                   "Y": 1
                 },
                 {
                   "$id": "618",
-                  "X": -1,
+                  "X": -10,
                   "Y": 1
                 },
                 {
                   "$id": "619",
+                  "X": -2,
+                  "Y": 2
+                },
+                {
+                  "$id": "620",
+                  "X": -1,
+                  "Y": 2
+                },
+                {
+                  "$id": "621",
+                  "X": 0,
+                  "Y": 2
+                },
+                {
+                  "$id": "622",
+                  "X": 1,
+                  "Y": 2
+                },
+                {
+                  "$id": "623",
+                  "X": 1,
+                  "Y": 1
+                },
+                {
+                  "$id": "624",
+                  "X": 1,
+                  "Y": 0
+                },
+                {
+                  "$id": "625",
+                  "X": 0,
+                  "Y": 0
+                },
+                {
+                  "$id": "626",
+                  "X": -1,
+                  "Y": 0
+                },
+                {
+                  "$id": "627",
+                  "X": -2,
+                  "Y": 0
+                },
+                {
+                  "$id": "628",
+                  "X": -2,
+                  "Y": 1
+                },
+                {
+                  "$id": "629",
+                  "X": -1,
+                  "Y": 1
+                },
+                {
+                  "$id": "630",
                   "X": 0,
                   "Y": 1
                 }
               ]
             },
             "_children": {
-              "$id": "620",
+              "$id": "631",
               "$values": []
             },
             "Draw Order": 999,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "516"
+              "$ref": "527"
             },
             "Update Order": 0,
             "GridConfiguration": {
-              "$id": "621",
+              "$id": "632",
               "Use Local Grid": true,
               "Grid Module": null,
               "Local Grid": {
-                "$id": "622",
+                "$id": "633",
                 "Tile Size": "4, 4",
                 "Offset": "0, 0"
               }
@@ -3600,23 +3740,24 @@
             }
           },
           {
-            "$id": "623",
-            "$type": "Macabre2D.Project.Gameplay.StartMenuComponent, Macabre2D.Project.Gameplay",
+            "$id": "634",
+            "$type": "Macabre2D.Project.Gameplay.MenuComponent, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "624",
+              "$id": "635",
               "$values": [
                 {
-                  "$id": "625",
-                  "$type": "Macabre2D.Framework.TextRenderComponent, Macabre2D.Framework",
+                  "$id": "636",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
                   "_children": {
-                    "$id": "626",
+                    "$id": "637",
                     "$values": []
                   },
                   "Draw Order": 1000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "623"
+                    "$ref": "634"
                   },
                   "Update Order": 0,
                   "Id": "dd522b1d-949e-4a58-9eac-52e60edb3db6",
@@ -3628,15 +3769,15 @@
                     "$ref": "272"
                   },
                   "Color": {
-                    "R": 240,
-                    "G": 248,
-                    "B": 255,
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
                     "A": 255
                   },
-                  "Text": "Exit",
+                  "Text": "Quit",
                   "SnapToPixels": true,
                   "Render Settings": {
-                    "$id": "627",
+                    "$id": "638",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
@@ -3645,56 +3786,17 @@
                   "Rotation": 0.0
                 },
                 {
-                  "$id": "628",
-                  "$type": "Macabre2D.Framework.TextRenderComponent, Macabre2D.Framework",
-                  "_children": {
-                    "$id": "629",
-                    "$values": []
-                  },
-                  "Draw Order": 1000,
-                  "Enable": true,
-                  "Visible": true,
-                  "_parent": {
-                    "$ref": "623"
-                  },
-                  "Update Order": 0,
-                  "Id": "8ce7657e-4fb9-466c-8ec8-15152b359d1f",
-                  "Layers": 1,
-                  "Local Position": "-6, 3.25",
-                  "Local Scale": "1, 1",
-                  "Name": "PlayText",
-                  "Font": {
-                    "$ref": "272"
-                  },
-                  "Color": {
-                    "R": 240,
-                    "G": 248,
-                    "B": 255,
-                    "A": 255
-                  },
-                  "Text": "Play",
-                  "SnapToPixels": true,
-                  "Render Settings": {
-                    "$id": "630",
-                    "Flip Horizontal": false,
-                    "Flip Vertical": false,
-                    "Offset Type": 4,
-                    "Offset": "0, 0"
-                  },
-                  "Rotation": 0.0
-                },
-                {
-                  "$id": "631",
+                  "$id": "639",
                   "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
                   "_children": {
-                    "$id": "632",
+                    "$id": "640",
                     "$values": []
                   },
                   "Draw Order": 1000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "623"
+                    "$ref": "634"
                   },
                   "Update Order": 0,
                   "Id": "32f983ec-8be5-46c4-9aa4-fe7e107e27b8",
@@ -3714,12 +3816,52 @@
                   "Snap to Pixels": false,
                   "Rotation": 0.0,
                   "Render Settings": {
-                    "$id": "633",
+                    "$id": "641",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
                     "Offset": "0, 0"
                   }
+                },
+                {
+                  "$id": "642",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
+                  "_children": {
+                    "$id": "643",
+                    "$values": []
+                  },
+                  "Draw Order": 1000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "634"
+                  },
+                  "Update Order": 0,
+                  "Id": "73640c19-f298-468c-be53-629a1971d2a4",
+                  "Layers": 1,
+                  "Local Position": "-6, 3.25",
+                  "Local Scale": "1, 1",
+                  "Name": "PlayText",
+                  "Font": {
+                    "$ref": "272"
+                  },
+                  "Color": {
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
+                    "A": 255
+                  },
+                  "Text": "Play",
+                  "SnapToPixels": true,
+                  "Render Settings": {
+                    "$id": "644",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Rotation": 0.0
                 }
               ]
             },
@@ -3727,14 +3869,14 @@
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "516"
+              "$ref": "527"
             },
             "Update Order": 0,
             "Id": "e4f016c8-f9c7-4334-b290-3995c1db4557",
             "Layers": 1,
             "Local Position": "0, 0",
             "Local Scale": "1, 1",
-            "Name": "StartMenuComponent"
+            "Name": "MenuComponent"
           }
         ]
       },
@@ -3750,536 +3892,536 @@
       "Name": "TitleScreen"
     },
     {
-      "$id": "634",
+      "$id": "645",
       "$type": "Macabre2D.Framework.EmptyComponent, Macabre2D.Framework",
       "_children": {
-        "$id": "635",
+        "$id": "646",
         "$values": [
           {
-            "$id": "636",
+            "$id": "647",
             "$type": "Macabre2D.Framework.BinaryTileMap, Macabre2D.Framework",
             "_activeTiles": {
-              "$id": "637",
+              "$id": "648",
               "$values": [
                 {
-                  "$id": "638",
+                  "$id": "649",
                   "X": -3,
                   "Y": 2
-                },
-                {
-                  "$id": "639",
-                  "X": -3,
-                  "Y": 1
-                },
-                {
-                  "$id": "640",
-                  "X": -3,
-                  "Y": 0
-                },
-                {
-                  "$id": "641",
-                  "X": -3,
-                  "Y": 3
-                },
-                {
-                  "$id": "642",
-                  "X": -3,
-                  "Y": -1
-                },
-                {
-                  "$id": "643",
-                  "X": -2,
-                  "Y": -1
-                },
-                {
-                  "$id": "644",
-                  "X": -1,
-                  "Y": -1
-                },
-                {
-                  "$id": "645",
-                  "X": 0,
-                  "Y": -1
-                },
-                {
-                  "$id": "646",
-                  "X": 1,
-                  "Y": -1
-                },
-                {
-                  "$id": "647",
-                  "X": 2,
-                  "Y": -1
-                },
-                {
-                  "$id": "648",
-                  "X": 2,
-                  "Y": 0
-                },
-                {
-                  "$id": "649",
-                  "X": 2,
-                  "Y": 1
                 },
                 {
                   "$id": "650",
-                  "X": 2,
-                  "Y": 2
+                  "X": -3,
+                  "Y": 1
                 },
                 {
                   "$id": "651",
-                  "X": 2,
-                  "Y": 3
+                  "X": -3,
+                  "Y": 0
                 },
                 {
                   "$id": "652",
-                  "X": 1,
+                  "X": -3,
                   "Y": 3
                 },
                 {
                   "$id": "653",
-                  "X": 0,
-                  "Y": 3
+                  "X": -3,
+                  "Y": -1
                 },
                 {
                   "$id": "654",
-                  "X": -1,
-                  "Y": 3
+                  "X": -2,
+                  "Y": -1
                 },
                 {
                   "$id": "655",
-                  "X": -2,
-                  "Y": 3
+                  "X": -1,
+                  "Y": -1
                 },
                 {
                   "$id": "656",
-                  "X": -5,
-                  "Y": 3
+                  "X": 0,
+                  "Y": -1
                 },
                 {
                   "$id": "657",
-                  "X": -5,
-                  "Y": 2
+                  "X": 1,
+                  "Y": -1
                 },
                 {
                   "$id": "658",
-                  "X": -5,
-                  "Y": 1
+                  "X": 2,
+                  "Y": -1
                 },
                 {
                   "$id": "659",
-                  "X": -5,
+                  "X": 2,
                   "Y": 0
                 },
                 {
                   "$id": "660",
-                  "X": -5,
-                  "Y": -1
+                  "X": 2,
+                  "Y": 1
                 },
                 {
                   "$id": "661",
-                  "X": -4,
-                  "Y": -1
+                  "X": 2,
+                  "Y": 2
                 },
                 {
                   "$id": "662",
-                  "X": -4,
+                  "X": 2,
                   "Y": 3
                 },
                 {
                   "$id": "663",
-                  "X": -4,
-                  "Y": 2
+                  "X": 1,
+                  "Y": 3
                 },
                 {
                   "$id": "664",
-                  "X": -4,
-                  "Y": 1
+                  "X": 0,
+                  "Y": 3
                 },
                 {
                   "$id": "665",
-                  "X": -4,
-                  "Y": 0
+                  "X": -1,
+                  "Y": 3
                 },
                 {
                   "$id": "666",
-                  "X": -6,
+                  "X": -2,
                   "Y": 3
                 },
                 {
                   "$id": "667",
-                  "X": -7,
+                  "X": -5,
                   "Y": 3
                 },
                 {
                   "$id": "668",
-                  "X": -8,
-                  "Y": 3
+                  "X": -5,
+                  "Y": 2
                 },
                 {
                   "$id": "669",
-                  "X": 3,
-                  "Y": -1
+                  "X": -5,
+                  "Y": 1
                 },
                 {
                   "$id": "670",
-                  "X": 3,
+                  "X": -5,
                   "Y": 0
                 },
                 {
                   "$id": "671",
-                  "X": 3,
-                  "Y": 1
+                  "X": -5,
+                  "Y": -1
                 },
                 {
                   "$id": "672",
-                  "X": 3,
-                  "Y": 2
+                  "X": -4,
+                  "Y": -1
                 },
                 {
                   "$id": "673",
-                  "X": 3,
+                  "X": -4,
                   "Y": 3
                 },
                 {
                   "$id": "674",
-                  "X": 4,
-                  "Y": 3
-                },
-                {
-                  "$id": "675",
-                  "X": 4,
+                  "X": -4,
                   "Y": 2
                 },
                 {
-                  "$id": "676",
-                  "X": 4,
+                  "$id": "675",
+                  "X": -4,
                   "Y": 1
                 },
                 {
-                  "$id": "677",
-                  "X": 4,
+                  "$id": "676",
+                  "X": -4,
                   "Y": 0
                 },
                 {
+                  "$id": "677",
+                  "X": -6,
+                  "Y": 3
+                },
+                {
                   "$id": "678",
-                  "X": 4,
-                  "Y": -1
+                  "X": -7,
+                  "Y": 3
                 },
                 {
                   "$id": "679",
-                  "X": -10,
+                  "X": -8,
                   "Y": 3
                 },
                 {
                   "$id": "680",
-                  "X": -9,
-                  "Y": 3
+                  "X": 3,
+                  "Y": -1
                 },
                 {
                   "$id": "681",
-                  "X": -10,
-                  "Y": -1
-                },
-                {
-                  "$id": "682",
-                  "X": -9,
-                  "Y": -1
-                },
-                {
-                  "$id": "683",
-                  "X": -8,
-                  "Y": -1
-                },
-                {
-                  "$id": "684",
-                  "X": 9,
-                  "Y": -1
-                },
-                {
-                  "$id": "685",
-                  "X": 9,
+                  "X": 3,
                   "Y": 0
                 },
                 {
-                  "$id": "686",
-                  "X": 9,
+                  "$id": "682",
+                  "X": 3,
                   "Y": 1
                 },
                 {
-                  "$id": "687",
-                  "X": 9,
+                  "$id": "683",
+                  "X": 3,
                   "Y": 2
                 },
                 {
-                  "$id": "688",
-                  "X": 9,
+                  "$id": "684",
+                  "X": 3,
                   "Y": 3
+                },
+                {
+                  "$id": "685",
+                  "X": 4,
+                  "Y": 3
+                },
+                {
+                  "$id": "686",
+                  "X": 4,
+                  "Y": 2
+                },
+                {
+                  "$id": "687",
+                  "X": 4,
+                  "Y": 1
+                },
+                {
+                  "$id": "688",
+                  "X": 4,
+                  "Y": 0
                 },
                 {
                   "$id": "689",
-                  "X": 8,
-                  "Y": 3
+                  "X": 4,
+                  "Y": -1
                 },
                 {
                   "$id": "690",
-                  "X": 7,
+                  "X": -10,
                   "Y": 3
                 },
                 {
                   "$id": "691",
-                  "X": 6,
+                  "X": -9,
                   "Y": 3
                 },
                 {
                   "$id": "692",
-                  "X": 5,
-                  "Y": 3
+                  "X": -10,
+                  "Y": -1
                 },
                 {
                   "$id": "693",
-                  "X": 5,
-                  "Y": 1
+                  "X": -9,
+                  "Y": -1
                 },
                 {
                   "$id": "694",
-                  "X": 5,
-                  "Y": 0
+                  "X": -8,
+                  "Y": -1
                 },
                 {
                   "$id": "695",
-                  "X": 5,
+                  "X": 9,
                   "Y": -1
                 },
                 {
                   "$id": "696",
-                  "X": 5,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 0
                 },
                 {
                   "$id": "697",
-                  "X": 6,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 1
                 },
                 {
                   "$id": "698",
-                  "X": 7,
+                  "X": 9,
                   "Y": 2
                 },
                 {
                   "$id": "699",
-                  "X": 8,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 3
                 },
                 {
                   "$id": "700",
                   "X": 8,
-                  "Y": 1
+                  "Y": 3
                 },
                 {
                   "$id": "701",
-                  "X": 8,
-                  "Y": 0
+                  "X": 7,
+                  "Y": 3
                 },
                 {
                   "$id": "702",
-                  "X": 8,
-                  "Y": -1
+                  "X": 6,
+                  "Y": 3
                 },
                 {
                   "$id": "703",
-                  "X": 7,
-                  "Y": -1
+                  "X": 5,
+                  "Y": 3
                 },
                 {
                   "$id": "704",
-                  "X": 6,
-                  "Y": -1
+                  "X": 5,
+                  "Y": 1
                 },
                 {
                   "$id": "705",
-                  "X": 6,
+                  "X": 5,
                   "Y": 0
                 },
                 {
                   "$id": "706",
+                  "X": 5,
+                  "Y": -1
+                },
+                {
+                  "$id": "707",
+                  "X": 5,
+                  "Y": 2
+                },
+                {
+                  "$id": "708",
+                  "X": 6,
+                  "Y": 2
+                },
+                {
+                  "$id": "709",
+                  "X": 7,
+                  "Y": 2
+                },
+                {
+                  "$id": "710",
+                  "X": 8,
+                  "Y": 2
+                },
+                {
+                  "$id": "711",
+                  "X": 8,
+                  "Y": 1
+                },
+                {
+                  "$id": "712",
+                  "X": 8,
+                  "Y": 0
+                },
+                {
+                  "$id": "713",
+                  "X": 8,
+                  "Y": -1
+                },
+                {
+                  "$id": "714",
+                  "X": 7,
+                  "Y": -1
+                },
+                {
+                  "$id": "715",
+                  "X": 6,
+                  "Y": -1
+                },
+                {
+                  "$id": "716",
+                  "X": 6,
+                  "Y": 0
+                },
+                {
+                  "$id": "717",
                   "X": 6,
                   "Y": 1
                 },
                 {
-                  "$id": "707",
-                  "X": 7,
-                  "Y": 1
-                },
-                {
-                  "$id": "708",
-                  "X": 7,
-                  "Y": 0
-                },
-                {
-                  "$id": "709",
-                  "X": -7,
-                  "Y": -1
-                },
-                {
-                  "$id": "710",
-                  "X": -6,
-                  "Y": -1
-                },
-                {
-                  "$id": "711",
-                  "X": -6,
-                  "Y": 0
-                },
-                {
-                  "$id": "712",
-                  "X": -6,
-                  "Y": 1
-                },
-                {
-                  "$id": "713",
-                  "X": -6,
-                  "Y": 2
-                },
-                {
-                  "$id": "714",
-                  "X": -7,
-                  "Y": 2
-                },
-                {
-                  "$id": "715",
-                  "X": -8,
-                  "Y": 2
-                },
-                {
-                  "$id": "716",
-                  "X": -9,
-                  "Y": 2
-                },
-                {
-                  "$id": "717",
-                  "X": -10,
-                  "Y": 2
-                },
-                {
                   "$id": "718",
-                  "X": -10,
-                  "Y": 0
+                  "X": 7,
+                  "Y": 1
                 },
                 {
                   "$id": "719",
-                  "X": -9,
+                  "X": 7,
                   "Y": 0
                 },
                 {
                   "$id": "720",
-                  "X": -8,
-                  "Y": 0
+                  "X": -7,
+                  "Y": -1
                 },
                 {
                   "$id": "721",
-                  "X": -7,
-                  "Y": 0
+                  "X": -6,
+                  "Y": -1
                 },
                 {
                   "$id": "722",
-                  "X": -7,
-                  "Y": 1
+                  "X": -6,
+                  "Y": 0
                 },
                 {
                   "$id": "723",
-                  "X": -8,
+                  "X": -6,
                   "Y": 1
                 },
                 {
                   "$id": "724",
-                  "X": -9,
-                  "Y": 1
+                  "X": -6,
+                  "Y": 2
                 },
                 {
                   "$id": "725",
-                  "X": -10,
-                  "Y": 1
+                  "X": -7,
+                  "Y": 2
                 },
                 {
                   "$id": "726",
-                  "X": -2,
+                  "X": -8,
                   "Y": 2
                 },
                 {
                   "$id": "727",
-                  "X": -1,
+                  "X": -9,
                   "Y": 2
                 },
                 {
                   "$id": "728",
-                  "X": 0,
+                  "X": -10,
                   "Y": 2
                 },
                 {
                   "$id": "729",
-                  "X": 1,
-                  "Y": 2
+                  "X": -10,
+                  "Y": 0
                 },
                 {
                   "$id": "730",
-                  "X": 0,
-                  "Y": 1
+                  "X": -9,
+                  "Y": 0
                 },
                 {
                   "$id": "731",
-                  "X": 1,
-                  "Y": 1
+                  "X": -8,
+                  "Y": 0
                 },
                 {
                   "$id": "732",
-                  "X": 1,
+                  "X": -7,
                   "Y": 0
                 },
                 {
                   "$id": "733",
-                  "X": 0,
-                  "Y": 0
+                  "X": -7,
+                  "Y": 1
                 },
                 {
                   "$id": "734",
-                  "X": -1,
-                  "Y": 0
+                  "X": -8,
+                  "Y": 1
                 },
                 {
                   "$id": "735",
-                  "X": -2,
-                  "Y": 0
+                  "X": -9,
+                  "Y": 1
                 },
                 {
                   "$id": "736",
-                  "X": -1,
+                  "X": -10,
                   "Y": 1
                 },
                 {
                   "$id": "737",
+                  "X": -2,
+                  "Y": 2
+                },
+                {
+                  "$id": "738",
+                  "X": -1,
+                  "Y": 2
+                },
+                {
+                  "$id": "739",
+                  "X": 0,
+                  "Y": 2
+                },
+                {
+                  "$id": "740",
+                  "X": 1,
+                  "Y": 2
+                },
+                {
+                  "$id": "741",
+                  "X": 0,
+                  "Y": 1
+                },
+                {
+                  "$id": "742",
+                  "X": 1,
+                  "Y": 1
+                },
+                {
+                  "$id": "743",
+                  "X": 1,
+                  "Y": 0
+                },
+                {
+                  "$id": "744",
+                  "X": 0,
+                  "Y": 0
+                },
+                {
+                  "$id": "745",
+                  "X": -1,
+                  "Y": 0
+                },
+                {
+                  "$id": "746",
+                  "X": -2,
+                  "Y": 0
+                },
+                {
+                  "$id": "747",
+                  "X": -1,
+                  "Y": 1
+                },
+                {
+                  "$id": "748",
                   "X": -2,
                   "Y": 1
                 }
               ]
             },
             "_children": {
-              "$id": "738",
+              "$id": "749",
               "$values": []
             },
             "Draw Order": 999,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "634"
+              "$ref": "645"
             },
             "Update Order": 0,
             "GridConfiguration": {
-              "$id": "739",
+              "$id": "750",
               "Use Local Grid": true,
               "Grid Module": null,
               "Local Grid": {
-                "$id": "740",
+                "$id": "751",
                 "Tile Size": "4, 4",
                 "Offset": "0, 0"
               }
