@@ -78,8 +78,8 @@
     <Compile Include="Food\FoodComponent.cs" />
     <Compile Include="Food\FoodSpawner.cs" />
     <Compile Include="HorizontalDirection.cs" />
-    <Compile Include="IConsumable.cs" />
     <Compile Include="InputManager.cs" />
+    <Compile Include="IResetable.cs" />
     <Compile Include="Player\BaseStance.cs" />
     <Compile Include="Player\PlayerAnimation.cs" />
     <Compile Include="Player\PlayerComponent.cs" />

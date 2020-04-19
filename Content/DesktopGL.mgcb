@@ -37,6 +37,10 @@
 /processorParam:TextureFormat=Color
 /build:Assets\Creature\CreatureSpriteSheet.png
 
+
+
+
+
 #begin Assets\Environment\GroundTilesSpriteSheet.png
 /importer:TextureImporter
 /processor:TextureProcessor

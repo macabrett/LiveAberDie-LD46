@@ -1417,111 +1417,180 @@
     },
     {
       "$id": "243",
-      "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
+      "$type": "Macabre2D.Project.Gameplay.Creature.CreatureComponent, Macabre2D.Project.Gameplay",
       "_children": {
         "$id": "244",
-        "$values": []
+        "$values": [
+          {
+            "$id": "245",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "246",
+              "$values": []
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "243"
+            },
+            "Update Order": 0,
+            "Id": "b8aa52b2-f080-416c-bd9b-e89917760bff",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "CreatureAnimator",
+            "Sprite": null,
+            "Frame Rate": 16,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": true,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "247",
+              "Flip Horizontal": true,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            }
+          }
+        ]
       },
-      "Draw Order": 0,
+      "Draw Order": 11,
       "Enable": true,
       "Visible": true,
       "_parent": null,
       "Update Order": 0,
-      "Id": "1f8d8ec3-2ad3-4c01-b88f-29bfe4ff9980",
-      "Layers": 1,
-      "Local Position": "-8, 8",
+      "Id": "650a62f8-9702-4f70-9ae9-66f9e71961b2",
+      "Layers": 16,
+      "Local Position": "7, 8",
       "Local Scale": "1, 1",
-      "Name": "CreatureSprite",
-      "Sprite": {
-        "$id": "245",
-        "_id": "f4627b0d-18d4-4fb7-baac-81048a5a00c6",
-        "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
-        "Location": {
-          "$id": "246",
-          "X": 0,
-          "Y": 0
-        },
-        "Name": "CreatureIdle1",
-        "Size": {
-          "$id": "247",
-          "X": 8,
-          "Y": 32
-        }
-      },
-      "Color": {
-        "R": 255,
-        "G": 255,
-        "B": 255,
-        "A": 255
-      },
-      "Snap to Pixels": true,
-      "Rotation": 0.0,
-      "Render Settings": {
+      "Name": "CreatureComponentRight",
+      "Flip Horizontal": true,
+      "Idle Animation": {
         "$id": "248",
-        "Flip Horizontal": false,
-        "Flip Vertical": false,
-        "Offset Type": 4,
-        "Offset": "0, 0"
-      }
-    },
-    {
-      "$id": "249",
-      "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
-      "_children": {
-        "$id": "250",
-        "$values": []
-      },
-      "Draw Order": 0,
-      "Enable": true,
-      "Visible": true,
-      "_parent": null,
-      "Update Order": 0,
-      "Id": "625d7671-fa43-4e86-9edc-866b98aa69c8",
-      "Layers": 1,
-      "Local Position": "7, 1",
-      "Local Scale": "1, 1",
-      "Name": "CreatureSprite",
-      "Sprite": {
-        "$id": "251",
-        "_id": "4521c167-799a-49d4-b8a5-e46a44a283ac",
-        "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
-        "Location": {
-          "$id": "252",
-          "X": 24,
-          "Y": 0
+        "_steps": {
+          "$id": "249",
+          "$values": [
+            {
+              "$id": "250",
+              "Frames": 13,
+              "Sprite": {
+                "$id": "251",
+                "_id": "437ce3ad-055c-4d15-9f59-479e5a624530",
+                "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                "Location": {
+                  "$id": "252",
+                  "X": 8,
+                  "Y": 0
+                },
+                "Name": "CreatureIdle2",
+                "Size": {
+                  "$id": "253",
+                  "X": 8,
+                  "Y": 32
+                }
+              }
+            },
+            {
+              "$id": "254",
+              "Frames": 115,
+              "Sprite": {
+                "$id": "255",
+                "_id": "f4627b0d-18d4-4fb7-baac-81048a5a00c6",
+                "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                "Location": {
+                  "$id": "256",
+                  "X": 0,
+                  "Y": 0
+                },
+                "Name": "CreatureIdle1",
+                "Size": {
+                  "$id": "257",
+                  "X": 8,
+                  "Y": 32
+                }
+              }
+            }
+          ]
         },
-        "Name": "CreatureDead",
-        "Size": {
-          "$id": "253",
-          "X": 8,
-          "Y": 32
-        }
+        "_id": "903012ff-ff31-4448-967c-453181803066",
+        "AssetId": "fce7aeb9-b846-4e87-8677-3a9c9e2a6d31"
       },
-      "Color": {
-        "R": 255,
-        "G": 255,
-        "B": 255,
-        "A": 255
+      "Chomp Animation": {
+        "$id": "258",
+        "_steps": {
+          "$id": "259",
+          "$values": [
+            {
+              "$id": "260",
+              "Frames": 8,
+              "Sprite": {
+                "$id": "261",
+                "_id": "d27889f2-e5f5-4725-bc25-893bde560d55",
+                "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                "Location": {
+                  "$id": "262",
+                  "X": 16,
+                  "Y": 0
+                },
+                "Name": "CreatureChomp",
+                "Size": {
+                  "$id": "263",
+                  "X": 8,
+                  "Y": 32
+                }
+              }
+            }
+          ]
+        },
+        "_id": "27531ffb-4c35-4091-868b-48faac2ffffd",
+        "AssetId": "7f4917d0-5636-450a-86d2-85862029e210"
       },
-      "Snap to Pixels": true,
-      "Rotation": 0.0,
-      "Render Settings": {
-        "$id": "254",
-        "Flip Horizontal": true,
-        "Flip Vertical": false,
-        "Offset Type": 4,
-        "Offset": "0, 0"
+      "Dead Animation": {
+        "$id": "264",
+        "_steps": {
+          "$id": "265",
+          "$values": [
+            {
+              "$id": "266",
+              "Frames": 1,
+              "Sprite": {
+                "$id": "267",
+                "_id": "4521c167-799a-49d4-b8a5-e46a44a283ac",
+                "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                "Location": {
+                  "$id": "268",
+                  "X": 24,
+                  "Y": 0
+                },
+                "Name": "CreatureDead",
+                "Size": {
+                  "$id": "269",
+                  "X": 8,
+                  "Y": 32
+                }
+              }
+            }
+          ]
+        },
+        "_id": "d0d5516f-62d6-4fe5-b87b-f94424813992",
+        "AssetId": "5ee205f8-4ede-4ec9-92eb-6b48ea4e15e0"
       }
     },
     {
-      "$id": "255",
+      "$id": "270",
       "$type": "Macabre2D.Framework.AutoTileMap, Macabre2D.Framework",
       "_activeTileToIndex": {
-        "$id": "256",
+        "$id": "271",
         "$values": [
           {
             "Key": {
-              "$id": "257",
+              "$id": "272",
               "X": -4,
               "Y": 3
             },
@@ -1529,7 +1598,7 @@
           },
           {
             "Key": {
-              "$id": "258",
+              "$id": "273",
               "X": -5,
               "Y": 3
             },
@@ -1537,7 +1606,7 @@
           },
           {
             "Key": {
-              "$id": "259",
+              "$id": "274",
               "X": 4,
               "Y": 7
             },
@@ -1545,7 +1614,7 @@
           },
           {
             "Key": {
-              "$id": "260",
+              "$id": "275",
               "X": -1,
               "Y": 5
             },
@@ -1553,7 +1622,7 @@
           },
           {
             "Key": {
-              "$id": "261",
+              "$id": "276",
               "X": 0,
               "Y": 5
             },
@@ -1561,7 +1630,7 @@
           },
           {
             "Key": {
-              "$id": "262",
+              "$id": "277",
               "X": 3,
               "Y": 7
             },
@@ -1569,7 +1638,7 @@
           },
           {
             "Key": {
-              "$id": "263",
+              "$id": "278",
               "X": -2,
               "Y": 5
             },
@@ -1577,7 +1646,7 @@
           },
           {
             "Key": {
-              "$id": "264",
+              "$id": "279",
               "X": 1,
               "Y": 5
             },
@@ -1585,7 +1654,7 @@
           },
           {
             "Key": {
-              "$id": "265",
+              "$id": "280",
               "X": -4,
               "Y": 7
             },
@@ -1593,7 +1662,7 @@
           },
           {
             "Key": {
-              "$id": "266",
+              "$id": "281",
               "X": -5,
               "Y": 7
             },
@@ -1601,7 +1670,7 @@
           },
           {
             "Key": {
-              "$id": "267",
+              "$id": "282",
               "X": -6,
               "Y": 7
             },
@@ -1609,7 +1678,7 @@
           },
           {
             "Key": {
-              "$id": "268",
+              "$id": "283",
               "X": -6,
               "Y": 3
             },
@@ -1617,7 +1686,7 @@
           },
           {
             "Key": {
-              "$id": "269",
+              "$id": "284",
               "X": 3,
               "Y": 3
             },
@@ -1625,7 +1694,7 @@
           },
           {
             "Key": {
-              "$id": "270",
+              "$id": "285",
               "X": 4,
               "Y": 3
             },
@@ -1633,7 +1702,7 @@
           },
           {
             "Key": {
-              "$id": "271",
+              "$id": "286",
               "X": 5,
               "Y": 3
             },
@@ -1641,7 +1710,7 @@
           },
           {
             "Key": {
-              "$id": "272",
+              "$id": "287",
               "X": 5,
               "Y": 7
             },
@@ -1650,20 +1719,20 @@
         ]
       },
       "_children": {
-        "$id": "273",
+        "$id": "288",
         "$values": [
           {
-            "$id": "274",
+            "$id": "289",
             "$type": "Macabre2D.Framework.TileableBodyComponent, Macabre2D.Framework",
             "_children": {
-              "$id": "275",
+              "$id": "290",
               "$values": []
             },
             "Draw Order": 0,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "255"
+              "$ref": "270"
             },
             "Update Order": 0,
             "Id": "5c191684-eefd-4c26-80af-3e54e7d98da8",
@@ -1673,7 +1742,7 @@
             "Name": "TileableBodyComponent",
             "Use as Trigger": false,
             "Physics Material": {
-              "$id": "276",
+              "$id": "291",
               "Bounce": 0.5,
               "Friction": 1.0
             },
@@ -1690,11 +1759,11 @@
       "_parent": null,
       "Update Order": 0,
       "GridConfiguration": {
-        "$id": "277",
+        "$id": "292",
         "Use Local Grid": true,
         "Grid Module": null,
         "Local Grid": {
-          "$id": "278",
+          "$id": "293",
           "Tile Size": "1, 1",
           "Offset": "0, 0"
         }
@@ -1705,24 +1774,24 @@
       "Local Scale": "1, 1",
       "Name": "OneWayGround",
       "Tile Set": {
-        "$id": "279",
+        "$id": "294",
         "_indexToSprites": {
-          "$id": "280",
+          "$id": "295",
           "$values": [
             {
               "Key": 0,
               "Value": {
-                "$id": "281",
+                "$id": "296",
                 "_id": "70703134-f2e2-4aa6-8c73-4d0b14895c54",
                 "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                 "Location": {
-                  "$id": "282",
+                  "$id": "297",
                   "X": 24,
                   "Y": 0
                 },
                 "Name": "OneWayGroundTilesSpriteSheet-003",
                 "Size": {
-                  "$id": "283",
+                  "$id": "298",
                   "X": 8,
                   "Y": 8
                 }
@@ -1731,17 +1800,17 @@
             {
               "Key": 2,
               "Value": {
-                "$id": "284",
+                "$id": "299",
                 "_id": "a3fe3835-458d-4862-ba79-473a6bcfdbca",
                 "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                 "Location": {
-                  "$id": "285",
+                  "$id": "300",
                   "X": 16,
                   "Y": 0
                 },
                 "Name": "OneWayGroundTilesSpriteSheet-002",
                 "Size": {
-                  "$id": "286",
+                  "$id": "301",
                   "X": 8,
                   "Y": 8
                 }
@@ -1750,17 +1819,17 @@
             {
               "Key": 6,
               "Value": {
-                "$id": "287",
+                "$id": "302",
                 "_id": "d92a1155-319c-446c-98c6-731af5eebb35",
                 "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                 "Location": {
-                  "$id": "288",
+                  "$id": "303",
                   "X": 8,
                   "Y": 0
                 },
                 "Name": "OneWayGroundTilesSpriteSheet-001",
                 "Size": {
-                  "$id": "289",
+                  "$id": "304",
                   "X": 8,
                   "Y": 8
                 }
@@ -1769,17 +1838,17 @@
             {
               "Key": 4,
               "Value": {
-                "$id": "290",
+                "$id": "305",
                 "_id": "c4c38450-bd49-4321-9d3f-13cf4a3a8fcf",
                 "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                 "Location": {
-                  "$id": "291",
+                  "$id": "306",
                   "X": 0,
                   "Y": 0
                 },
                 "Name": "OneWayGroundTilesSpriteSheet-000",
                 "Size": {
-                  "$id": "292",
+                  "$id": "307",
                   "X": 8,
                   "Y": 8
                 }
@@ -1788,25 +1857,25 @@
             {
               "Key": 8,
               "Value": {
-                "$ref": "281"
+                "$ref": "296"
               }
             },
             {
               "Key": 10,
               "Value": {
-                "$ref": "284"
+                "$ref": "299"
               }
             },
             {
               "Key": 14,
               "Value": {
-                "$ref": "287"
+                "$ref": "302"
               }
             },
             {
               "Key": 12,
               "Value": {
-                "$ref": "290"
+                "$ref": "305"
               }
             }
           ]
@@ -1823,23 +1892,23 @@
       }
     },
     {
-      "$id": "293",
+      "$id": "308",
       "$type": "Macabre2D.Project.Gameplay.TimerComponent, Macabre2D.Project.Gameplay",
       "_children": {
-        "$id": "294",
+        "$id": "309",
         "$values": [
           {
-            "$id": "295",
+            "$id": "310",
             "$type": "Macabre2D.Framework.TextRenderComponent, Macabre2D.Framework",
             "_children": {
-              "$id": "296",
+              "$id": "311",
               "$values": []
             },
             "Draw Order": 1000,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "293"
+              "$ref": "308"
             },
             "Update Order": 0,
             "Id": "5591bf61-54d6-4407-92ce-4128cc13cec2",
@@ -1848,7 +1917,7 @@
             "Local Scale": "1, 1",
             "Name": "TimerText",
             "Font": {
-              "$id": "297",
+              "$id": "312",
               "_id": "ce6a4162-3798-454c-a67a-2fcdb7fc1781"
             },
             "Color": {
@@ -1860,7 +1929,7 @@
             "Text": "000000",
             "SnapToPixels": true,
             "Render Settings": {
-              "$id": "298",
+              "$id": "313",
               "Flip Horizontal": false,
               "Flip Vertical": false,
               "Offset Type": 4,
@@ -1882,10 +1951,10 @@
       "Name": "TimerComponent"
     },
     {
-      "$id": "299",
+      "$id": "314",
       "$type": "Macabre2D.Project.Gameplay.Food.FoodSpawner, Macabre2D.Project.Gameplay",
       "_children": {
-        "$id": "300",
+        "$id": "315",
         "$values": []
       },
       "Draw Order": 0,
@@ -1899,85 +1968,85 @@
       "Local Scale": "1, 1",
       "Name": "FoodSpawner",
       "Bread Animation": {
-        "$id": "301",
+        "$id": "316",
         "_steps": {
-          "$id": "302",
+          "$id": "317",
           "$values": [
             {
-              "$id": "303",
+              "$id": "318",
               "Frames": 8,
               "Sprite": {
-                "$id": "304",
+                "$id": "319",
                 "_id": "7a131a4f-a370-4b11-8743-5afa06b56509",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "305",
+                  "$id": "320",
                   "X": 0,
                   "Y": 0
                 },
                 "Name": "Bread1",
                 "Size": {
-                  "$id": "306",
+                  "$id": "321",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "307",
+              "$id": "322",
               "Frames": 8,
               "Sprite": {
-                "$id": "308",
+                "$id": "323",
                 "_id": "a503bf17-7c80-4d34-83a0-b8f3de74b61f",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "309",
+                  "$id": "324",
                   "X": 8,
                   "Y": 0
                 },
                 "Name": "Bread2",
                 "Size": {
-                  "$id": "310",
+                  "$id": "325",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "311",
+              "$id": "326",
               "Frames": 8,
               "Sprite": {
-                "$id": "312",
+                "$id": "327",
                 "_id": "d9881d21-b0a1-4fe2-b5d3-44ab6a5cdf5c",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "313",
+                  "$id": "328",
                   "X": 16,
                   "Y": 0
                 },
                 "Name": "Bread3",
                 "Size": {
-                  "$id": "314",
+                  "$id": "329",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "315",
+              "$id": "330",
               "Frames": 8,
               "Sprite": {
-                "$id": "316",
+                "$id": "331",
                 "_id": "c0d446a9-c8ce-49c5-bee1-a9f2c90446aa",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "317",
+                  "$id": "332",
                   "X": 24,
                   "Y": 0
                 },
                 "Name": "Bread4",
                 "Size": {
-                  "$id": "318",
+                  "$id": "333",
                   "X": 8,
                   "Y": 8
                 }
@@ -1989,85 +2058,85 @@
         "AssetId": "cb78c232-11e9-449b-a282-a51b7c6f1128"
       },
       "Donut Animation": {
-        "$id": "319",
+        "$id": "334",
         "_steps": {
-          "$id": "320",
+          "$id": "335",
           "$values": [
             {
-              "$id": "321",
+              "$id": "336",
               "Frames": 8,
               "Sprite": {
-                "$id": "322",
+                "$id": "337",
                 "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "323",
+                  "$id": "338",
                   "X": 0,
                   "Y": 24
                 },
                 "Name": "Donut1",
                 "Size": {
-                  "$id": "324",
+                  "$id": "339",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "325",
+              "$id": "340",
               "Frames": 8,
               "Sprite": {
-                "$id": "326",
+                "$id": "341",
                 "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "327",
+                  "$id": "342",
                   "X": 8,
                   "Y": 24
                 },
                 "Name": "Donut2",
                 "Size": {
-                  "$id": "328",
+                  "$id": "343",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "329",
+              "$id": "344",
               "Frames": 8,
               "Sprite": {
-                "$id": "330",
+                "$id": "345",
                 "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "331",
+                  "$id": "346",
                   "X": 16,
                   "Y": 24
                 },
                 "Name": "Donut3",
                 "Size": {
-                  "$id": "332",
+                  "$id": "347",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "333",
+              "$id": "348",
               "Frames": 8,
               "Sprite": {
-                "$id": "334",
+                "$id": "349",
                 "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "335",
+                  "$id": "350",
                   "X": 24,
                   "Y": 24
                 },
                 "Name": "Donut4",
                 "Size": {
-                  "$id": "336",
+                  "$id": "351",
                   "X": 8,
                   "Y": 8
                 }
@@ -2079,85 +2148,85 @@
         "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
       },
       "Melon Animation": {
-        "$id": "337",
+        "$id": "352",
         "_steps": {
-          "$id": "338",
+          "$id": "353",
           "$values": [
             {
-              "$id": "339",
+              "$id": "354",
               "Frames": 8,
               "Sprite": {
-                "$id": "340",
+                "$id": "355",
                 "_id": "9d10a1dc-2a9d-46ca-b408-090917c467a1",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "341",
+                  "$id": "356",
                   "X": 0,
                   "Y": 16
                 },
                 "Name": "Melon1",
                 "Size": {
-                  "$id": "342",
+                  "$id": "357",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "343",
+              "$id": "358",
               "Frames": 8,
               "Sprite": {
-                "$id": "344",
+                "$id": "359",
                 "_id": "dae2f402-4ebd-43c4-b1a8-f04ed65670b9",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "345",
+                  "$id": "360",
                   "X": 8,
                   "Y": 16
                 },
                 "Name": "Melon2",
                 "Size": {
-                  "$id": "346",
+                  "$id": "361",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "347",
+              "$id": "362",
               "Frames": 8,
               "Sprite": {
-                "$id": "348",
+                "$id": "363",
                 "_id": "cb486115-0f1f-457c-b7e9-67663387aaca",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "349",
+                  "$id": "364",
                   "X": 16,
                   "Y": 16
                 },
                 "Name": "Melon3",
                 "Size": {
-                  "$id": "350",
+                  "$id": "365",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "351",
+              "$id": "366",
               "Frames": 8,
               "Sprite": {
-                "$id": "352",
+                "$id": "367",
                 "_id": "ee8ea6e6-81a8-4750-8dcf-3ee705566199",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "353",
+                  "$id": "368",
                   "X": 24,
                   "Y": 16
                 },
                 "Name": "Melon4",
                 "Size": {
-                  "$id": "354",
+                  "$id": "369",
                   "X": 8,
                   "Y": 8
                 }
@@ -2169,85 +2238,85 @@
         "AssetId": "b6244948-7689-4f2b-a0b5-e6ad3a727eb3"
       },
       "Plum Animation": {
-        "$id": "355",
+        "$id": "370",
         "_steps": {
-          "$id": "356",
+          "$id": "371",
           "$values": [
             {
-              "$id": "357",
+              "$id": "372",
               "Frames": 8,
               "Sprite": {
-                "$id": "358",
+                "$id": "373",
                 "_id": "e3179d74-c541-48bd-95db-57856c8524d3",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "359",
+                  "$id": "374",
                   "X": 0,
                   "Y": 8
                 },
                 "Name": "Plum1",
                 "Size": {
-                  "$id": "360",
+                  "$id": "375",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "361",
+              "$id": "376",
               "Frames": 8,
               "Sprite": {
-                "$id": "362",
+                "$id": "377",
                 "_id": "70b8b8ce-d76a-45a3-9d94-1e5fa3bc64a2",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "363",
+                  "$id": "378",
                   "X": 8,
                   "Y": 8
                 },
                 "Name": "Plum2",
                 "Size": {
-                  "$id": "364",
+                  "$id": "379",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "365",
+              "$id": "380",
               "Frames": 8,
               "Sprite": {
-                "$id": "366",
+                "$id": "381",
                 "_id": "ba254f74-f164-4d25-83a3-2ab93e1be7d8",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "367",
+                  "$id": "382",
                   "X": 16,
                   "Y": 8
                 },
                 "Name": "Plum3",
                 "Size": {
-                  "$id": "368",
+                  "$id": "383",
                   "X": 8,
                   "Y": 8
                 }
               }
             },
             {
-              "$id": "369",
+              "$id": "384",
               "Frames": 8,
               "Sprite": {
-                "$id": "370",
+                "$id": "385",
                 "_id": "240ac913-f535-4150-b74f-39217ada050f",
                 "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                 "Location": {
-                  "$id": "371",
+                  "$id": "386",
                   "X": 24,
                   "Y": 8
                 },
                 "Name": "Plum4",
                 "Size": {
-                  "$id": "372",
+                  "$id": "387",
                   "X": 8,
                   "Y": 8
                 }
@@ -2257,6 +2326,147 @@
         },
         "_id": "23d8bd1a-2c3b-4385-b6a2-56aa7c1d21b3",
         "AssetId": "80bbc0db-6e8e-4826-8c74-3c44c12e3053"
+      }
+    },
+    {
+      "$id": "388",
+      "$type": "Macabre2D.Project.Gameplay.Creature.CreatureComponent, Macabre2D.Project.Gameplay",
+      "_children": {
+        "$id": "389",
+        "$values": [
+          {
+            "$id": "390",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "391",
+              "$values": []
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "388"
+            },
+            "Update Order": 0,
+            "Id": "3e4e5272-27ad-46b9-afca-af0631b4d1de",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "CreatureAnimator",
+            "Sprite": null,
+            "Frame Rate": 16,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": true,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "392",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            }
+          }
+        ]
+      },
+      "Draw Order": 11,
+      "Enable": true,
+      "Visible": true,
+      "_parent": null,
+      "Update Order": 0,
+      "Id": "8cb3671b-697d-4758-b354-329a451395d7",
+      "Layers": 32768,
+      "Local Position": "-8, 8",
+      "Local Scale": "1, 1",
+      "Name": "CreatureComponentLeft",
+      "Flip Horizontal": false,
+      "Idle Animation": {
+        "$id": "393",
+        "_steps": {
+          "$id": "394",
+          "$values": [
+            {
+              "$id": "395",
+              "Frames": 96,
+              "Sprite": {
+                "$ref": "255"
+              }
+            },
+            {
+              "$id": "396",
+              "Frames": 32,
+              "Sprite": {
+                "$ref": "251"
+              }
+            }
+          ]
+        },
+        "_id": "0520e5f6-e3f3-4a1d-84c2-26ed2e4f6e76",
+        "AssetId": "1deb75e0-345f-4c3a-b9a8-7c297e70eb65"
+      },
+      "Chomp Animation": {
+        "$id": "397",
+        "_steps": {
+          "$id": "398",
+          "$values": [
+            {
+              "$id": "399",
+              "Frames": 8,
+              "Sprite": {
+                "$id": "400",
+                "_id": "d27889f2-e5f5-4725-bc25-893bde560d55",
+                "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                "Location": {
+                  "$id": "401",
+                  "X": 16,
+                  "Y": 0
+                },
+                "Name": "CreatureChomp",
+                "Size": {
+                  "$id": "402",
+                  "X": 8,
+                  "Y": 32
+                }
+              }
+            }
+          ]
+        },
+        "_id": "27531ffb-4c35-4091-868b-48faac2ffffd",
+        "AssetId": "7f4917d0-5636-450a-86d2-85862029e210"
+      },
+      "Dead Animation": {
+        "$id": "403",
+        "_steps": {
+          "$id": "404",
+          "$values": [
+            {
+              "$id": "405",
+              "Frames": 1,
+              "Sprite": {
+                "$id": "406",
+                "_id": "4521c167-799a-49d4-b8a5-e46a44a283ac",
+                "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                "Location": {
+                  "$id": "407",
+                  "X": 24,
+                  "Y": 0
+                },
+                "Name": "CreatureDead",
+                "Size": {
+                  "$id": "408",
+                  "X": 8,
+                  "Y": 32
+                }
+              }
+            }
+          ]
+        },
+        "_id": "d0d5516f-62d6-4fe5-b87b-f94424813992",
+        "AssetId": "5ee205f8-4ede-4ec9-92eb-6b48ea4e15e0"
       }
     }
   ]

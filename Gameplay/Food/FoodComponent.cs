@@ -1,14 +1,17 @@
 ﻿namespace Macabre2D.Project.Gameplay.Food {
 
     using Macabre2D.Framework;
+    using Macabre2D.Project.Gameplay.Creature;
     using Macabre2D.Project.Gameplay.Player;
     using Microsoft.Xna.Framework;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
 
-    public class FoodComponent : BaseComponent, IBoundable, IConsumable, IUpdateableComponent {
+    public class FoodComponent : BaseComponent, IBoundable, IUpdateableComponent {
         public const float FoodMaxFallSpeed = 5f;
         public const float FoodMinFallSpeed = 2f;
+        private readonly List<CreatureComponent> _creatures = new List<CreatureComponent>();
         private readonly Random _random = new Random();
         private SpriteAnimation _animation;
         private PlayerComponent _player;
@@ -68,15 +71,19 @@
             }
         }
 
-        public void Consume() {
-        }
-
         public void Update(FrameTime frameTime) {
             if (this.IsOutOfBounds()) {
                 this.Destroyed.SafeInvoke(this);
             }
             else if (this.HasBeenHit) {
                 this.Velocity = new Vector2(this.Velocity.X, this.Velocity.Y - (0.5f * PlayerMovementValues.Gravity) * (float)frameTime.SecondsPassed);
+            }
+
+            foreach (var creature in this._creatures) {
+                if (this.BoundingArea.Overlaps(creature.BoundingArea)) {
+                    creature.EatMe(this);
+                    break;
+                }
             }
 
             if (this.BoundingArea.Overlaps(this._player.BoundingArea)) {
@@ -97,10 +104,14 @@
             this.IsEnabledChanged += this.FoodComponent_IsEnabledChanged;
             this._player = this.Scene.GetAllComponentsOfType<PlayerComponent>().First();
             this._spriteAnimator = this.GetChild<SpriteAnimationComponent>();
+            this._creatures.AddRange(this.Scene.GetAllComponentsOfType<CreatureComponent>());
 
             if (this._spriteAnimator == null) {
                 this._spriteAnimator = this.AddChild<SpriteAnimationComponent>();
             }
+
+            this._spriteAnimator.SnapToPixels = true;
+            this._spriteAnimator.FrameRate = 16;
 
             if (this._animation != null) {
                 this._spriteAnimator.Play(this._animation, true);
