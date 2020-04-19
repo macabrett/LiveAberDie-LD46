@@ -15,7 +15,7 @@ namespace Macabre2D.Project.Gameplay {
         private InputManager _inputManager;
         private TextRenderComponent _playTextRenderer;
         private MenuOptions _selectedOption = MenuOptions.Play;
-        private SpriteRenderComponent _selectionRenderer;
+        private SpriteAnimationComponent _selectionRenderer;
 
         public void Update(FrameTime frameTime) {
             if (this._inputManager.IsJumpPressed) {
@@ -34,7 +34,7 @@ namespace Macabre2D.Project.Gameplay {
         protected override void Initialize() {
             this._playTextRenderer = this.FindComponentInChildren("PlayText") as TextRenderComponent;
             this._exitTextRenderer = this.FindComponentInChildren("ExitText") as TextRenderComponent;
-            this._selectionRenderer = this.GetChild<SpriteRenderComponent>();
+            this._selectionRenderer = this.GetChild<SpriteAnimationComponent>();
             this._gameStateComponent = this.Scene.GetAllComponentsOfType<GameStateComponent>().First();
             this._inputManager = this.Scene.GetModule<InputManager>();
         }

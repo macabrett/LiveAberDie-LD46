@@ -4,6 +4,7 @@
     using Macabre2D.Project.Gameplay.Creature;
     using Macabre2D.Project.Gameplay.Player;
     using Microsoft.Xna.Framework;
+    using Microsoft.Xna.Framework.Audio;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -14,6 +15,8 @@
         private readonly List<CreatureComponent> _creatures = new List<CreatureComponent>();
         private readonly Random _random = new Random();
         private SpriteAnimation _animation;
+        private AudioPlayer _crunchAudioPlayer;
+        private AudioPlayer _hitAudioPlayer;
         private PlayerComponent _player;
         private SpriteAnimationComponent _spriteAnimator;
         private Vector2 _velocity;
@@ -45,7 +48,10 @@
             }
         }
 
+        public AudioClip CrunchNoise { get; set; }
         public bool HasBeenHit { get; set; }
+
+        public AudioClip HitNoise { get; set; }
 
         public Vector2 Velocity {
             get {
@@ -71,6 +77,8 @@
             }
         }
 
+        public bool WorryAboutCollisions { get; set; } = true;
+
         public void Update(FrameTime frameTime) {
             if (this.IsOutOfBounds()) {
                 this.Destroyed.SafeInvoke(this);
@@ -79,22 +87,37 @@
                 this.Velocity = new Vector2(this.Velocity.X, this.Velocity.Y - (0.5f * PlayerMovementValues.Gravity) * (float)frameTime.SecondsPassed);
             }
 
-            foreach (var creature in this._creatures) {
-                if (this.BoundingArea.Overlaps(creature.BoundingArea)) {
-                    creature.EatMe(this);
-                    break;
-                }
-            }
+            if (this.WorryAboutCollisions) {
+                foreach (var creature in this._creatures) {
+                    if (this.BoundingArea.Overlaps(creature.BoundingArea)) {
+                        creature.EatMe(this);
+                        if (this.CrunchNoise != null) {
+                            this._crunchAudioPlayer.Stop();
+                            this._crunchAudioPlayer.AudioClip = this.CrunchNoise;
+                            this._crunchAudioPlayer.Volume = 1f;
+                            this._crunchAudioPlayer.Play();
+                        }
 
-            if (this.BoundingArea.Overlaps(this._player.BoundingArea)) {
-                var playerSpeed = this._player.Velocity.Length();
-                var mySpeed = this.Velocity.Length();
-                var vectorBetween = (this.WorldTransform.Position - this._player.WorldTransform.Position).GetNormalized();
-                var direction = this._player.Velocity != Vector2.Zero ?
-                    0.5f * (vectorBetween + this._player.Velocity.GetNormalized()) :
-                    vectorBetween;
-                this.Velocity = direction * (playerSpeed + mySpeed);
-                this.HasBeenHit = true;
+                        break;
+                    }
+                }
+
+                if (this.BoundingArea.Overlaps(this._player.BoundingArea)) {
+                    var playerSpeed = this._player.Velocity.Length();
+                    var mySpeed = this.Velocity.Length();
+                    var vectorBetween = (this.WorldTransform.Position - this._player.WorldTransform.Position).GetNormalized();
+                    var direction = this._player.Velocity != Vector2.Zero ?
+                        0.5f * (vectorBetween + this._player.Velocity.GetNormalized()) :
+                        vectorBetween;
+                    this.Velocity = direction * (playerSpeed + mySpeed);
+                    this.HasBeenHit = true;
+
+                    if (this._hitAudioPlayer.State != SoundState.Playing && this.HitNoise != null) {
+                        this._hitAudioPlayer.AudioClip = this.HitNoise;
+                        this._hitAudioPlayer.Volume = 0.7f;
+                        this._hitAudioPlayer.Play();
+                    }
+                }
             }
 
             this.SetWorldPosition(this.WorldTransform.Position + (this.Velocity * (float)frameTime.SecondsPassed));
@@ -105,10 +128,19 @@
             this._player = this.Scene.GetAllComponentsOfType<PlayerComponent>().First();
             this._spriteAnimator = this.GetChild<SpriteAnimationComponent>();
             this._creatures.AddRange(this.Scene.GetAllComponentsOfType<CreatureComponent>());
+            this._crunchAudioPlayer = this.AddChild<AudioPlayer>();
+            this._crunchAudioPlayer.ShouldLoop = false;
+            this._crunchAudioPlayer.Volume = 1f;
+
+            this._hitAudioPlayer = this.AddChild<AudioPlayer>();
+            this._hitAudioPlayer.ShouldLoop = false;
+            this._hitAudioPlayer.Volume = 1f;
 
             if (this._spriteAnimator == null) {
                 this._spriteAnimator = this.AddChild<SpriteAnimationComponent>();
             }
+
+            this._spriteAnimator.DrawOrder = this.DrawOrder;
 
             this._spriteAnimator.SnapToPixels = true;
             this._spriteAnimator.FrameRate = 16;

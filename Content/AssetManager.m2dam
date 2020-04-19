@@ -8,6 +8,14 @@
         "Value": "Assets\\Creature\\CreatureSpriteSheet"
       },
       {
+        "Key": "7d68f61b-854f-46c3-8c75-d25e5944d862",
+        "Value": "Assets\\Creature\\crunchnoise"
+      },
+      {
+        "Key": "2119979a-d1f9-4a9b-b2b3-8eb116ac9277",
+        "Value": "Assets\\Creature\\laughter"
+      },
+      {
         "Key": "c2cd0818-cfe7-4c37-9e85-c0fc02f3b7eb",
         "Value": "Assets\\Environment\\GroundTilesSpriteSheet"
       },
@@ -24,6 +32,14 @@
         "Value": "Assets\\Food\\FoodSpriteSheet"
       },
       {
+        "Key": "20d90ef3-7f09-4512-bcf4-5696fc2663f8",
+        "Value": "Assets\\Food\\hitnoise"
+      },
+      {
+        "Key": "e6ac8252-d366-4ccc-84f2-d4a0df722c0f",
+        "Value": "Assets\\Player\\jumpnoise"
+      },
+      {
         "Key": "674230aa-203e-4d03-a816-b8a3a941744b",
         "Value": "Assets\\Player\\PlayerSpriteSheet"
       },
@@ -34,6 +50,10 @@
       {
         "Key": "ce6a4162-3798-454c-a67a-2fcdb7fc1781",
         "Value": "Assets\\silkscreen"
+      },
+      {
+        "Key": "e6746284-092e-479f-8583-83b3ac512084",
+        "Value": "Assets\\themesong"
       }
     ]
   }

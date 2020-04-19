@@ -63,19 +63,11 @@
 
         public void Update(FrameTime frameTime) {
             if (this.State == GameState.Playing) {
-                if (this._player.IsDead || this._creatures.All(x => x.IsDead)) {
+                if (this._player.LivingState == PlayerLivingState.Dead || this._creatures.All(x => x.IsDead)) {
                     this.State = GameState.DeathScreen;
                 }
-            }
-            else if (this.State == GameState.DeathScreen || this.State == GameState.SecretScreen) {
-                if (this._inputManager.IsJumpPressed) {
-                    this.State = GameState.Playing;
-                }
-            }
-            else if (this.State == GameState.TitleScreen) {
-                // TODO: have a menu
-                if (this._inputManager.IsJumpPressed) {
-                    this.State = GameState.Playing;
+                else if (this._player.LivingState == PlayerLivingState.SpecialDead) {
+                    this.State = GameState.SecretScreen;
                 }
             }
         }

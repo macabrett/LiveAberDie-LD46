@@ -1139,7 +1139,6 @@
                   "Local Scale": "1, 1",
                   "Name": "PlayerAnimationComponent",
                   "Sprite": null,
-                  "Frame Rate": 16,
                   "Color": {
                     "R": 255,
                     "G": 255,
@@ -1154,7 +1153,65 @@
                     "Flip Vertical": false,
                     "Offset Type": 4,
                     "Offset": "-4, -4"
-                  }
+                  },
+                  "Default Animation": null,
+                  "Frame Rate": 16
+                },
+                {
+                  "$id": "198",
+                  "$type": "Macabre2D.Framework.AudioPlayer, Macabre2D.Framework",
+                  "_children": {
+                    "$id": "199",
+                    "$values": []
+                  },
+                  "Draw Order": 0,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "193"
+                  },
+                  "Update Order": 0,
+                  "Id": "0d74b9c2-6013-41aa-9e27-e7a4674285d5",
+                  "Layers": 1,
+                  "Local Position": "0, 0",
+                  "Local Scale": "1, 1",
+                  "Name": "JumpPlayer",
+                  "Audio Clip": {
+                    "$id": "200",
+                    "_id": "e6ac8252-d366-4ccc-84f2-d4a0df722c0f"
+                  },
+                  "Should Loop": false,
+                  "Volume": 1.0,
+                  "Pan": 0.0,
+                  "Pitch": 0.0
+                },
+                {
+                  "$id": "201",
+                  "$type": "Macabre2D.Framework.AudioPlayer, Macabre2D.Framework",
+                  "_children": {
+                    "$id": "202",
+                    "$values": []
+                  },
+                  "Draw Order": 0,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "193"
+                  },
+                  "Update Order": 0,
+                  "Id": "515a6219-553f-4955-b639-68220d24841c",
+                  "Layers": 1,
+                  "Local Position": "0, 0",
+                  "Local Scale": "1, 1",
+                  "Name": "CrunchPlayer",
+                  "Audio Clip": {
+                    "$id": "203",
+                    "_id": "7d68f61b-854f-46c3-8c75-d25e5944d862"
+                  },
+                  "Should Loop": false,
+                  "Volume": 1.0,
+                  "Pan": 0.0,
+                  "Pitch": 0.0
                 }
               ]
             },
@@ -1171,45 +1228,45 @@
             "Local Scale": "1, 1",
             "Name": "PlayerComponent",
             "IdleAnimation": {
-              "$id": "198",
+              "$id": "204",
               "_steps": {
-                "$id": "199",
+                "$id": "205",
                 "$values": [
                   {
-                    "$id": "200",
+                    "$id": "206",
                     "Frames": 28,
                     "Sprite": {
-                      "$id": "201",
+                      "$id": "207",
                       "_id": "a07d3862-2218-4d04-9fb8-33ac6da339dd",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "202",
+                        "$id": "208",
                         "X": 0,
                         "Y": 0
                       },
                       "Name": "PlayerIdle1",
                       "Size": {
-                        "$id": "203",
+                        "$id": "209",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
                   {
-                    "$id": "204",
+                    "$id": "210",
                     "Frames": 4,
                     "Sprite": {
-                      "$id": "205",
+                      "$id": "211",
                       "_id": "782d8144-b534-4443-9ab2-5610f3663b07",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "206",
+                        "$id": "212",
                         "X": 8,
                         "Y": 0
                       },
                       "Name": "PlayerIdle2",
                       "Size": {
-                        "$id": "207",
+                        "$id": "213",
                         "X": 8,
                         "Y": 8
                       }
@@ -1221,45 +1278,45 @@
               "AssetId": "3f6398a3-cc06-469c-9d89-d771bcbacd46"
             },
             "RunAnimation": {
-              "$id": "208",
+              "$id": "214",
               "_steps": {
-                "$id": "209",
+                "$id": "215",
                 "$values": [
                   {
-                    "$id": "210",
+                    "$id": "216",
                     "Frames": 2,
                     "Sprite": {
-                      "$id": "211",
+                      "$id": "217",
                       "_id": "d287f1a5-84d7-4281-8f58-d693f0cd582f",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "212",
+                        "$id": "218",
                         "X": 16,
                         "Y": 0
                       },
                       "Name": "PlayerRunning1",
                       "Size": {
-                        "$id": "213",
+                        "$id": "219",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
                   {
-                    "$id": "214",
+                    "$id": "220",
                     "Frames": 2,
                     "Sprite": {
-                      "$id": "215",
+                      "$id": "221",
                       "_id": "f0faa7b4-c4e0-4d38-b667-0083e5a8ba92",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "216",
+                        "$id": "222",
                         "X": 24,
                         "Y": 0
                       },
                       "Name": "PlayerRunning2",
                       "Size": {
-                        "$id": "217",
+                        "$id": "223",
                         "X": 8,
                         "Y": 8
                       }
@@ -1271,25 +1328,25 @@
               "AssetId": "c257aa94-6330-43e6-8944-aa16851ccf33"
             },
             "FallAnimation": {
-              "$id": "218",
+              "$id": "224",
               "_steps": {
-                "$id": "219",
+                "$id": "225",
                 "$values": [
                   {
-                    "$id": "220",
+                    "$id": "226",
                     "Frames": 1,
                     "Sprite": {
-                      "$id": "221",
+                      "$id": "227",
                       "_id": "d81bca8d-af9d-47af-b54a-73e290bf1ebb",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "222",
+                        "$id": "228",
                         "X": 16,
                         "Y": 8
                       },
                       "Name": "PlayerFalling",
                       "Size": {
-                        "$id": "223",
+                        "$id": "229",
                         "X": 8,
                         "Y": 8
                       }
@@ -1301,55 +1358,55 @@
               "AssetId": "fa36a3df-84a7-491d-adbc-4001b40ccf71"
             },
             "JumpAnimation": {
-              "$id": "224",
+              "$id": "230",
               "_steps": {
-                "$id": "225",
+                "$id": "231",
                 "$values": [
                   {
-                    "$id": "226",
+                    "$id": "232",
                     "Frames": 1,
                     "Sprite": {
-                      "$id": "227",
+                      "$id": "233",
                       "_id": "c612ee28-7360-45f2-aef8-02778ced88b9",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "228",
+                        "$id": "234",
                         "X": 0,
                         "Y": 8
                       },
                       "Name": "PlayerJumping1",
                       "Size": {
-                        "$id": "229",
+                        "$id": "235",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
                   {
-                    "$id": "230",
+                    "$id": "236",
                     "Frames": 2,
                     "Sprite": {
-                      "$id": "231",
+                      "$id": "237",
                       "_id": "be30bf40-68b2-4337-bb76-f7823dc13ca4",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "232",
+                        "$id": "238",
                         "X": 8,
                         "Y": 8
                       },
                       "Name": "PlayerJumping2",
                       "Size": {
-                        "$id": "233",
+                        "$id": "239",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
                   {
-                    "$id": "234",
+                    "$id": "240",
                     "Frames": 1,
                     "Sprite": {
-                      "$ref": "221"
+                      "$ref": "227"
                     }
                   }
                 ]
@@ -1358,25 +1415,25 @@
               "AssetId": "7abca9dc-5860-4df5-8717-858f97ab86e1"
             },
             "SlideAnimation": {
-              "$id": "235",
+              "$id": "241",
               "_steps": {
-                "$id": "236",
+                "$id": "242",
                 "$values": [
                   {
-                    "$id": "237",
+                    "$id": "243",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "238",
+                      "$id": "244",
                       "_id": "77f2b9e0-636b-497e-b381-ee75428d7790",
                       "AssetId": "674230aa-203e-4d03-a816-b8a3a941744b",
                       "Location": {
-                        "$id": "239",
+                        "$id": "245",
                         "X": 24,
                         "Y": 8
                       },
                       "Name": "PlayerSliding",
                       "Size": {
-                        "$id": "240",
+                        "$id": "246",
                         "X": 8,
                         "Y": 8
                       }
@@ -1392,23 +1449,23 @@
             "Wall Layer": 2
           },
           {
-            "$id": "241",
+            "$id": "247",
             "$type": "Macabre2D.Project.Gameplay.Creature.CreatureComponent, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "242",
+              "$id": "248",
               "$values": [
                 {
-                  "$id": "243",
+                  "$id": "249",
                   "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
                   "_children": {
-                    "$id": "244",
+                    "$id": "250",
                     "$values": []
                   },
                   "Draw Order": 0,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "241"
+                    "$ref": "247"
                   },
                   "Update Order": 0,
                   "Id": "3e4e5272-27ad-46b9-afca-af0631b4d1de",
@@ -1417,7 +1474,6 @@
                   "Local Scale": "1, 1",
                   "Name": "CreatureAnimator",
                   "Sprite": null,
-                  "Frame Rate": 16,
                   "Color": {
                     "R": 255,
                     "G": 255,
@@ -1427,12 +1483,14 @@
                   "Snap to Pixels": true,
                   "Rotation": 0.0,
                   "Render Settings": {
-                    "$id": "245",
+                    "$id": "251",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
                     "Offset": "0, 0"
-                  }
+                  },
+                  "Default Animation": null,
+                  "Frame Rate": 16
                 }
               ]
             },
@@ -1450,45 +1508,45 @@
             "Name": "CreatureComponentLeft",
             "Flip Horizontal": false,
             "Idle Animation": {
-              "$id": "246",
+              "$id": "252",
               "_steps": {
-                "$id": "247",
+                "$id": "253",
                 "$values": [
                   {
-                    "$id": "248",
+                    "$id": "254",
                     "Frames": 96,
                     "Sprite": {
-                      "$id": "249",
+                      "$id": "255",
                       "_id": "f4627b0d-18d4-4fb7-baac-81048a5a00c6",
                       "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
                       "Location": {
-                        "$id": "250",
+                        "$id": "256",
                         "X": 0,
                         "Y": 0
                       },
                       "Name": "CreatureIdle1",
                       "Size": {
-                        "$id": "251",
+                        "$id": "257",
                         "X": 8,
                         "Y": 32
                       }
                     }
                   },
                   {
-                    "$id": "252",
+                    "$id": "258",
                     "Frames": 32,
                     "Sprite": {
-                      "$id": "253",
+                      "$id": "259",
                       "_id": "437ce3ad-055c-4d15-9f59-479e5a624530",
                       "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
                       "Location": {
-                        "$id": "254",
+                        "$id": "260",
                         "X": 8,
                         "Y": 0
                       },
                       "Name": "CreatureIdle2",
                       "Size": {
-                        "$id": "255",
+                        "$id": "261",
                         "X": 8,
                         "Y": 32
                       }
@@ -1500,25 +1558,25 @@
               "AssetId": "1deb75e0-345f-4c3a-b9a8-7c297e70eb65"
             },
             "Chomp Animation": {
-              "$id": "256",
+              "$id": "262",
               "_steps": {
-                "$id": "257",
+                "$id": "263",
                 "$values": [
                   {
-                    "$id": "258",
+                    "$id": "264",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "259",
+                      "$id": "265",
                       "_id": "d27889f2-e5f5-4725-bc25-893bde560d55",
                       "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
                       "Location": {
-                        "$id": "260",
+                        "$id": "266",
                         "X": 16,
                         "Y": 0
                       },
                       "Name": "CreatureChomp",
                       "Size": {
-                        "$id": "261",
+                        "$id": "267",
                         "X": 8,
                         "Y": 32
                       }
@@ -1530,25 +1588,45 @@
               "AssetId": "7f4917d0-5636-450a-86d2-85862029e210"
             },
             "Dead Animation": {
-              "$id": "262",
+              "$id": "268",
               "_steps": {
-                "$id": "263",
+                "$id": "269",
                 "$values": [
                   {
-                    "$id": "264",
-                    "Frames": 1,
+                    "$id": "270",
+                    "Frames": 16,
                     "Sprite": {
-                      "$id": "265",
+                      "$id": "271",
                       "_id": "4521c167-799a-49d4-b8a5-e46a44a283ac",
                       "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
                       "Location": {
-                        "$id": "266",
+                        "$id": "272",
                         "X": 24,
                         "Y": 0
                       },
-                      "Name": "CreatureDead",
+                      "Name": "CreatureDead1",
                       "Size": {
-                        "$id": "267",
+                        "$id": "273",
+                        "X": 8,
+                        "Y": 32
+                      }
+                    }
+                  },
+                  {
+                    "$id": "274",
+                    "Frames": 32,
+                    "Sprite": {
+                      "$id": "275",
+                      "_id": "0fec76ae-37c0-489f-aaa1-b1efd578fa55",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "276",
+                        "X": 0,
+                        "Y": 32
+                      },
+                      "Name": "CreatureDead2",
+                      "Size": {
+                        "$id": "277",
                         "X": 8,
                         "Y": 32
                       }
@@ -1561,24 +1639,24 @@
             }
           },
           {
-            "$id": "268",
+            "$id": "278",
             "$type": "Macabre2D.Project.Gameplay.TimerComponent, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "269",
+              "$id": "279",
               "$values": [
                 {
-                  "$id": "270",
+                  "$id": "280",
                   "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
                   "_numberOfRenderPasses": 3,
                   "_children": {
-                    "$id": "271",
+                    "$id": "281",
                     "$values": []
                   },
                   "Draw Order": 1000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "268"
+                    "$ref": "278"
                   },
                   "Update Order": 0,
                   "Id": "5591bf61-54d6-4407-92ce-4128cc13cec2",
@@ -1587,7 +1665,7 @@
                   "Local Scale": "1, 1",
                   "Name": "TimerText",
                   "Font": {
-                    "$id": "272",
+                    "$id": "282",
                     "_id": "ce6a4162-3798-454c-a67a-2fcdb7fc1781"
                   },
                   "Color": {
@@ -1599,7 +1677,7 @@
                   "Text": "000000",
                   "SnapToPixels": true,
                   "Render Settings": {
-                    "$id": "273",
+                    "$id": "283",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
@@ -1623,14 +1701,14 @@
             "Name": "TimerComponent"
           },
           {
-            "$id": "274",
+            "$id": "284",
             "$type": "Macabre2D.Framework.AutoTileMap, Macabre2D.Framework",
             "_activeTileToIndex": {
-              "$id": "275",
+              "$id": "285",
               "$values": [
                 {
                   "Key": {
-                    "$id": "276",
+                    "$id": "286",
                     "X": -4,
                     "Y": 3
                   },
@@ -1638,7 +1716,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "277",
+                    "$id": "287",
                     "X": -5,
                     "Y": 3
                   },
@@ -1646,7 +1724,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "278",
+                    "$id": "288",
                     "X": 4,
                     "Y": 7
                   },
@@ -1654,7 +1732,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "279",
+                    "$id": "289",
                     "X": -1,
                     "Y": 5
                   },
@@ -1662,7 +1740,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "280",
+                    "$id": "290",
                     "X": 0,
                     "Y": 5
                   },
@@ -1670,7 +1748,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "281",
+                    "$id": "291",
                     "X": 3,
                     "Y": 7
                   },
@@ -1678,7 +1756,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "282",
+                    "$id": "292",
                     "X": -2,
                     "Y": 5
                   },
@@ -1686,7 +1764,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "283",
+                    "$id": "293",
                     "X": 1,
                     "Y": 5
                   },
@@ -1694,7 +1772,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "284",
+                    "$id": "294",
                     "X": -4,
                     "Y": 7
                   },
@@ -1702,7 +1780,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "285",
+                    "$id": "295",
                     "X": -5,
                     "Y": 7
                   },
@@ -1710,7 +1788,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "286",
+                    "$id": "296",
                     "X": -6,
                     "Y": 7
                   },
@@ -1718,7 +1796,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "287",
+                    "$id": "297",
                     "X": -6,
                     "Y": 3
                   },
@@ -1726,7 +1804,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "288",
+                    "$id": "298",
                     "X": 3,
                     "Y": 3
                   },
@@ -1734,7 +1812,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "289",
+                    "$id": "299",
                     "X": 4,
                     "Y": 3
                   },
@@ -1742,7 +1820,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "290",
+                    "$id": "300",
                     "X": 5,
                     "Y": 3
                   },
@@ -1750,7 +1828,7 @@
                 },
                 {
                   "Key": {
-                    "$id": "291",
+                    "$id": "301",
                     "X": 5,
                     "Y": 7
                   },
@@ -1759,20 +1837,20 @@
               ]
             },
             "_children": {
-              "$id": "292",
+              "$id": "302",
               "$values": [
                 {
-                  "$id": "293",
+                  "$id": "303",
                   "$type": "Macabre2D.Framework.TileableBodyComponent, Macabre2D.Framework",
                   "_children": {
-                    "$id": "294",
+                    "$id": "304",
                     "$values": []
                   },
                   "Draw Order": 0,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "274"
+                    "$ref": "284"
                   },
                   "Update Order": 0,
                   "Id": "5c191684-eefd-4c26-80af-3e54e7d98da8",
@@ -1782,7 +1860,7 @@
                   "Name": "TileableBodyComponent",
                   "Use as Trigger": false,
                   "Physics Material": {
-                    "$id": "295",
+                    "$id": "305",
                     "Bounce": 0.5,
                     "Friction": 1.0
                   },
@@ -1801,11 +1879,11 @@
             },
             "Update Order": 0,
             "GridConfiguration": {
-              "$id": "296",
+              "$id": "306",
               "Use Local Grid": true,
               "Grid Module": null,
               "Local Grid": {
-                "$id": "297",
+                "$id": "307",
                 "Tile Size": "1, 1",
                 "Offset": "0, 0"
               }
@@ -1816,24 +1894,24 @@
             "Local Scale": "1, 1",
             "Name": "OneWayGround",
             "Tile Set": {
-              "$id": "298",
+              "$id": "308",
               "_indexToSprites": {
-                "$id": "299",
+                "$id": "309",
                 "$values": [
                   {
                     "Key": 0,
                     "Value": {
-                      "$id": "300",
+                      "$id": "310",
                       "_id": "70703134-f2e2-4aa6-8c73-4d0b14895c54",
                       "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                       "Location": {
-                        "$id": "301",
+                        "$id": "311",
                         "X": 24,
                         "Y": 0
                       },
                       "Name": "OneWayGroundTilesSpriteSheet-003",
                       "Size": {
-                        "$id": "302",
+                        "$id": "312",
                         "X": 8,
                         "Y": 8
                       }
@@ -1842,17 +1920,17 @@
                   {
                     "Key": 2,
                     "Value": {
-                      "$id": "303",
+                      "$id": "313",
                       "_id": "a3fe3835-458d-4862-ba79-473a6bcfdbca",
                       "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                       "Location": {
-                        "$id": "304",
+                        "$id": "314",
                         "X": 16,
                         "Y": 0
                       },
                       "Name": "OneWayGroundTilesSpriteSheet-002",
                       "Size": {
-                        "$id": "305",
+                        "$id": "315",
                         "X": 8,
                         "Y": 8
                       }
@@ -1861,17 +1939,17 @@
                   {
                     "Key": 6,
                     "Value": {
-                      "$id": "306",
+                      "$id": "316",
                       "_id": "d92a1155-319c-446c-98c6-731af5eebb35",
                       "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                       "Location": {
-                        "$id": "307",
+                        "$id": "317",
                         "X": 8,
                         "Y": 0
                       },
                       "Name": "OneWayGroundTilesSpriteSheet-001",
                       "Size": {
-                        "$id": "308",
+                        "$id": "318",
                         "X": 8,
                         "Y": 8
                       }
@@ -1880,17 +1958,17 @@
                   {
                     "Key": 4,
                     "Value": {
-                      "$id": "309",
+                      "$id": "319",
                       "_id": "c4c38450-bd49-4321-9d3f-13cf4a3a8fcf",
                       "AssetId": "606f3925-d1c3-48e8-8da8-ce1ce5d816ed",
                       "Location": {
-                        "$id": "310",
+                        "$id": "320",
                         "X": 0,
                         "Y": 0
                       },
                       "Name": "OneWayGroundTilesSpriteSheet-000",
                       "Size": {
-                        "$id": "311",
+                        "$id": "321",
                         "X": 8,
                         "Y": 8
                       }
@@ -1899,25 +1977,25 @@
                   {
                     "Key": 8,
                     "Value": {
-                      "$ref": "300"
+                      "$ref": "310"
                     }
                   },
                   {
                     "Key": 10,
                     "Value": {
-                      "$ref": "303"
+                      "$ref": "313"
                     }
                   },
                   {
                     "Key": 14,
                     "Value": {
-                      "$ref": "306"
+                      "$ref": "316"
                     }
                   },
                   {
                     "Key": 12,
                     "Value": {
-                      "$ref": "309"
+                      "$ref": "319"
                     }
                   }
                 ]
@@ -1934,23 +2012,23 @@
             }
           },
           {
-            "$id": "312",
+            "$id": "322",
             "$type": "Macabre2D.Project.Gameplay.Creature.CreatureComponent, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "313",
+              "$id": "323",
               "$values": [
                 {
-                  "$id": "314",
+                  "$id": "324",
                   "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
                   "_children": {
-                    "$id": "315",
+                    "$id": "325",
                     "$values": []
                   },
                   "Draw Order": 0,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "312"
+                    "$ref": "322"
                   },
                   "Update Order": 0,
                   "Id": "b8aa52b2-f080-416c-bd9b-e89917760bff",
@@ -1959,7 +2037,6 @@
                   "Local Scale": "1, 1",
                   "Name": "CreatureAnimator",
                   "Sprite": null,
-                  "Frame Rate": 16,
                   "Color": {
                     "R": 255,
                     "G": 255,
@@ -1969,12 +2046,14 @@
                   "Snap to Pixels": true,
                   "Rotation": 0.0,
                   "Render Settings": {
-                    "$id": "316",
+                    "$id": "326",
                     "Flip Horizontal": true,
                     "Flip Vertical": false,
                     "Offset Type": 4,
                     "Offset": "0, 0"
-                  }
+                  },
+                  "Default Animation": null,
+                  "Frame Rate": 16
                 }
               ]
             },
@@ -1992,22 +2071,22 @@
             "Name": "CreatureComponentRight",
             "Flip Horizontal": true,
             "Idle Animation": {
-              "$id": "317",
+              "$id": "327",
               "_steps": {
-                "$id": "318",
+                "$id": "328",
                 "$values": [
                   {
-                    "$id": "319",
+                    "$id": "329",
                     "Frames": 13,
                     "Sprite": {
-                      "$ref": "253"
+                      "$ref": "259"
                     }
                   },
                   {
-                    "$id": "320",
+                    "$id": "330",
                     "Frames": 115,
                     "Sprite": {
-                      "$ref": "249"
+                      "$ref": "255"
                     }
                   }
                 ]
@@ -2016,25 +2095,25 @@
               "AssetId": "fce7aeb9-b846-4e87-8677-3a9c9e2a6d31"
             },
             "Chomp Animation": {
-              "$id": "321",
+              "$id": "331",
               "_steps": {
-                "$id": "322",
+                "$id": "332",
                 "$values": [
                   {
-                    "$id": "323",
+                    "$id": "333",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "324",
+                      "$id": "334",
                       "_id": "d27889f2-e5f5-4725-bc25-893bde560d55",
                       "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
                       "Location": {
-                        "$id": "325",
+                        "$id": "335",
                         "X": 16,
                         "Y": 0
                       },
                       "Name": "CreatureChomp",
                       "Size": {
-                        "$id": "326",
+                        "$id": "336",
                         "X": 8,
                         "Y": 32
                       }
@@ -2046,25 +2125,25 @@
               "AssetId": "7f4917d0-5636-450a-86d2-85862029e210"
             },
             "Dead Animation": {
-              "$id": "327",
+              "$id": "337",
               "_steps": {
-                "$id": "328",
+                "$id": "338",
                 "$values": [
                   {
-                    "$id": "329",
+                    "$id": "339",
                     "Frames": 1,
                     "Sprite": {
-                      "$id": "330",
+                      "$id": "340",
                       "_id": "4521c167-799a-49d4-b8a5-e46a44a283ac",
                       "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
                       "Location": {
-                        "$id": "331",
+                        "$id": "341",
                         "X": 24,
                         "Y": 0
                       },
                       "Name": "CreatureDead",
                       "Size": {
-                        "$id": "332",
+                        "$id": "342",
                         "X": 8,
                         "Y": 32
                       }
@@ -2077,10 +2156,10 @@
             }
           },
           {
-            "$id": "333",
+            "$id": "343",
             "$type": "Macabre2D.Project.Gameplay.Food.FoodSpawner, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "334",
+              "$id": "344",
               "$values": []
             },
             "Draw Order": 0,
@@ -2095,114 +2174,67 @@
             "Local Position": "0, 0",
             "Local Scale": "1, 1",
             "Name": "FoodSpawner",
+            "Food Draw Order": 1,
+            "Drop Time": 1.2,
+            "Use Collisions": true,
             "Bread Animation": {
-              "$id": "335",
+              "$id": "345",
               "_steps": {
-                "$id": "336",
+                "$id": "346",
                 "$values": [
                   {
-                    "$id": "337",
+                    "$id": "347",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "338",
+                      "$id": "348",
                       "_id": "7a131a4f-a370-4b11-8743-5afa06b56509",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
-                        "$id": "339",
+                        "$id": "349",
                         "X": 0,
                         "Y": 0
                       },
                       "Name": "Bread1",
                       "Size": {
-                        "$id": "340",
+                        "$id": "350",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
                   {
-                    "$id": "341",
+                    "$id": "351",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "342",
+                      "$id": "352",
                       "_id": "a503bf17-7c80-4d34-83a0-b8f3de74b61f",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
-                        "$id": "343",
+                        "$id": "353",
                         "X": 8,
                         "Y": 0
                       },
                       "Name": "Bread2",
                       "Size": {
-                        "$id": "344",
+                        "$id": "354",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
-                  {
-                    "$id": "345",
-                    "Frames": 8,
-                    "Sprite": {
-                      "$id": "346",
-                      "_id": "d9881d21-b0a1-4fe2-b5d3-44ab6a5cdf5c",
-                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
-                      "Location": {
-                        "$id": "347",
-                        "X": 16,
-                        "Y": 0
-                      },
-                      "Name": "Bread3",
-                      "Size": {
-                        "$id": "348",
-                        "X": 8,
-                        "Y": 8
-                      }
-                    }
-                  },
-                  {
-                    "$id": "349",
-                    "Frames": 8,
-                    "Sprite": {
-                      "$id": "350",
-                      "_id": "c0d446a9-c8ce-49c5-bee1-a9f2c90446aa",
-                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
-                      "Location": {
-                        "$id": "351",
-                        "X": 24,
-                        "Y": 0
-                      },
-                      "Name": "Bread4",
-                      "Size": {
-                        "$id": "352",
-                        "X": 8,
-                        "Y": 8
-                      }
-                    }
-                  }
-                ]
-              },
-              "_id": "277c285b-354a-412b-9b14-41219f99c3fa",
-              "AssetId": "cb78c232-11e9-449b-a282-a51b7c6f1128"
-            },
-            "Donut Animation": {
-              "$id": "353",
-              "_steps": {
-                "$id": "354",
-                "$values": [
                   {
                     "$id": "355",
                     "Frames": 8,
                     "Sprite": {
                       "$id": "356",
-                      "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
+                      "_id": "d9881d21-b0a1-4fe2-b5d3-44ab6a5cdf5c",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
                         "$id": "357",
-                        "X": 0,
-                        "Y": 24
+                        "X": 16,
+                        "Y": 0
                       },
-                      "Name": "Donut1",
+                      "Name": "Bread3",
                       "Size": {
                         "$id": "358",
                         "X": 8,
@@ -2215,56 +2247,16 @@
                     "Frames": 8,
                     "Sprite": {
                       "$id": "360",
-                      "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
+                      "_id": "c0d446a9-c8ce-49c5-bee1-a9f2c90446aa",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
                         "$id": "361",
-                        "X": 8,
-                        "Y": 24
+                        "X": 24,
+                        "Y": 0
                       },
-                      "Name": "Donut2",
+                      "Name": "Bread4",
                       "Size": {
                         "$id": "362",
-                        "X": 8,
-                        "Y": 8
-                      }
-                    }
-                  },
-                  {
-                    "$id": "363",
-                    "Frames": 8,
-                    "Sprite": {
-                      "$id": "364",
-                      "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
-                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
-                      "Location": {
-                        "$id": "365",
-                        "X": 16,
-                        "Y": 24
-                      },
-                      "Name": "Donut3",
-                      "Size": {
-                        "$id": "366",
-                        "X": 8,
-                        "Y": 8
-                      }
-                    }
-                  },
-                  {
-                    "$id": "367",
-                    "Frames": 8,
-                    "Sprite": {
-                      "$id": "368",
-                      "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
-                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
-                      "Location": {
-                        "$id": "369",
-                        "X": 24,
-                        "Y": 24
-                      },
-                      "Name": "Donut4",
-                      "Size": {
-                        "$id": "370",
                         "X": 8,
                         "Y": 8
                       }
@@ -2272,27 +2264,67 @@
                   }
                 ]
               },
-              "_id": "9505f6fd-e448-4182-9605-c775d402325c",
-              "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
+              "_id": "277c285b-354a-412b-9b14-41219f99c3fa",
+              "AssetId": "cb78c232-11e9-449b-a282-a51b7c6f1128"
             },
-            "Melon Animation": {
-              "$id": "371",
+            "Donut Animation": {
+              "$id": "363",
               "_steps": {
-                "$id": "372",
+                "$id": "364",
                 "$values": [
+                  {
+                    "$id": "365",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "366",
+                      "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "367",
+                        "X": 0,
+                        "Y": 24
+                      },
+                      "Name": "Donut1",
+                      "Size": {
+                        "$id": "368",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "369",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "370",
+                      "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "371",
+                        "X": 8,
+                        "Y": 24
+                      },
+                      "Name": "Donut2",
+                      "Size": {
+                        "$id": "372",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
                   {
                     "$id": "373",
                     "Frames": 8,
                     "Sprite": {
                       "$id": "374",
-                      "_id": "9d10a1dc-2a9d-46ca-b408-090917c467a1",
+                      "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
                         "$id": "375",
-                        "X": 0,
-                        "Y": 16
+                        "X": 16,
+                        "Y": 24
                       },
-                      "Name": "Melon1",
+                      "Name": "Donut3",
                       "Size": {
                         "$id": "376",
                         "X": 8,
@@ -2305,56 +2337,16 @@
                     "Frames": 8,
                     "Sprite": {
                       "$id": "378",
-                      "_id": "dae2f402-4ebd-43c4-b1a8-f04ed65670b9",
+                      "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
                         "$id": "379",
-                        "X": 8,
-                        "Y": 16
+                        "X": 24,
+                        "Y": 24
                       },
-                      "Name": "Melon2",
+                      "Name": "Donut4",
                       "Size": {
                         "$id": "380",
-                        "X": 8,
-                        "Y": 8
-                      }
-                    }
-                  },
-                  {
-                    "$id": "381",
-                    "Frames": 8,
-                    "Sprite": {
-                      "$id": "382",
-                      "_id": "cb486115-0f1f-457c-b7e9-67663387aaca",
-                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
-                      "Location": {
-                        "$id": "383",
-                        "X": 16,
-                        "Y": 16
-                      },
-                      "Name": "Melon3",
-                      "Size": {
-                        "$id": "384",
-                        "X": 8,
-                        "Y": 8
-                      }
-                    }
-                  },
-                  {
-                    "$id": "385",
-                    "Frames": 8,
-                    "Sprite": {
-                      "$id": "386",
-                      "_id": "ee8ea6e6-81a8-4750-8dcf-3ee705566199",
-                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
-                      "Location": {
-                        "$id": "387",
-                        "X": 24,
-                        "Y": 16
-                      },
-                      "Name": "Melon4",
-                      "Size": {
-                        "$id": "388",
                         "X": 8,
                         "Y": 8
                       }
@@ -2362,27 +2354,67 @@
                   }
                 ]
               },
-              "_id": "b9b532f9-4e8c-4a37-aff4-f65742222a21",
-              "AssetId": "b6244948-7689-4f2b-a0b5-e6ad3a727eb3"
+              "_id": "9505f6fd-e448-4182-9605-c775d402325c",
+              "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
             },
-            "Plum Animation": {
-              "$id": "389",
+            "Melon Animation": {
+              "$id": "381",
               "_steps": {
-                "$id": "390",
+                "$id": "382",
                 "$values": [
+                  {
+                    "$id": "383",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "384",
+                      "_id": "9d10a1dc-2a9d-46ca-b408-090917c467a1",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "385",
+                        "X": 0,
+                        "Y": 16
+                      },
+                      "Name": "Melon1",
+                      "Size": {
+                        "$id": "386",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "387",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "388",
+                      "_id": "dae2f402-4ebd-43c4-b1a8-f04ed65670b9",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "389",
+                        "X": 8,
+                        "Y": 16
+                      },
+                      "Name": "Melon2",
+                      "Size": {
+                        "$id": "390",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
                   {
                     "$id": "391",
                     "Frames": 8,
                     "Sprite": {
                       "$id": "392",
-                      "_id": "e3179d74-c541-48bd-95db-57856c8524d3",
+                      "_id": "cb486115-0f1f-457c-b7e9-67663387aaca",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
                         "$id": "393",
-                        "X": 0,
-                        "Y": 8
+                        "X": 16,
+                        "Y": 16
                       },
-                      "Name": "Plum1",
+                      "Name": "Melon3",
                       "Size": {
                         "$id": "394",
                         "X": 8,
@@ -2395,56 +2427,106 @@
                     "Frames": 8,
                     "Sprite": {
                       "$id": "396",
-                      "_id": "70b8b8ce-d76a-45a3-9d94-1e5fa3bc64a2",
+                      "_id": "ee8ea6e6-81a8-4750-8dcf-3ee705566199",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
                         "$id": "397",
-                        "X": 8,
-                        "Y": 8
+                        "X": 24,
+                        "Y": 16
                       },
-                      "Name": "Plum2",
+                      "Name": "Melon4",
                       "Size": {
                         "$id": "398",
                         "X": 8,
                         "Y": 8
                       }
                     }
-                  },
+                  }
+                ]
+              },
+              "_id": "b9b532f9-4e8c-4a37-aff4-f65742222a21",
+              "AssetId": "b6244948-7689-4f2b-a0b5-e6ad3a727eb3"
+            },
+            "Plum Animation": {
+              "$id": "399",
+              "_steps": {
+                "$id": "400",
+                "$values": [
                   {
-                    "$id": "399",
+                    "$id": "401",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "400",
-                      "_id": "ba254f74-f164-4d25-83a3-2ab93e1be7d8",
+                      "$id": "402",
+                      "_id": "e3179d74-c541-48bd-95db-57856c8524d3",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
-                        "$id": "401",
-                        "X": 16,
+                        "$id": "403",
+                        "X": 0,
                         "Y": 8
                       },
-                      "Name": "Plum3",
+                      "Name": "Plum1",
                       "Size": {
-                        "$id": "402",
+                        "$id": "404",
                         "X": 8,
                         "Y": 8
                       }
                     }
                   },
                   {
-                    "$id": "403",
+                    "$id": "405",
                     "Frames": 8,
                     "Sprite": {
-                      "$id": "404",
+                      "$id": "406",
+                      "_id": "70b8b8ce-d76a-45a3-9d94-1e5fa3bc64a2",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "407",
+                        "X": 8,
+                        "Y": 8
+                      },
+                      "Name": "Plum2",
+                      "Size": {
+                        "$id": "408",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "409",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "410",
+                      "_id": "ba254f74-f164-4d25-83a3-2ab93e1be7d8",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "411",
+                        "X": 16,
+                        "Y": 8
+                      },
+                      "Name": "Plum3",
+                      "Size": {
+                        "$id": "412",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "413",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "414",
                       "_id": "240ac913-f535-4150-b74f-39217ada050f",
                       "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
                       "Location": {
-                        "$id": "405",
+                        "$id": "415",
                         "X": 24,
                         "Y": 8
                       },
                       "Name": "Plum4",
                       "Size": {
-                        "$id": "406",
+                        "$id": "416",
                         "X": 8,
                         "Y": 8
                       }
@@ -2454,6 +2536,13 @@
               },
               "_id": "23d8bd1a-2c3b-4385-b6a2-56aa7c1d21b3",
               "AssetId": "80bbc0db-6e8e-4826-8c74-3c44c12e3053"
+            },
+            "Hit Noise": {
+              "$id": "417",
+              "_id": "20d90ef3-7f09-4512-bcf4-5696fc2663f8"
+            },
+            "Crunch Noise": {
+              "$ref": "203"
             }
           }
         ]
@@ -2470,10 +2559,10 @@
       "Name": "GameScreen"
     },
     {
-      "$id": "407",
+      "$id": "418",
       "$type": "Macabre2D.Project.Gameplay.GameStateComponent, Macabre2D.Project.Gameplay",
       "_children": {
-        "$id": "408",
+        "$id": "419",
         "$values": []
       },
       "Draw Order": 0,
@@ -2488,536 +2577,536 @@
       "Name": "GameStateComponent"
     },
     {
-      "$id": "409",
+      "$id": "420",
       "$type": "Macabre2D.Framework.EmptyComponent, Macabre2D.Framework",
       "_children": {
-        "$id": "410",
+        "$id": "421",
         "$values": [
           {
-            "$id": "411",
+            "$id": "422",
             "$type": "Macabre2D.Framework.BinaryTileMap, Macabre2D.Framework",
             "_activeTiles": {
-              "$id": "412",
+              "$id": "423",
               "$values": [
                 {
-                  "$id": "413",
+                  "$id": "424",
                   "X": -3,
                   "Y": 2
-                },
-                {
-                  "$id": "414",
-                  "X": -3,
-                  "Y": 1
-                },
-                {
-                  "$id": "415",
-                  "X": -3,
-                  "Y": 0
-                },
-                {
-                  "$id": "416",
-                  "X": -3,
-                  "Y": 3
-                },
-                {
-                  "$id": "417",
-                  "X": -3,
-                  "Y": -1
-                },
-                {
-                  "$id": "418",
-                  "X": -2,
-                  "Y": -1
-                },
-                {
-                  "$id": "419",
-                  "X": -1,
-                  "Y": -1
-                },
-                {
-                  "$id": "420",
-                  "X": 0,
-                  "Y": -1
-                },
-                {
-                  "$id": "421",
-                  "X": 1,
-                  "Y": -1
-                },
-                {
-                  "$id": "422",
-                  "X": 2,
-                  "Y": -1
-                },
-                {
-                  "$id": "423",
-                  "X": 2,
-                  "Y": 0
-                },
-                {
-                  "$id": "424",
-                  "X": 2,
-                  "Y": 1
                 },
                 {
                   "$id": "425",
-                  "X": 2,
-                  "Y": 2
+                  "X": -3,
+                  "Y": 1
                 },
                 {
                   "$id": "426",
-                  "X": 2,
-                  "Y": 3
+                  "X": -3,
+                  "Y": 0
                 },
                 {
                   "$id": "427",
-                  "X": 1,
+                  "X": -3,
                   "Y": 3
                 },
                 {
                   "$id": "428",
-                  "X": 0,
-                  "Y": 3
+                  "X": -3,
+                  "Y": -1
                 },
                 {
                   "$id": "429",
-                  "X": -1,
-                  "Y": 3
+                  "X": -2,
+                  "Y": -1
                 },
                 {
                   "$id": "430",
-                  "X": -2,
-                  "Y": 3
+                  "X": -1,
+                  "Y": -1
                 },
                 {
                   "$id": "431",
-                  "X": -5,
-                  "Y": 3
+                  "X": 0,
+                  "Y": -1
                 },
                 {
                   "$id": "432",
-                  "X": -5,
-                  "Y": 2
+                  "X": 1,
+                  "Y": -1
                 },
                 {
                   "$id": "433",
-                  "X": -5,
-                  "Y": 1
+                  "X": 2,
+                  "Y": -1
                 },
                 {
                   "$id": "434",
-                  "X": -5,
+                  "X": 2,
                   "Y": 0
                 },
                 {
                   "$id": "435",
-                  "X": -5,
-                  "Y": -1
+                  "X": 2,
+                  "Y": 1
                 },
                 {
                   "$id": "436",
-                  "X": -4,
-                  "Y": -1
+                  "X": 2,
+                  "Y": 2
                 },
                 {
                   "$id": "437",
-                  "X": -4,
+                  "X": 2,
                   "Y": 3
                 },
                 {
                   "$id": "438",
-                  "X": -4,
-                  "Y": 2
+                  "X": 1,
+                  "Y": 3
                 },
                 {
                   "$id": "439",
-                  "X": -4,
-                  "Y": 1
+                  "X": 0,
+                  "Y": 3
                 },
                 {
                   "$id": "440",
-                  "X": -4,
-                  "Y": 0
+                  "X": -1,
+                  "Y": 3
                 },
                 {
                   "$id": "441",
-                  "X": -6,
+                  "X": -2,
                   "Y": 3
                 },
                 {
                   "$id": "442",
-                  "X": -7,
+                  "X": -5,
                   "Y": 3
                 },
                 {
                   "$id": "443",
-                  "X": -8,
-                  "Y": 3
+                  "X": -5,
+                  "Y": 2
                 },
                 {
                   "$id": "444",
-                  "X": 3,
-                  "Y": -1
+                  "X": -5,
+                  "Y": 1
                 },
                 {
                   "$id": "445",
-                  "X": 3,
+                  "X": -5,
                   "Y": 0
                 },
                 {
                   "$id": "446",
-                  "X": 3,
-                  "Y": 1
+                  "X": -5,
+                  "Y": -1
                 },
                 {
                   "$id": "447",
-                  "X": 3,
-                  "Y": 2
+                  "X": -4,
+                  "Y": -1
                 },
                 {
                   "$id": "448",
-                  "X": 3,
+                  "X": -4,
                   "Y": 3
                 },
                 {
                   "$id": "449",
-                  "X": 4,
-                  "Y": 3
-                },
-                {
-                  "$id": "450",
-                  "X": 4,
+                  "X": -4,
                   "Y": 2
                 },
                 {
-                  "$id": "451",
-                  "X": 4,
+                  "$id": "450",
+                  "X": -4,
                   "Y": 1
                 },
                 {
-                  "$id": "452",
-                  "X": 4,
+                  "$id": "451",
+                  "X": -4,
                   "Y": 0
                 },
                 {
+                  "$id": "452",
+                  "X": -6,
+                  "Y": 3
+                },
+                {
                   "$id": "453",
-                  "X": 4,
-                  "Y": -1
+                  "X": -7,
+                  "Y": 3
                 },
                 {
                   "$id": "454",
-                  "X": -10,
+                  "X": -8,
                   "Y": 3
                 },
                 {
                   "$id": "455",
-                  "X": -9,
-                  "Y": 3
+                  "X": 3,
+                  "Y": -1
                 },
                 {
                   "$id": "456",
-                  "X": -10,
-                  "Y": -1
-                },
-                {
-                  "$id": "457",
-                  "X": -9,
-                  "Y": -1
-                },
-                {
-                  "$id": "458",
-                  "X": -8,
-                  "Y": -1
-                },
-                {
-                  "$id": "459",
-                  "X": 9,
-                  "Y": -1
-                },
-                {
-                  "$id": "460",
-                  "X": 9,
+                  "X": 3,
                   "Y": 0
                 },
                 {
-                  "$id": "461",
-                  "X": 9,
+                  "$id": "457",
+                  "X": 3,
                   "Y": 1
                 },
                 {
-                  "$id": "462",
-                  "X": 9,
+                  "$id": "458",
+                  "X": 3,
                   "Y": 2
                 },
                 {
-                  "$id": "463",
-                  "X": 9,
+                  "$id": "459",
+                  "X": 3,
                   "Y": 3
+                },
+                {
+                  "$id": "460",
+                  "X": 4,
+                  "Y": 3
+                },
+                {
+                  "$id": "461",
+                  "X": 4,
+                  "Y": 2
+                },
+                {
+                  "$id": "462",
+                  "X": 4,
+                  "Y": 1
+                },
+                {
+                  "$id": "463",
+                  "X": 4,
+                  "Y": 0
                 },
                 {
                   "$id": "464",
-                  "X": 8,
-                  "Y": 3
+                  "X": 4,
+                  "Y": -1
                 },
                 {
                   "$id": "465",
-                  "X": 7,
+                  "X": -10,
                   "Y": 3
                 },
                 {
                   "$id": "466",
-                  "X": 6,
+                  "X": -9,
                   "Y": 3
                 },
                 {
                   "$id": "467",
-                  "X": 5,
-                  "Y": 3
+                  "X": -10,
+                  "Y": -1
                 },
                 {
                   "$id": "468",
-                  "X": 5,
-                  "Y": 1
+                  "X": -9,
+                  "Y": -1
                 },
                 {
                   "$id": "469",
-                  "X": 5,
-                  "Y": 0
+                  "X": -8,
+                  "Y": -1
                 },
                 {
                   "$id": "470",
-                  "X": 5,
+                  "X": 9,
                   "Y": -1
                 },
                 {
                   "$id": "471",
-                  "X": 5,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 0
                 },
                 {
                   "$id": "472",
-                  "X": 6,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 1
                 },
                 {
                   "$id": "473",
-                  "X": 7,
+                  "X": 9,
                   "Y": 2
                 },
                 {
                   "$id": "474",
-                  "X": 8,
-                  "Y": 2
+                  "X": 9,
+                  "Y": 3
                 },
                 {
                   "$id": "475",
                   "X": 8,
-                  "Y": 1
+                  "Y": 3
                 },
                 {
                   "$id": "476",
-                  "X": 8,
-                  "Y": 0
+                  "X": 7,
+                  "Y": 3
                 },
                 {
                   "$id": "477",
-                  "X": 8,
-                  "Y": -1
+                  "X": 6,
+                  "Y": 3
                 },
                 {
                   "$id": "478",
-                  "X": 7,
-                  "Y": -1
+                  "X": 5,
+                  "Y": 3
                 },
                 {
                   "$id": "479",
-                  "X": 6,
-                  "Y": -1
+                  "X": 5,
+                  "Y": 1
                 },
                 {
                   "$id": "480",
-                  "X": 6,
+                  "X": 5,
                   "Y": 0
                 },
                 {
                   "$id": "481",
+                  "X": 5,
+                  "Y": -1
+                },
+                {
+                  "$id": "482",
+                  "X": 5,
+                  "Y": 2
+                },
+                {
+                  "$id": "483",
+                  "X": 6,
+                  "Y": 2
+                },
+                {
+                  "$id": "484",
+                  "X": 7,
+                  "Y": 2
+                },
+                {
+                  "$id": "485",
+                  "X": 8,
+                  "Y": 2
+                },
+                {
+                  "$id": "486",
+                  "X": 8,
+                  "Y": 1
+                },
+                {
+                  "$id": "487",
+                  "X": 8,
+                  "Y": 0
+                },
+                {
+                  "$id": "488",
+                  "X": 8,
+                  "Y": -1
+                },
+                {
+                  "$id": "489",
+                  "X": 7,
+                  "Y": -1
+                },
+                {
+                  "$id": "490",
+                  "X": 6,
+                  "Y": -1
+                },
+                {
+                  "$id": "491",
+                  "X": 6,
+                  "Y": 0
+                },
+                {
+                  "$id": "492",
                   "X": 6,
                   "Y": 1
                 },
                 {
-                  "$id": "482",
-                  "X": 7,
-                  "Y": 1
-                },
-                {
-                  "$id": "483",
-                  "X": 7,
-                  "Y": 0
-                },
-                {
-                  "$id": "484",
-                  "X": -7,
-                  "Y": -1
-                },
-                {
-                  "$id": "485",
-                  "X": -6,
-                  "Y": -1
-                },
-                {
-                  "$id": "486",
-                  "X": -6,
-                  "Y": 0
-                },
-                {
-                  "$id": "487",
-                  "X": -6,
-                  "Y": 1
-                },
-                {
-                  "$id": "488",
-                  "X": -6,
-                  "Y": 2
-                },
-                {
-                  "$id": "489",
-                  "X": -7,
-                  "Y": 2
-                },
-                {
-                  "$id": "490",
-                  "X": -8,
-                  "Y": 2
-                },
-                {
-                  "$id": "491",
-                  "X": -9,
-                  "Y": 2
-                },
-                {
-                  "$id": "492",
-                  "X": -10,
-                  "Y": 2
-                },
-                {
                   "$id": "493",
-                  "X": -10,
-                  "Y": 0
+                  "X": 7,
+                  "Y": 1
                 },
                 {
                   "$id": "494",
-                  "X": -9,
+                  "X": 7,
                   "Y": 0
                 },
                 {
                   "$id": "495",
-                  "X": -8,
-                  "Y": 0
+                  "X": -7,
+                  "Y": -1
                 },
                 {
                   "$id": "496",
-                  "X": -7,
-                  "Y": 0
+                  "X": -6,
+                  "Y": -1
                 },
                 {
                   "$id": "497",
-                  "X": -7,
-                  "Y": 1
+                  "X": -6,
+                  "Y": 0
                 },
                 {
                   "$id": "498",
-                  "X": -8,
+                  "X": -6,
                   "Y": 1
                 },
                 {
                   "$id": "499",
-                  "X": -9,
-                  "Y": 1
+                  "X": -6,
+                  "Y": 2
                 },
                 {
                   "$id": "500",
-                  "X": -10,
-                  "Y": 1
+                  "X": -7,
+                  "Y": 2
                 },
                 {
                   "$id": "501",
-                  "X": -1,
+                  "X": -8,
                   "Y": 2
                 },
                 {
                   "$id": "502",
-                  "X": 0,
+                  "X": -9,
                   "Y": 2
                 },
                 {
                   "$id": "503",
-                  "X": 1,
+                  "X": -10,
                   "Y": 2
                 },
                 {
                   "$id": "504",
-                  "X": 1,
-                  "Y": 1
+                  "X": -10,
+                  "Y": 0
                 },
                 {
                   "$id": "505",
-                  "X": 1,
+                  "X": -9,
                   "Y": 0
                 },
                 {
                   "$id": "506",
-                  "X": 0,
+                  "X": -8,
                   "Y": 0
                 },
                 {
                   "$id": "507",
-                  "X": -1,
+                  "X": -7,
                   "Y": 0
                 },
                 {
                   "$id": "508",
-                  "X": -2,
-                  "Y": 0
+                  "X": -7,
+                  "Y": 1
                 },
                 {
                   "$id": "509",
-                  "X": -2,
+                  "X": -8,
                   "Y": 1
                 },
                 {
                   "$id": "510",
-                  "X": -2,
-                  "Y": 2
+                  "X": -9,
+                  "Y": 1
                 },
                 {
                   "$id": "511",
-                  "X": -1,
+                  "X": -10,
                   "Y": 1
                 },
                 {
                   "$id": "512",
+                  "X": -1,
+                  "Y": 2
+                },
+                {
+                  "$id": "513",
+                  "X": 0,
+                  "Y": 2
+                },
+                {
+                  "$id": "514",
+                  "X": 1,
+                  "Y": 2
+                },
+                {
+                  "$id": "515",
+                  "X": 1,
+                  "Y": 1
+                },
+                {
+                  "$id": "516",
+                  "X": 1,
+                  "Y": 0
+                },
+                {
+                  "$id": "517",
+                  "X": 0,
+                  "Y": 0
+                },
+                {
+                  "$id": "518",
+                  "X": -1,
+                  "Y": 0
+                },
+                {
+                  "$id": "519",
+                  "X": -2,
+                  "Y": 0
+                },
+                {
+                  "$id": "520",
+                  "X": -2,
+                  "Y": 1
+                },
+                {
+                  "$id": "521",
+                  "X": -2,
+                  "Y": 2
+                },
+                {
+                  "$id": "522",
+                  "X": -1,
+                  "Y": 1
+                },
+                {
+                  "$id": "523",
                   "X": 0,
                   "Y": 1
                 }
               ]
             },
             "_children": {
-              "$id": "513",
+              "$id": "524",
               "$values": []
             },
             "Draw Order": 999,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "409"
+              "$ref": "420"
             },
             "Update Order": 0,
             "GridConfiguration": {
-              "$id": "514",
+              "$id": "525",
               "Use Local Grid": true,
               "Grid Module": null,
               "Local Grid": {
-                "$id": "515",
+                "$id": "526",
                 "Tile Size": "4, 4",
                 "Offset": "0, 0"
               }
@@ -3038,33 +3127,33 @@
             }
           },
           {
-            "$id": "516",
+            "$id": "527",
             "$type": "Macabre2D.Project.Gameplay.MenuComponent, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "517",
+              "$id": "528",
               "$values": [
                 {
-                  "$id": "518",
+                  "$id": "529",
                   "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
                   "_numberOfRenderPasses": 3,
                   "_children": {
-                    "$id": "519",
+                    "$id": "530",
                     "$values": []
                   },
-                  "Draw Order": 1000,
+                  "Draw Order": 2000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "516"
+                    "$ref": "527"
                   },
                   "Update Order": 0,
-                  "Id": "eda89356-3a20-4825-b73f-9ff13b66c4a9",
+                  "Id": "bd9522e4-3eac-44a4-96a0-b458144e779d",
                   "Layers": 1,
-                  "Local Position": "-6, 2",
+                  "Local Position": "-6.5, 1.5",
                   "Local Scale": "1, 1",
                   "Name": "ExitText",
                   "Font": {
-                    "$ref": "272"
+                    "$ref": "282"
                   },
                   "Color": {
                     "R": 235,
@@ -3075,7 +3164,7 @@
                   "Text": "Quit",
                   "SnapToPixels": true,
                   "Render Settings": {
-                    "$id": "520",
+                    "$id": "531",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
@@ -3084,27 +3173,27 @@
                   "Rotation": 0.0
                 },
                 {
-                  "$id": "521",
+                  "$id": "532",
                   "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
                   "_numberOfRenderPasses": 3,
                   "_children": {
-                    "$id": "522",
+                    "$id": "533",
                     "$values": []
                   },
-                  "Draw Order": 1000,
+                  "Draw Order": 2000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "516"
+                    "$ref": "527"
                   },
                   "Update Order": 0,
-                  "Id": "55af811d-2431-4f88-86bf-fe537dc70e35",
+                  "Id": "a7412530-12bf-4610-96c3-a5889fb2ec44",
                   "Layers": 1,
-                  "Local Position": "-6, 3.25",
+                  "Local Position": "-6.5, 2.5",
                   "Local Scale": "1, 1",
                   "Name": "PlayText",
                   "Font": {
-                    "$ref": "272"
+                    "$ref": "282"
                   },
                   "Color": {
                     "R": 235,
@@ -3112,10 +3201,10 @@
                     "B": 235,
                     "A": 255
                   },
-                  "Text": "Try Again",
+                  "Text": "Play Again",
                   "SnapToPixels": true,
                   "Render Settings": {
-                    "$id": "523",
+                    "$id": "534",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
@@ -3124,42 +3213,131 @@
                   "Rotation": 0.0
                 },
                 {
-                  "$id": "524",
-                  "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
+                  "$id": "535",
+                  "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
                   "_children": {
-                    "$id": "525",
+                    "$id": "536",
                     "$values": []
                   },
-                  "Draw Order": 1000,
+                  "Draw Order": 2000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "516"
+                    "$ref": "527"
                   },
                   "Update Order": 0,
-                  "Id": "6c607723-5846-448e-9379-3d8dced83813",
+                  "Id": "1e3aff5d-b4b2-4bb8-882c-2eac47c7990e",
                   "Layers": 1,
-                  "Local Position": "-7, 3.25",
+                  "Local Position": "-7.75, 2.5",
                   "Local Scale": "1, 1",
                   "Name": "SelectionIcon",
-                  "Sprite": {
-                    "$ref": "356"
-                  },
+                  "Sprite": null,
                   "Color": {
                     "R": 255,
                     "G": 255,
                     "B": 255,
                     "A": 255
                   },
-                  "Snap to Pixels": false,
+                  "Snap to Pixels": true,
                   "Rotation": 0.0,
                   "Render Settings": {
-                    "$id": "526",
+                    "$id": "537",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
                     "Offset": "0, 0"
-                  }
+                  },
+                  "Default Animation": {
+                    "$id": "538",
+                    "_steps": {
+                      "$id": "539",
+                      "$values": [
+                        {
+                          "$id": "540",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "541",
+                            "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "542",
+                              "X": 0,
+                              "Y": 24
+                            },
+                            "Name": "Donut1",
+                            "Size": {
+                              "$id": "543",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        },
+                        {
+                          "$id": "544",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "545",
+                            "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "546",
+                              "X": 8,
+                              "Y": 24
+                            },
+                            "Name": "Donut2",
+                            "Size": {
+                              "$id": "547",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        },
+                        {
+                          "$id": "548",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "549",
+                            "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "550",
+                              "X": 16,
+                              "Y": 24
+                            },
+                            "Name": "Donut3",
+                            "Size": {
+                              "$id": "551",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        },
+                        {
+                          "$id": "552",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "553",
+                            "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "554",
+                              "X": 24,
+                              "Y": 24
+                            },
+                            "Name": "Donut4",
+                            "Size": {
+                              "$id": "555",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "_id": "9505f6fd-e448-4182-9605-c775d402325c",
+                    "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
+                  },
+                  "Frame Rate": 16
                 }
               ]
             },
@@ -3167,14 +3345,399 @@
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "409"
+              "$ref": "420"
             },
             "Update Order": 0,
-            "Id": "bf122c94-02cb-44db-abf5-1215ae6e73f7",
+            "Id": "a5aac74b-be26-4f9f-aa44-8c303401cd96",
             "Layers": 1,
             "Local Position": "0, 0",
             "Local Scale": "1, 1",
             "Name": "MenuComponent"
+          },
+          {
+            "$id": "556",
+            "$type": "Macabre2D.Project.Gameplay.Food.FoodSpawner, Macabre2D.Project.Gameplay",
+            "_children": {
+              "$id": "557",
+              "$values": []
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "420"
+            },
+            "Update Order": 0,
+            "Id": "2a7f1544-8ff3-4f0f-a01a-0b3ca58a57a6",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "FoodSpawner",
+            "Food Draw Order": 1000,
+            "Drop Time": 0.5,
+            "Use Collisions": false,
+            "Bread Animation": {
+              "$id": "558",
+              "_steps": {
+                "$id": "559",
+                "$values": [
+                  {
+                    "$id": "560",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "561",
+                      "_id": "7a131a4f-a370-4b11-8743-5afa06b56509",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "562",
+                        "X": 0,
+                        "Y": 0
+                      },
+                      "Name": "Bread1",
+                      "Size": {
+                        "$id": "563",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "564",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "565",
+                      "_id": "a503bf17-7c80-4d34-83a0-b8f3de74b61f",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "566",
+                        "X": 8,
+                        "Y": 0
+                      },
+                      "Name": "Bread2",
+                      "Size": {
+                        "$id": "567",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "568",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "569",
+                      "_id": "d9881d21-b0a1-4fe2-b5d3-44ab6a5cdf5c",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "570",
+                        "X": 16,
+                        "Y": 0
+                      },
+                      "Name": "Bread3",
+                      "Size": {
+                        "$id": "571",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "572",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "573",
+                      "_id": "c0d446a9-c8ce-49c5-bee1-a9f2c90446aa",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "574",
+                        "X": 24,
+                        "Y": 0
+                      },
+                      "Name": "Bread4",
+                      "Size": {
+                        "$id": "575",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "277c285b-354a-412b-9b14-41219f99c3fa",
+              "AssetId": "cb78c232-11e9-449b-a282-a51b7c6f1128"
+            },
+            "Donut Animation": {
+              "$id": "576",
+              "_steps": {
+                "$id": "577",
+                "$values": [
+                  {
+                    "$id": "578",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "579",
+                      "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "580",
+                        "X": 0,
+                        "Y": 24
+                      },
+                      "Name": "Donut1",
+                      "Size": {
+                        "$id": "581",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "582",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "583",
+                      "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "584",
+                        "X": 8,
+                        "Y": 24
+                      },
+                      "Name": "Donut2",
+                      "Size": {
+                        "$id": "585",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "586",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "587",
+                      "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "588",
+                        "X": 16,
+                        "Y": 24
+                      },
+                      "Name": "Donut3",
+                      "Size": {
+                        "$id": "589",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "590",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "591",
+                      "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "592",
+                        "X": 24,
+                        "Y": 24
+                      },
+                      "Name": "Donut4",
+                      "Size": {
+                        "$id": "593",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "9505f6fd-e448-4182-9605-c775d402325c",
+              "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
+            },
+            "Melon Animation": {
+              "$id": "594",
+              "_steps": {
+                "$id": "595",
+                "$values": [
+                  {
+                    "$id": "596",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "597",
+                      "_id": "9d10a1dc-2a9d-46ca-b408-090917c467a1",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "598",
+                        "X": 0,
+                        "Y": 16
+                      },
+                      "Name": "Melon1",
+                      "Size": {
+                        "$id": "599",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "600",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "601",
+                      "_id": "dae2f402-4ebd-43c4-b1a8-f04ed65670b9",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "602",
+                        "X": 8,
+                        "Y": 16
+                      },
+                      "Name": "Melon2",
+                      "Size": {
+                        "$id": "603",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "604",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "605",
+                      "_id": "cb486115-0f1f-457c-b7e9-67663387aaca",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "606",
+                        "X": 16,
+                        "Y": 16
+                      },
+                      "Name": "Melon3",
+                      "Size": {
+                        "$id": "607",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "608",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "609",
+                      "_id": "ee8ea6e6-81a8-4750-8dcf-3ee705566199",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "610",
+                        "X": 24,
+                        "Y": 16
+                      },
+                      "Name": "Melon4",
+                      "Size": {
+                        "$id": "611",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "b9b532f9-4e8c-4a37-aff4-f65742222a21",
+              "AssetId": "b6244948-7689-4f2b-a0b5-e6ad3a727eb3"
+            },
+            "Plum Animation": {
+              "$id": "612",
+              "_steps": {
+                "$id": "613",
+                "$values": [
+                  {
+                    "$id": "614",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "615",
+                      "_id": "e3179d74-c541-48bd-95db-57856c8524d3",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "616",
+                        "X": 0,
+                        "Y": 8
+                      },
+                      "Name": "Plum1",
+                      "Size": {
+                        "$id": "617",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "618",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "619",
+                      "_id": "70b8b8ce-d76a-45a3-9d94-1e5fa3bc64a2",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "620",
+                        "X": 8,
+                        "Y": 8
+                      },
+                      "Name": "Plum2",
+                      "Size": {
+                        "$id": "621",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "622",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "623",
+                      "_id": "ba254f74-f164-4d25-83a3-2ab93e1be7d8",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "624",
+                        "X": 16,
+                        "Y": 8
+                      },
+                      "Name": "Plum3",
+                      "Size": {
+                        "$id": "625",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "626",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "627",
+                      "_id": "240ac913-f535-4150-b74f-39217ada050f",
+                      "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                      "Location": {
+                        "$id": "628",
+                        "X": 24,
+                        "Y": 8
+                      },
+                      "Name": "Plum4",
+                      "Size": {
+                        "$id": "629",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "23d8bd1a-2c3b-4385-b6a2-56aa7c1d21b3",
+              "AssetId": "80bbc0db-6e8e-4826-8c74-3c44c12e3053"
+            },
+            "Hit Noise": null,
+            "Crunch Noise": null
           }
         ]
       },
@@ -3190,536 +3753,536 @@
       "Name": "DeathScreen"
     },
     {
-      "$id": "527",
+      "$id": "630",
       "$type": "Macabre2D.Framework.EmptyComponent, Macabre2D.Framework",
       "_children": {
-        "$id": "528",
+        "$id": "631",
         "$values": [
           {
-            "$id": "529",
+            "$id": "632",
             "$type": "Macabre2D.Framework.BinaryTileMap, Macabre2D.Framework",
             "_activeTiles": {
-              "$id": "530",
+              "$id": "633",
               "$values": [
                 {
-                  "$id": "531",
+                  "$id": "634",
                   "X": -3,
                   "Y": 2
                 },
                 {
-                  "$id": "532",
+                  "$id": "635",
                   "X": -3,
                   "Y": 1
                 },
                 {
-                  "$id": "533",
+                  "$id": "636",
                   "X": -3,
                   "Y": 0
                 },
                 {
-                  "$id": "534",
+                  "$id": "637",
                   "X": -3,
                   "Y": 3
                 },
                 {
-                  "$id": "535",
+                  "$id": "638",
                   "X": -3,
                   "Y": -1
                 },
                 {
-                  "$id": "536",
+                  "$id": "639",
                   "X": -2,
                   "Y": -1
                 },
                 {
-                  "$id": "537",
+                  "$id": "640",
                   "X": -1,
                   "Y": -1
                 },
                 {
-                  "$id": "538",
+                  "$id": "641",
                   "X": 0,
                   "Y": -1
                 },
                 {
-                  "$id": "539",
+                  "$id": "642",
                   "X": 1,
                   "Y": -1
                 },
                 {
-                  "$id": "540",
+                  "$id": "643",
                   "X": 2,
                   "Y": -1
                 },
                 {
-                  "$id": "541",
+                  "$id": "644",
                   "X": 2,
                   "Y": 0
                 },
                 {
-                  "$id": "542",
+                  "$id": "645",
                   "X": 2,
                   "Y": 1
                 },
                 {
-                  "$id": "543",
+                  "$id": "646",
                   "X": 2,
                   "Y": 2
                 },
                 {
-                  "$id": "544",
+                  "$id": "647",
                   "X": 2,
                   "Y": 3
                 },
                 {
-                  "$id": "545",
+                  "$id": "648",
                   "X": 1,
                   "Y": 3
                 },
                 {
-                  "$id": "546",
+                  "$id": "649",
                   "X": 0,
                   "Y": 3
                 },
                 {
-                  "$id": "547",
+                  "$id": "650",
                   "X": -1,
                   "Y": 3
                 },
                 {
-                  "$id": "548",
+                  "$id": "651",
                   "X": -2,
                   "Y": 3
                 },
                 {
-                  "$id": "549",
+                  "$id": "652",
                   "X": -5,
                   "Y": 3
                 },
                 {
-                  "$id": "550",
+                  "$id": "653",
                   "X": -5,
                   "Y": 2
                 },
                 {
-                  "$id": "551",
+                  "$id": "654",
                   "X": -5,
                   "Y": 1
                 },
                 {
-                  "$id": "552",
+                  "$id": "655",
                   "X": -5,
                   "Y": 0
                 },
                 {
-                  "$id": "553",
+                  "$id": "656",
                   "X": -5,
                   "Y": -1
                 },
                 {
-                  "$id": "554",
+                  "$id": "657",
                   "X": -4,
                   "Y": -1
                 },
                 {
-                  "$id": "555",
+                  "$id": "658",
                   "X": -4,
                   "Y": 3
                 },
                 {
-                  "$id": "556",
+                  "$id": "659",
                   "X": -4,
                   "Y": 2
                 },
                 {
-                  "$id": "557",
+                  "$id": "660",
                   "X": -4,
                   "Y": 1
                 },
                 {
-                  "$id": "558",
+                  "$id": "661",
                   "X": -4,
                   "Y": 0
                 },
                 {
-                  "$id": "559",
+                  "$id": "662",
                   "X": -6,
                   "Y": 3
                 },
                 {
-                  "$id": "560",
+                  "$id": "663",
                   "X": -7,
                   "Y": 3
                 },
                 {
-                  "$id": "561",
+                  "$id": "664",
                   "X": -8,
                   "Y": 3
                 },
                 {
-                  "$id": "562",
+                  "$id": "665",
                   "X": 3,
                   "Y": -1
                 },
                 {
-                  "$id": "563",
+                  "$id": "666",
                   "X": 3,
                   "Y": 0
                 },
                 {
-                  "$id": "564",
+                  "$id": "667",
                   "X": 3,
                   "Y": 1
                 },
                 {
-                  "$id": "565",
+                  "$id": "668",
                   "X": 3,
                   "Y": 2
                 },
                 {
-                  "$id": "566",
+                  "$id": "669",
                   "X": 3,
                   "Y": 3
                 },
                 {
-                  "$id": "567",
+                  "$id": "670",
                   "X": 4,
                   "Y": 3
                 },
                 {
-                  "$id": "568",
+                  "$id": "671",
                   "X": 4,
                   "Y": 2
                 },
                 {
-                  "$id": "569",
+                  "$id": "672",
                   "X": 4,
                   "Y": 1
                 },
                 {
-                  "$id": "570",
+                  "$id": "673",
                   "X": 4,
                   "Y": 0
                 },
                 {
-                  "$id": "571",
+                  "$id": "674",
                   "X": 4,
                   "Y": -1
                 },
                 {
-                  "$id": "572",
+                  "$id": "675",
                   "X": -10,
                   "Y": 3
                 },
                 {
-                  "$id": "573",
+                  "$id": "676",
                   "X": -9,
                   "Y": 3
                 },
                 {
-                  "$id": "574",
+                  "$id": "677",
                   "X": -10,
                   "Y": -1
                 },
                 {
-                  "$id": "575",
+                  "$id": "678",
                   "X": -9,
                   "Y": -1
                 },
                 {
-                  "$id": "576",
+                  "$id": "679",
                   "X": -8,
                   "Y": -1
                 },
                 {
-                  "$id": "577",
+                  "$id": "680",
                   "X": 9,
                   "Y": -1
                 },
                 {
-                  "$id": "578",
+                  "$id": "681",
                   "X": 9,
                   "Y": 0
                 },
                 {
-                  "$id": "579",
+                  "$id": "682",
                   "X": 9,
                   "Y": 1
                 },
                 {
-                  "$id": "580",
+                  "$id": "683",
                   "X": 9,
                   "Y": 2
                 },
                 {
-                  "$id": "581",
+                  "$id": "684",
                   "X": 9,
                   "Y": 3
                 },
                 {
-                  "$id": "582",
+                  "$id": "685",
                   "X": 8,
                   "Y": 3
                 },
                 {
-                  "$id": "583",
+                  "$id": "686",
                   "X": 7,
                   "Y": 3
                 },
                 {
-                  "$id": "584",
+                  "$id": "687",
                   "X": 6,
                   "Y": 3
                 },
                 {
-                  "$id": "585",
+                  "$id": "688",
                   "X": 5,
                   "Y": 3
                 },
                 {
-                  "$id": "586",
+                  "$id": "689",
                   "X": 5,
                   "Y": 1
                 },
                 {
-                  "$id": "587",
+                  "$id": "690",
                   "X": 5,
                   "Y": 0
                 },
                 {
-                  "$id": "588",
+                  "$id": "691",
                   "X": 5,
                   "Y": -1
                 },
                 {
-                  "$id": "589",
+                  "$id": "692",
                   "X": 5,
                   "Y": 2
                 },
                 {
-                  "$id": "590",
+                  "$id": "693",
                   "X": 6,
                   "Y": 2
                 },
                 {
-                  "$id": "591",
+                  "$id": "694",
                   "X": 7,
                   "Y": 2
                 },
                 {
-                  "$id": "592",
+                  "$id": "695",
                   "X": 8,
                   "Y": 2
                 },
                 {
-                  "$id": "593",
+                  "$id": "696",
                   "X": 8,
                   "Y": 1
                 },
                 {
-                  "$id": "594",
+                  "$id": "697",
                   "X": 8,
                   "Y": 0
                 },
                 {
-                  "$id": "595",
+                  "$id": "698",
                   "X": 8,
                   "Y": -1
                 },
                 {
-                  "$id": "596",
+                  "$id": "699",
                   "X": 7,
                   "Y": -1
                 },
                 {
-                  "$id": "597",
+                  "$id": "700",
                   "X": 6,
                   "Y": -1
                 },
                 {
-                  "$id": "598",
+                  "$id": "701",
                   "X": 6,
                   "Y": 0
                 },
                 {
-                  "$id": "599",
+                  "$id": "702",
                   "X": 6,
                   "Y": 1
                 },
                 {
-                  "$id": "600",
+                  "$id": "703",
                   "X": 7,
                   "Y": 1
                 },
                 {
-                  "$id": "601",
+                  "$id": "704",
                   "X": 7,
                   "Y": 0
                 },
                 {
-                  "$id": "602",
+                  "$id": "705",
                   "X": -7,
                   "Y": -1
                 },
                 {
-                  "$id": "603",
+                  "$id": "706",
                   "X": -6,
                   "Y": -1
                 },
                 {
-                  "$id": "604",
+                  "$id": "707",
                   "X": -6,
                   "Y": 0
                 },
                 {
-                  "$id": "605",
+                  "$id": "708",
                   "X": -6,
                   "Y": 1
                 },
                 {
-                  "$id": "606",
+                  "$id": "709",
                   "X": -6,
                   "Y": 2
                 },
                 {
-                  "$id": "607",
+                  "$id": "710",
                   "X": -7,
                   "Y": 2
                 },
                 {
-                  "$id": "608",
+                  "$id": "711",
                   "X": -8,
                   "Y": 2
                 },
                 {
-                  "$id": "609",
+                  "$id": "712",
                   "X": -9,
                   "Y": 2
                 },
                 {
-                  "$id": "610",
+                  "$id": "713",
                   "X": -10,
                   "Y": 2
                 },
                 {
-                  "$id": "611",
+                  "$id": "714",
                   "X": -10,
                   "Y": 0
                 },
                 {
-                  "$id": "612",
+                  "$id": "715",
                   "X": -9,
                   "Y": 0
                 },
                 {
-                  "$id": "613",
+                  "$id": "716",
                   "X": -8,
                   "Y": 0
                 },
                 {
-                  "$id": "614",
+                  "$id": "717",
                   "X": -7,
                   "Y": 0
                 },
                 {
-                  "$id": "615",
+                  "$id": "718",
                   "X": -7,
                   "Y": 1
                 },
                 {
-                  "$id": "616",
+                  "$id": "719",
                   "X": -8,
                   "Y": 1
                 },
                 {
-                  "$id": "617",
+                  "$id": "720",
                   "X": -9,
                   "Y": 1
                 },
                 {
-                  "$id": "618",
+                  "$id": "721",
                   "X": -10,
                   "Y": 1
                 },
                 {
-                  "$id": "619",
+                  "$id": "722",
                   "X": -2,
                   "Y": 2
                 },
                 {
-                  "$id": "620",
+                  "$id": "723",
                   "X": -1,
                   "Y": 2
                 },
                 {
-                  "$id": "621",
+                  "$id": "724",
                   "X": 0,
                   "Y": 2
                 },
                 {
-                  "$id": "622",
+                  "$id": "725",
                   "X": 1,
                   "Y": 2
                 },
                 {
-                  "$id": "623",
+                  "$id": "726",
                   "X": 1,
                   "Y": 1
                 },
                 {
-                  "$id": "624",
+                  "$id": "727",
                   "X": 1,
                   "Y": 0
                 },
                 {
-                  "$id": "625",
+                  "$id": "728",
                   "X": 0,
                   "Y": 0
                 },
                 {
-                  "$id": "626",
+                  "$id": "729",
                   "X": -1,
                   "Y": 0
                 },
                 {
-                  "$id": "627",
+                  "$id": "730",
                   "X": -2,
                   "Y": 0
                 },
                 {
-                  "$id": "628",
+                  "$id": "731",
                   "X": -2,
                   "Y": 1
                 },
                 {
-                  "$id": "629",
+                  "$id": "732",
                   "X": -1,
                   "Y": 1
                 },
                 {
-                  "$id": "630",
+                  "$id": "733",
                   "X": 0,
                   "Y": 1
                 }
               ]
             },
             "_children": {
-              "$id": "631",
+              "$id": "734",
               "$values": []
             },
             "Draw Order": 999,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "527"
+              "$ref": "630"
             },
             "Update Order": 0,
             "GridConfiguration": {
-              "$id": "632",
+              "$id": "735",
               "Use Local Grid": true,
               "Grid Module": null,
               "Local Grid": {
-                "$id": "633",
+                "$id": "736",
                 "Tile Size": "4, 4",
                 "Offset": "0, 0"
               }
@@ -3740,33 +4303,353 @@
             }
           },
           {
-            "$id": "634",
+            "$id": "737",
+            "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+            "_numberOfRenderPasses": 3,
+            "_children": {
+              "$id": "738",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "a7444151-59cb-4f56-a315-36daeae91d45",
+            "Layers": 1,
+            "Local Position": "-4, 9",
+            "Local Scale": "2, 2",
+            "Name": "Live",
+            "Font": {
+              "$ref": "282"
+            },
+            "Color": {
+              "R": 228,
+              "G": 216,
+              "B": 84,
+              "A": 255
+            },
+            "Text": "Live",
+            "SnapToPixels": false,
+            "Render Settings": {
+              "$id": "739",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Rotation": 0.0
+          },
+          {
+            "$id": "740",
+            "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+            "_numberOfRenderPasses": 3,
+            "_children": {
+              "$id": "741",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "08ff39e8-0111-4765-adfc-d882a92a7840",
+            "Layers": 1,
+            "Local Position": "0.5, 6",
+            "Local Scale": "2, 2",
+            "Name": "Die",
+            "Font": {
+              "$ref": "282"
+            },
+            "Color": {
+              "R": 162,
+              "G": 62,
+              "B": 178,
+              "A": 255
+            },
+            "Text": "Die",
+            "SnapToPixels": false,
+            "Render Settings": {
+              "$id": "742",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Rotation": 0.0
+          },
+          {
+            "$id": "743",
+            "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+            "_numberOfRenderPasses": 3,
+            "_children": {
+              "$id": "744",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "4b28134c-6940-46c1-bd64-0e9577bd0990",
+            "Layers": 1,
+            "Local Position": "-3, 7.5",
+            "Local Scale": "2, 2",
+            "Name": "Aber",
+            "Font": {
+              "$ref": "282"
+            },
+            "Color": {
+              "R": 46,
+              "G": 122,
+              "B": 189,
+              "A": 255
+            },
+            "Text": "Aber",
+            "SnapToPixels": false,
+            "Render Settings": {
+              "$id": "745",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Rotation": 0.0
+          },
+          {
+            "$id": "746",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "747",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "3199d75b-7ae9-48eb-822e-b09a52850d47",
+            "Layers": 1,
+            "Local Position": "-8, 8",
+            "Local Scale": "1, 1",
+            "Name": "LeftCreature",
+            "Sprite": null,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": false,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "748",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Default Animation": {
+              "$ref": "252"
+            },
+            "Frame Rate": 16
+          },
+          {
+            "$id": "749",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "750",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "7ab1152e-47ca-4f39-8043-94f2e3c49d66",
+            "Layers": 1,
+            "Local Position": "-0.5, 6.25",
+            "Local Scale": "1, 1",
+            "Name": "PlayerCharacterIdle",
+            "Sprite": null,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": false,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "751",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Default Animation": {
+              "$ref": "204"
+            },
+            "Frame Rate": 16
+          },
+          {
+            "$id": "752",
+            "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+            "_numberOfRenderPasses": 3,
+            "_children": {
+              "$id": "753",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "87c93c62-cee3-4441-b4bb-c2c1ff0a98c3",
+            "Layers": 1,
+            "Local Position": "-2, 2.5",
+            "Local Scale": "1, 1",
+            "Name": "BrettStory",
+            "Font": {
+              "$ref": "282"
+            },
+            "Color": {
+              "R": 55,
+              "G": 118,
+              "B": 106,
+              "A": 255
+            },
+            "Text": "by Brett Story",
+            "SnapToPixels": false,
+            "Render Settings": {
+              "$id": "754",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Rotation": 0.0
+          },
+          {
+            "$id": "755",
+            "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+            "_numberOfRenderPasses": 3,
+            "_children": {
+              "$id": "756",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "5d8c7fbe-2ce5-41d0-9659-b2e86fb2cf24",
+            "Layers": 1,
+            "Local Position": "-3.125, 1.5",
+            "Local Scale": "1, 1",
+            "Name": "CometOverdrive",
+            "Font": {
+              "$ref": "282"
+            },
+            "Color": {
+              "R": 55,
+              "G": 118,
+              "B": 106,
+              "A": 255
+            },
+            "Text": "@cometoverdrive",
+            "SnapToPixels": false,
+            "Render Settings": {
+              "$id": "757",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Rotation": 0.0
+          },
+          {
+            "$id": "758",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "759",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "630"
+            },
+            "Update Order": 0,
+            "Id": "38073784-5e04-4f86-abc6-892dccad0497",
+            "Layers": 1,
+            "Local Position": "7, 4.5",
+            "Local Scale": "1, 1",
+            "Name": "RightCreature",
+            "Sprite": null,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": true,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "760",
+              "Flip Horizontal": true,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Default Animation": {
+              "$ref": "268"
+            },
+            "Frame Rate": 16
+          },
+          {
+            "$id": "761",
             "$type": "Macabre2D.Project.Gameplay.MenuComponent, Macabre2D.Project.Gameplay",
             "_children": {
-              "$id": "635",
+              "$id": "762",
               "$values": [
                 {
-                  "$id": "636",
+                  "$id": "763",
                   "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
                   "_numberOfRenderPasses": 3,
                   "_children": {
-                    "$id": "637",
+                    "$id": "764",
                     "$values": []
                   },
-                  "Draw Order": 1000,
+                  "Draw Order": 2000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "634"
+                    "$ref": "761"
                   },
                   "Update Order": 0,
                   "Id": "dd522b1d-949e-4a58-9eac-52e60edb3db6",
                   "Layers": 1,
-                  "Local Position": "-6, 2",
+                  "Local Position": "-6.5, 1.5",
                   "Local Scale": "1, 1",
                   "Name": "ExitText",
                   "Font": {
-                    "$ref": "272"
+                    "$ref": "282"
                   },
                   "Color": {
                     "R": 235,
@@ -3777,7 +4660,7 @@
                   "Text": "Quit",
                   "SnapToPixels": true,
                   "Render Settings": {
-                    "$id": "638",
+                    "$id": "765",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
@@ -3786,65 +4669,27 @@
                   "Rotation": 0.0
                 },
                 {
-                  "$id": "639",
-                  "$type": "Macabre2D.Framework.SpriteRenderComponent, Macabre2D.Framework",
-                  "_children": {
-                    "$id": "640",
-                    "$values": []
-                  },
-                  "Draw Order": 1000,
-                  "Enable": true,
-                  "Visible": true,
-                  "_parent": {
-                    "$ref": "634"
-                  },
-                  "Update Order": 0,
-                  "Id": "32f983ec-8be5-46c4-9aa4-fe7e107e27b8",
-                  "Layers": 1,
-                  "Local Position": "-7, 3.25",
-                  "Local Scale": "1, 1",
-                  "Name": "SelectionIcon",
-                  "Sprite": {
-                    "$ref": "356"
-                  },
-                  "Color": {
-                    "R": 255,
-                    "G": 255,
-                    "B": 255,
-                    "A": 255
-                  },
-                  "Snap to Pixels": false,
-                  "Rotation": 0.0,
-                  "Render Settings": {
-                    "$id": "641",
-                    "Flip Horizontal": false,
-                    "Flip Vertical": false,
-                    "Offset Type": 4,
-                    "Offset": "0, 0"
-                  }
-                },
-                {
-                  "$id": "642",
+                  "$id": "766",
                   "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
                   "_numberOfRenderPasses": 3,
                   "_children": {
-                    "$id": "643",
+                    "$id": "767",
                     "$values": []
                   },
-                  "Draw Order": 1000,
+                  "Draw Order": 2000,
                   "Enable": true,
                   "Visible": true,
                   "_parent": {
-                    "$ref": "634"
+                    "$ref": "761"
                   },
                   "Update Order": 0,
                   "Id": "73640c19-f298-468c-be53-629a1971d2a4",
                   "Layers": 1,
-                  "Local Position": "-6, 3.25",
+                  "Local Position": "-6.5, 2.5",
                   "Local Scale": "1, 1",
                   "Name": "PlayText",
                   "Font": {
-                    "$ref": "272"
+                    "$ref": "282"
                   },
                   "Color": {
                     "R": 235,
@@ -3855,13 +4700,140 @@
                   "Text": "Play",
                   "SnapToPixels": true,
                   "Render Settings": {
-                    "$id": "644",
+                    "$id": "768",
                     "Flip Horizontal": false,
                     "Flip Vertical": false,
                     "Offset Type": 4,
                     "Offset": "0, 0"
                   },
                   "Rotation": 0.0
+                },
+                {
+                  "$id": "769",
+                  "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+                  "_children": {
+                    "$id": "770",
+                    "$values": []
+                  },
+                  "Draw Order": 2000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "761"
+                  },
+                  "Update Order": 0,
+                  "Id": "2e89df68-465d-4278-95f0-9af0508cb538",
+                  "Layers": 1,
+                  "Local Position": "-7.75, 2.5",
+                  "Local Scale": "1, 1",
+                  "Name": "SelectionIcon",
+                  "Sprite": null,
+                  "Color": {
+                    "R": 255,
+                    "G": 255,
+                    "B": 255,
+                    "A": 255
+                  },
+                  "Snap to Pixels": true,
+                  "Rotation": 0.0,
+                  "Render Settings": {
+                    "$id": "771",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Default Animation": {
+                    "$id": "772",
+                    "_steps": {
+                      "$id": "773",
+                      "$values": [
+                        {
+                          "$id": "774",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "775",
+                            "_id": "1de933f1-d066-4e22-ac49-c86dd254a06c",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "776",
+                              "X": 0,
+                              "Y": 24
+                            },
+                            "Name": "Donut1",
+                            "Size": {
+                              "$id": "777",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        },
+                        {
+                          "$id": "778",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "779",
+                            "_id": "b43d4776-f085-4936-af58-1d05ad5e064e",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "780",
+                              "X": 8,
+                              "Y": 24
+                            },
+                            "Name": "Donut2",
+                            "Size": {
+                              "$id": "781",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        },
+                        {
+                          "$id": "782",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "783",
+                            "_id": "5e541dbc-4bf8-4ba1-ad77-bfee39647f35",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "784",
+                              "X": 16,
+                              "Y": 24
+                            },
+                            "Name": "Donut3",
+                            "Size": {
+                              "$id": "785",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        },
+                        {
+                          "$id": "786",
+                          "Frames": 8,
+                          "Sprite": {
+                            "$id": "787",
+                            "_id": "55ff83f4-c994-4f78-bce3-b4e1c4d617ad",
+                            "AssetId": "093886cc-0630-4acc-a85d-fc218d4133f8",
+                            "Location": {
+                              "$id": "788",
+                              "X": 24,
+                              "Y": 24
+                            },
+                            "Name": "Donut4",
+                            "Size": {
+                              "$id": "789",
+                              "X": 8,
+                              "Y": 8
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "_id": "9505f6fd-e448-4182-9605-c775d402325c",
+                    "AssetId": "e0c6a9a5-6f8d-4dcd-abeb-af2471038e7a"
+                  },
+                  "Frame Rate": 16
                 }
               ]
             },
@@ -3869,7 +4841,7 @@
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "527"
+              "$ref": "630"
             },
             "Update Order": 0,
             "Id": "e4f016c8-f9c7-4334-b290-3995c1db4557",
@@ -3892,536 +4864,536 @@
       "Name": "TitleScreen"
     },
     {
-      "$id": "645",
+      "$id": "790",
       "$type": "Macabre2D.Framework.EmptyComponent, Macabre2D.Framework",
       "_children": {
-        "$id": "646",
+        "$id": "791",
         "$values": [
           {
-            "$id": "647",
+            "$id": "792",
             "$type": "Macabre2D.Framework.BinaryTileMap, Macabre2D.Framework",
             "_activeTiles": {
-              "$id": "648",
+              "$id": "793",
               "$values": [
                 {
-                  "$id": "649",
+                  "$id": "794",
                   "X": -3,
                   "Y": 2
                 },
                 {
-                  "$id": "650",
+                  "$id": "795",
                   "X": -3,
                   "Y": 1
                 },
                 {
-                  "$id": "651",
+                  "$id": "796",
                   "X": -3,
                   "Y": 0
                 },
                 {
-                  "$id": "652",
+                  "$id": "797",
                   "X": -3,
                   "Y": 3
                 },
                 {
-                  "$id": "653",
+                  "$id": "798",
                   "X": -3,
                   "Y": -1
                 },
                 {
-                  "$id": "654",
+                  "$id": "799",
                   "X": -2,
                   "Y": -1
                 },
                 {
-                  "$id": "655",
+                  "$id": "800",
                   "X": -1,
                   "Y": -1
                 },
                 {
-                  "$id": "656",
+                  "$id": "801",
                   "X": 0,
                   "Y": -1
                 },
                 {
-                  "$id": "657",
+                  "$id": "802",
                   "X": 1,
                   "Y": -1
                 },
                 {
-                  "$id": "658",
+                  "$id": "803",
                   "X": 2,
                   "Y": -1
                 },
                 {
-                  "$id": "659",
+                  "$id": "804",
                   "X": 2,
                   "Y": 0
                 },
                 {
-                  "$id": "660",
+                  "$id": "805",
                   "X": 2,
                   "Y": 1
                 },
                 {
-                  "$id": "661",
+                  "$id": "806",
                   "X": 2,
                   "Y": 2
                 },
                 {
-                  "$id": "662",
+                  "$id": "807",
                   "X": 2,
                   "Y": 3
                 },
                 {
-                  "$id": "663",
+                  "$id": "808",
                   "X": 1,
                   "Y": 3
                 },
                 {
-                  "$id": "664",
+                  "$id": "809",
                   "X": 0,
                   "Y": 3
                 },
                 {
-                  "$id": "665",
+                  "$id": "810",
                   "X": -1,
                   "Y": 3
                 },
                 {
-                  "$id": "666",
+                  "$id": "811",
                   "X": -2,
                   "Y": 3
                 },
                 {
-                  "$id": "667",
+                  "$id": "812",
                   "X": -5,
                   "Y": 3
                 },
                 {
-                  "$id": "668",
+                  "$id": "813",
                   "X": -5,
                   "Y": 2
                 },
                 {
-                  "$id": "669",
+                  "$id": "814",
                   "X": -5,
                   "Y": 1
                 },
                 {
-                  "$id": "670",
+                  "$id": "815",
                   "X": -5,
                   "Y": 0
                 },
                 {
-                  "$id": "671",
+                  "$id": "816",
                   "X": -5,
                   "Y": -1
                 },
                 {
-                  "$id": "672",
+                  "$id": "817",
                   "X": -4,
                   "Y": -1
                 },
                 {
-                  "$id": "673",
+                  "$id": "818",
                   "X": -4,
                   "Y": 3
                 },
                 {
-                  "$id": "674",
+                  "$id": "819",
                   "X": -4,
                   "Y": 2
                 },
                 {
-                  "$id": "675",
+                  "$id": "820",
                   "X": -4,
                   "Y": 1
                 },
                 {
-                  "$id": "676",
+                  "$id": "821",
                   "X": -4,
                   "Y": 0
                 },
                 {
-                  "$id": "677",
+                  "$id": "822",
                   "X": -6,
                   "Y": 3
                 },
                 {
-                  "$id": "678",
+                  "$id": "823",
                   "X": -7,
                   "Y": 3
                 },
                 {
-                  "$id": "679",
+                  "$id": "824",
                   "X": -8,
                   "Y": 3
                 },
                 {
-                  "$id": "680",
+                  "$id": "825",
                   "X": 3,
                   "Y": -1
                 },
                 {
-                  "$id": "681",
+                  "$id": "826",
                   "X": 3,
                   "Y": 0
                 },
                 {
-                  "$id": "682",
+                  "$id": "827",
                   "X": 3,
                   "Y": 1
                 },
                 {
-                  "$id": "683",
+                  "$id": "828",
                   "X": 3,
                   "Y": 2
                 },
                 {
-                  "$id": "684",
+                  "$id": "829",
                   "X": 3,
                   "Y": 3
                 },
                 {
-                  "$id": "685",
+                  "$id": "830",
                   "X": 4,
                   "Y": 3
                 },
                 {
-                  "$id": "686",
+                  "$id": "831",
                   "X": 4,
                   "Y": 2
                 },
                 {
-                  "$id": "687",
+                  "$id": "832",
                   "X": 4,
                   "Y": 1
                 },
                 {
-                  "$id": "688",
+                  "$id": "833",
                   "X": 4,
                   "Y": 0
                 },
                 {
-                  "$id": "689",
+                  "$id": "834",
                   "X": 4,
                   "Y": -1
                 },
                 {
-                  "$id": "690",
+                  "$id": "835",
                   "X": -10,
                   "Y": 3
                 },
                 {
-                  "$id": "691",
+                  "$id": "836",
                   "X": -9,
                   "Y": 3
                 },
                 {
-                  "$id": "692",
+                  "$id": "837",
                   "X": -10,
                   "Y": -1
                 },
                 {
-                  "$id": "693",
+                  "$id": "838",
                   "X": -9,
                   "Y": -1
                 },
                 {
-                  "$id": "694",
+                  "$id": "839",
                   "X": -8,
                   "Y": -1
                 },
                 {
-                  "$id": "695",
+                  "$id": "840",
                   "X": 9,
                   "Y": -1
                 },
                 {
-                  "$id": "696",
+                  "$id": "841",
                   "X": 9,
                   "Y": 0
                 },
                 {
-                  "$id": "697",
+                  "$id": "842",
                   "X": 9,
                   "Y": 1
                 },
                 {
-                  "$id": "698",
+                  "$id": "843",
                   "X": 9,
                   "Y": 2
                 },
                 {
-                  "$id": "699",
+                  "$id": "844",
                   "X": 9,
                   "Y": 3
                 },
                 {
-                  "$id": "700",
+                  "$id": "845",
                   "X": 8,
                   "Y": 3
                 },
                 {
-                  "$id": "701",
+                  "$id": "846",
                   "X": 7,
                   "Y": 3
                 },
                 {
-                  "$id": "702",
+                  "$id": "847",
                   "X": 6,
                   "Y": 3
                 },
                 {
-                  "$id": "703",
+                  "$id": "848",
                   "X": 5,
                   "Y": 3
                 },
                 {
-                  "$id": "704",
+                  "$id": "849",
                   "X": 5,
                   "Y": 1
                 },
                 {
-                  "$id": "705",
+                  "$id": "850",
                   "X": 5,
                   "Y": 0
                 },
                 {
-                  "$id": "706",
+                  "$id": "851",
                   "X": 5,
                   "Y": -1
                 },
                 {
-                  "$id": "707",
+                  "$id": "852",
                   "X": 5,
                   "Y": 2
                 },
                 {
-                  "$id": "708",
+                  "$id": "853",
                   "X": 6,
                   "Y": 2
                 },
                 {
-                  "$id": "709",
+                  "$id": "854",
                   "X": 7,
                   "Y": 2
                 },
                 {
-                  "$id": "710",
+                  "$id": "855",
                   "X": 8,
                   "Y": 2
                 },
                 {
-                  "$id": "711",
+                  "$id": "856",
                   "X": 8,
                   "Y": 1
                 },
                 {
-                  "$id": "712",
+                  "$id": "857",
                   "X": 8,
                   "Y": 0
                 },
                 {
-                  "$id": "713",
+                  "$id": "858",
                   "X": 8,
                   "Y": -1
                 },
                 {
-                  "$id": "714",
+                  "$id": "859",
                   "X": 7,
                   "Y": -1
                 },
                 {
-                  "$id": "715",
+                  "$id": "860",
                   "X": 6,
                   "Y": -1
                 },
                 {
-                  "$id": "716",
+                  "$id": "861",
                   "X": 6,
                   "Y": 0
                 },
                 {
-                  "$id": "717",
+                  "$id": "862",
                   "X": 6,
                   "Y": 1
                 },
                 {
-                  "$id": "718",
+                  "$id": "863",
                   "X": 7,
                   "Y": 1
                 },
                 {
-                  "$id": "719",
+                  "$id": "864",
                   "X": 7,
                   "Y": 0
                 },
                 {
-                  "$id": "720",
+                  "$id": "865",
                   "X": -7,
                   "Y": -1
                 },
                 {
-                  "$id": "721",
+                  "$id": "866",
                   "X": -6,
                   "Y": -1
                 },
                 {
-                  "$id": "722",
+                  "$id": "867",
                   "X": -6,
                   "Y": 0
                 },
                 {
-                  "$id": "723",
+                  "$id": "868",
                   "X": -6,
                   "Y": 1
                 },
                 {
-                  "$id": "724",
+                  "$id": "869",
                   "X": -6,
                   "Y": 2
                 },
                 {
-                  "$id": "725",
+                  "$id": "870",
                   "X": -7,
                   "Y": 2
                 },
                 {
-                  "$id": "726",
+                  "$id": "871",
                   "X": -8,
                   "Y": 2
                 },
                 {
-                  "$id": "727",
+                  "$id": "872",
                   "X": -9,
                   "Y": 2
                 },
                 {
-                  "$id": "728",
+                  "$id": "873",
                   "X": -10,
                   "Y": 2
                 },
                 {
-                  "$id": "729",
+                  "$id": "874",
                   "X": -10,
                   "Y": 0
                 },
                 {
-                  "$id": "730",
+                  "$id": "875",
                   "X": -9,
                   "Y": 0
                 },
                 {
-                  "$id": "731",
+                  "$id": "876",
                   "X": -8,
                   "Y": 0
                 },
                 {
-                  "$id": "732",
+                  "$id": "877",
                   "X": -7,
                   "Y": 0
                 },
                 {
-                  "$id": "733",
+                  "$id": "878",
                   "X": -7,
                   "Y": 1
                 },
                 {
-                  "$id": "734",
+                  "$id": "879",
                   "X": -8,
                   "Y": 1
                 },
                 {
-                  "$id": "735",
+                  "$id": "880",
                   "X": -9,
                   "Y": 1
                 },
                 {
-                  "$id": "736",
+                  "$id": "881",
                   "X": -10,
                   "Y": 1
                 },
                 {
-                  "$id": "737",
+                  "$id": "882",
                   "X": -2,
                   "Y": 2
                 },
                 {
-                  "$id": "738",
+                  "$id": "883",
                   "X": -1,
                   "Y": 2
                 },
                 {
-                  "$id": "739",
+                  "$id": "884",
                   "X": 0,
                   "Y": 2
                 },
                 {
-                  "$id": "740",
+                  "$id": "885",
                   "X": 1,
                   "Y": 2
                 },
                 {
-                  "$id": "741",
+                  "$id": "886",
                   "X": 0,
                   "Y": 1
                 },
                 {
-                  "$id": "742",
+                  "$id": "887",
                   "X": 1,
                   "Y": 1
                 },
                 {
-                  "$id": "743",
+                  "$id": "888",
                   "X": 1,
                   "Y": 0
                 },
                 {
-                  "$id": "744",
+                  "$id": "889",
                   "X": 0,
                   "Y": 0
                 },
                 {
-                  "$id": "745",
+                  "$id": "890",
                   "X": -1,
                   "Y": 0
                 },
                 {
-                  "$id": "746",
+                  "$id": "891",
                   "X": -2,
                   "Y": 0
                 },
                 {
-                  "$id": "747",
+                  "$id": "892",
                   "X": -1,
                   "Y": 1
                 },
                 {
-                  "$id": "748",
+                  "$id": "893",
                   "X": -2,
                   "Y": 1
                 }
               ]
             },
             "_children": {
-              "$id": "749",
+              "$id": "894",
               "$values": []
             },
             "Draw Order": 999,
             "Enable": true,
             "Visible": true,
             "_parent": {
-              "$ref": "645"
+              "$ref": "790"
             },
             "Update Order": 0,
             "GridConfiguration": {
-              "$id": "750",
+              "$id": "895",
               "Use Local Grid": true,
               "Grid Module": null,
               "Local Grid": {
-                "$id": "751",
+                "$id": "896",
                 "Tile Size": "4, 4",
                 "Offset": "0, 0"
               }
@@ -4440,6 +5412,550 @@
               "B": 255,
               "A": 255
             }
+          },
+          {
+            "$id": "897",
+            "$type": "Macabre2D.Project.Gameplay.MenuComponent, Macabre2D.Project.Gameplay",
+            "_children": {
+              "$id": "898",
+              "$values": [
+                {
+                  "$id": "899",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
+                  "_children": {
+                    "$id": "900",
+                    "$values": []
+                  },
+                  "Draw Order": 2000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "897"
+                  },
+                  "Update Order": 0,
+                  "Id": "a8953f7f-8a20-4c5d-95b5-8e23678c5bbc",
+                  "Layers": 1,
+                  "Local Position": "-6.5, 1.5",
+                  "Local Scale": "1, 1",
+                  "Name": "ExitText",
+                  "Font": {
+                    "$ref": "282"
+                  },
+                  "Color": {
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
+                    "A": 255
+                  },
+                  "Text": "Quit",
+                  "SnapToPixels": true,
+                  "Render Settings": {
+                    "$id": "901",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Rotation": 0.0
+                },
+                {
+                  "$id": "902",
+                  "$type": "Macabre2D.Project.Gameplay.PixelTextRendererComponent, Macabre2D.Project.Gameplay",
+                  "_numberOfRenderPasses": 3,
+                  "_children": {
+                    "$id": "903",
+                    "$values": []
+                  },
+                  "Draw Order": 2000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "897"
+                  },
+                  "Update Order": 0,
+                  "Id": "7dfaa616-c03b-4af3-b301-752f239985b1",
+                  "Layers": 1,
+                  "Local Position": "-6.5, 2.5",
+                  "Local Scale": "1, 1",
+                  "Name": "PlayText",
+                  "Font": {
+                    "$ref": "282"
+                  },
+                  "Color": {
+                    "R": 235,
+                    "G": 235,
+                    "B": 235,
+                    "A": 255
+                  },
+                  "Text": "Play Again",
+                  "SnapToPixels": true,
+                  "Render Settings": {
+                    "$id": "904",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Rotation": 0.0
+                },
+                {
+                  "$id": "905",
+                  "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+                  "_children": {
+                    "$id": "906",
+                    "$values": []
+                  },
+                  "Draw Order": 2000,
+                  "Enable": true,
+                  "Visible": true,
+                  "_parent": {
+                    "$ref": "897"
+                  },
+                  "Update Order": 0,
+                  "Id": "a4ff5d82-880a-40f4-ad08-7c1b4acd31ee",
+                  "Layers": 1,
+                  "Local Position": "-7.75, 2.5",
+                  "Local Scale": "1, 1",
+                  "Name": "SelectionIcon",
+                  "Sprite": null,
+                  "Color": {
+                    "R": 255,
+                    "G": 255,
+                    "B": 255,
+                    "A": 255
+                  },
+                  "Snap to Pixels": true,
+                  "Rotation": 0.0,
+                  "Render Settings": {
+                    "$id": "907",
+                    "Flip Horizontal": false,
+                    "Flip Vertical": false,
+                    "Offset Type": 4,
+                    "Offset": "0, 0"
+                  },
+                  "Default Animation": {
+                    "$ref": "363"
+                  },
+                  "Frame Rate": 16
+                }
+              ]
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "790"
+            },
+            "Update Order": 0,
+            "Id": "283c0f3b-c1df-423c-af0f-6b3574268f83",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "MenuComponent"
+          },
+          {
+            "$id": "908",
+            "$type": "Macabre2D.Project.Gameplay.Food.FoodSpawner, Macabre2D.Project.Gameplay",
+            "_children": {
+              "$id": "909",
+              "$values": []
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "790"
+            },
+            "Update Order": 0,
+            "Id": "f12d981e-0c57-4691-89e3-279cba879b54",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "FoodSpawner",
+            "Food Draw Order": 1000,
+            "Drop Time": 0.5,
+            "Use Collisions": false,
+            "Bread Animation": {
+              "$id": "910",
+              "_steps": {
+                "$id": "911",
+                "$values": [
+                  {
+                    "$id": "912",
+                    "Frames": 4,
+                    "Sprite": {
+                      "$id": "913",
+                      "_id": "e12805df-594a-4d42-acad-5d74a6914d73",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "914",
+                        "X": 8,
+                        "Y": 32
+                      },
+                      "Name": "Laugh1",
+                      "Size": {
+                        "$id": "915",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "916",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "917",
+                      "_id": "97eba9e9-39ab-47b8-b4c2-bc9baf34975a",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "918",
+                        "X": 8,
+                        "Y": 40
+                      },
+                      "Name": "Laugh2",
+                      "Size": {
+                        "$id": "919",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "920",
+                    "Frames": 4,
+                    "Sprite": {
+                      "$id": "921",
+                      "_id": "b1c0fca6-4930-4874-8474-52c94389df94",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "922",
+                        "X": 8,
+                        "Y": 48
+                      },
+                      "Name": "Laugh3",
+                      "Size": {
+                        "$id": "923",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  },
+                  {
+                    "$id": "924",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "925",
+                      "_id": "d934b540-050b-4cd2-9d52-5f4abd97849a",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "926",
+                        "X": 8,
+                        "Y": 56
+                      },
+                      "Name": "Laugh4",
+                      "Size": {
+                        "$id": "927",
+                        "X": 8,
+                        "Y": 8
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "b516222d-a3ee-45fb-8b8b-a8420afb2ad3",
+              "AssetId": "a362fce0-bf68-4205-85ec-9b75524a166b"
+            },
+            "Donut Animation": {
+              "$id": "928",
+              "_steps": {
+                "$id": "929",
+                "$values": [
+                  {
+                    "$id": "930",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$ref": "925"
+                    }
+                  },
+                  {
+                    "$id": "931",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$ref": "921"
+                    }
+                  }
+                ]
+              },
+              "_id": "48788124-e6a9-4ee0-964a-237a933ea72c",
+              "AssetId": "f86e124a-408a-444c-a79e-9db241b8dc5a"
+            },
+            "Melon Animation": {
+              "$id": "932",
+              "_steps": {
+                "$id": "933",
+                "$values": [
+                  {
+                    "$id": "934",
+                    "Frames": 4,
+                    "Sprite": {
+                      "$ref": "917"
+                    }
+                  },
+                  {
+                    "$id": "935",
+                    "Frames": 4,
+                    "Sprite": {
+                      "$ref": "913"
+                    }
+                  }
+                ]
+              },
+              "_id": "57fd3910-f71d-4323-b450-eb1a88328abe",
+              "AssetId": "ed61083e-dad2-4170-a0a6-c8706cb0ddd5"
+            },
+            "Plum Animation": {
+              "$id": "936",
+              "_steps": {
+                "$id": "937",
+                "$values": [
+                  {
+                    "$id": "938",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$ref": "925"
+                    }
+                  },
+                  {
+                    "$id": "939",
+                    "Frames": 4,
+                    "Sprite": {
+                      "$ref": "913"
+                    }
+                  },
+                  {
+                    "$id": "940",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$ref": "917"
+                    }
+                  },
+                  {
+                    "$id": "941",
+                    "Frames": 4,
+                    "Sprite": {
+                      "$ref": "921"
+                    }
+                  }
+                ]
+              },
+              "_id": "a94b7d36-54e9-4fa4-b762-864a9029a989",
+              "AssetId": "4d952a0f-9d3b-4380-88e7-b05cf829e78d"
+            },
+            "Hit Noise": null,
+            "Crunch Noise": null
+          },
+          {
+            "$id": "942",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "943",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "790"
+            },
+            "Update Order": 0,
+            "Id": "62037ea5-626a-467e-8fcd-d1dacbfa1dc3",
+            "Layers": 1,
+            "Local Position": "7, 6",
+            "Local Scale": "1, 1",
+            "Name": "RightCreature",
+            "Sprite": null,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": true,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "944",
+              "Flip Horizontal": true,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Default Animation": {
+              "$id": "945",
+              "_steps": {
+                "$id": "946",
+                "$values": [
+                  {
+                    "$id": "947",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "948",
+                      "_id": "db5152e3-426d-4872-baed-4e7f700d46ae",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "949",
+                        "X": 16,
+                        "Y": 32
+                      },
+                      "Name": "CreatureLaugh1",
+                      "Size": {
+                        "$id": "950",
+                        "X": 8,
+                        "Y": 32
+                      }
+                    }
+                  },
+                  {
+                    "$id": "951",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "952",
+                      "_id": "28c97777-8c94-40e5-926a-2386b6ef5614",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "953",
+                        "X": 24,
+                        "Y": 32
+                      },
+                      "Name": "CreatureLaugh2",
+                      "Size": {
+                        "$id": "954",
+                        "X": 8,
+                        "Y": 32
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "ed3f8b81-d1bf-474b-bb31-ba7b7dfcb755",
+              "AssetId": "cd24b40c-6c9c-4541-925b-68629d0e7f1f"
+            },
+            "Frame Rate": 16
+          },
+          {
+            "$id": "955",
+            "$type": "Macabre2D.Framework.SpriteAnimationComponent, Macabre2D.Framework",
+            "_children": {
+              "$id": "956",
+              "$values": []
+            },
+            "Draw Order": 1000,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "790"
+            },
+            "Update Order": 0,
+            "Id": "c6d833cc-c4a1-487a-8046-0250bd959465",
+            "Layers": 1,
+            "Local Position": "-8, 6",
+            "Local Scale": "1, 1",
+            "Name": "LeftCreature",
+            "Sprite": null,
+            "Color": {
+              "R": 255,
+              "G": 255,
+              "B": 255,
+              "A": 255
+            },
+            "Snap to Pixels": true,
+            "Rotation": 0.0,
+            "Render Settings": {
+              "$id": "957",
+              "Flip Horizontal": false,
+              "Flip Vertical": false,
+              "Offset Type": 4,
+              "Offset": "0, 0"
+            },
+            "Default Animation": {
+              "$id": "958",
+              "_steps": {
+                "$id": "959",
+                "$values": [
+                  {
+                    "$id": "960",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "961",
+                      "_id": "db5152e3-426d-4872-baed-4e7f700d46ae",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "962",
+                        "X": 16,
+                        "Y": 32
+                      },
+                      "Name": "CreatureLaugh1",
+                      "Size": {
+                        "$id": "963",
+                        "X": 8,
+                        "Y": 32
+                      }
+                    }
+                  },
+                  {
+                    "$id": "964",
+                    "Frames": 8,
+                    "Sprite": {
+                      "$id": "965",
+                      "_id": "28c97777-8c94-40e5-926a-2386b6ef5614",
+                      "AssetId": "19fdc91f-a94e-492f-af5f-20969e644e0a",
+                      "Location": {
+                        "$id": "966",
+                        "X": 24,
+                        "Y": 32
+                      },
+                      "Name": "CreatureLaugh2",
+                      "Size": {
+                        "$id": "967",
+                        "X": 8,
+                        "Y": 32
+                      }
+                    }
+                  }
+                ]
+              },
+              "_id": "ed3f8b81-d1bf-474b-bb31-ba7b7dfcb755",
+              "AssetId": "cd24b40c-6c9c-4541-925b-68629d0e7f1f"
+            },
+            "Frame Rate": 16
+          },
+          {
+            "$id": "968",
+            "$type": "Macabre2D.Framework.AudioPlayer, Macabre2D.Framework",
+            "_children": {
+              "$id": "969",
+              "$values": []
+            },
+            "Draw Order": 0,
+            "Enable": true,
+            "Visible": true,
+            "_parent": {
+              "$ref": "790"
+            },
+            "Update Order": 0,
+            "Id": "bc7ee065-937e-47de-ae0e-beb572fb0d93",
+            "Layers": 1,
+            "Local Position": "0, 0",
+            "Local Scale": "1, 1",
+            "Name": "AudioPlayer",
+            "Audio Clip": {
+              "$id": "970",
+              "_id": "2119979a-d1f9-4a9b-b2b3-8eb116ac9277"
+            },
+            "Should Loop": true,
+            "Volume": 1.0,
+            "Pan": 0.0,
+            "Pitch": 0.0
           }
         ]
       },
@@ -4453,6 +5969,32 @@
       "Local Position": "0, 0",
       "Local Scale": "1, 1",
       "Name": "SecretScreen"
+    },
+    {
+      "$id": "971",
+      "$type": "Macabre2D.Framework.AudioPlayer, Macabre2D.Framework",
+      "_children": {
+        "$id": "972",
+        "$values": []
+      },
+      "Draw Order": 0,
+      "Enable": true,
+      "Visible": true,
+      "_parent": null,
+      "Update Order": 0,
+      "Id": "3e027022-8f5e-4c12-84e6-9602fafad6bb",
+      "Layers": 1,
+      "Local Position": "0, 0",
+      "Local Scale": "1, 1",
+      "Name": "ThemeSongPlayer",
+      "Audio Clip": {
+        "$id": "973",
+        "_id": "e6746284-092e-479f-8583-83b3ac512084"
+      },
+      "Should Loop": true,
+      "Volume": 1.0,
+      "Pan": 0.0,
+      "Pitch": 0.0
     }
   ]
 }

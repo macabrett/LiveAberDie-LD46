@@ -37,6 +37,23 @@
 /processorParam:TextureFormat=Color
 /build:Assets\Creature\CreatureSpriteSheet.png
 
+#begin Assets\Creature\crunchnoise.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets\Creature\crunchnoise.wav
+
+#begin Assets\Creature\laughter.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets\Creature\laughter.wav
+
+
+
+
+
+
 
 
 
@@ -91,9 +108,21 @@
 /processorParam:TextureFormat=Color
 /build:Assets\Food\FoodSpriteSheet.png
 
+#begin Assets\Food\hitnoise.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets\Food\hitnoise.wav
 
 
 
+
+
+#begin Assets\Player\jumpnoise.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets\Player\jumpnoise.wav
 
 #begin Assets\Player\PlayerSpriteSheet.png
 /importer:TextureImporter
@@ -124,4 +153,10 @@
 /processorParam:TextureFormat = Color
 /build:Assets\silkscreen.spritefont
 
+
+#begin Assets\themesong.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Assets\themesong.wav
 

@@ -1,17 +1,28 @@
 ﻿namespace Macabre2D.Project.Gameplay.Player {
 
     using Macabre2D.Framework;
+    using Macabre2D.Project.Gameplay.Creature;
     using Microsoft.Xna.Framework;
     using System;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
     using System.Runtime.Serialization;
 
+    public enum PlayerLivingState {
+        Alive,
+        Dead,
+        SpecialDead
+    }
+
     public sealed class PlayerComponent : BaseComponent, IBoundable, IResetable, IUpdateableComponent {
+        private readonly List<CreatureComponent> _creatures = new List<CreatureComponent>();
         private readonly BaseStance[] _stances;
+        private AudioPlayer _crunchAudioPlayer;
         private PlayerAnimation _currentAnimation = PlayerAnimation.None;
         private BaseStance _currentStance;
         private InputManager _inputManager;
+        private AudioPlayer _jumpAudioPlayer;
         private HorizontalDirection _movingDirection = HorizontalDirection.Neutral;
         private SimplePhysicsModule _physicsModule;
         private SpriteAnimationComponent _spriteAnimator;
@@ -41,10 +52,10 @@
         [DataMember(Order = 0)]
         public SpriteAnimation IdleAnimation { get; private set; }
 
-        public bool IsDead { get; private set; }
-
         [DataMember(Order = 3)]
         public SpriteAnimation JumpAnimation { get; private set; }
+
+        public PlayerLivingState LivingState { get; private set; } = PlayerLivingState.Alive;
 
         public HorizontalDirection MovingDirection {
             get {
@@ -94,21 +105,30 @@
             this.State = this._startState;
             this.Velocity = this.State.Velocity;
             this.SetWorldPosition(this.State.Position);
-            this.IsDead = false;
+            this.LivingState = PlayerLivingState.Alive;
             this.ChangeStance(this.State.Stance, new FrameTime());
             this.ChangeAnimation();
         }
 
         public void Update(FrameTime frameTime) {
-            if (!this.IsDead) {
+            if (this.LivingState == PlayerLivingState.Alive) {
                 this._currentStance.Update(frameTime, this._inputManager);
                 this.State = new PlayerState(this._currentStance.Stance, this.WorldTransform.Position, this.Velocity);
                 this.ChangeAnimation();
                 this.LocalPosition += this.Velocity * (float)frameTime.SecondsPassed;
 
                 if (this.IsOutOfBounds()) {
-                    this.IsDead = true;
+                    this.LivingState = PlayerLivingState.Dead;
                     this._spriteAnimator.Stop(true);
+                }
+
+                foreach (var creature in this._creatures.Where(x => !x.IsDead)) {
+                    if (this.BoundingArea.Overlaps(creature.BoundingArea)) {
+                        this._crunchAudioPlayer.Stop();
+                        this.LivingState = PlayerLivingState.SpecialDead;
+                        this._crunchAudioPlayer.Play();
+                        break;
+                    }
                 }
             }
         }
@@ -116,6 +136,12 @@
         internal void ChangeStance(PlayerStance newStance, FrameTime frameTime) {
             this._currentStance.ExitStance(frameTime);
             this._currentStance = this._stances[(int)newStance];
+
+            if (newStance == PlayerStance.Jumping && this._jumpAudioPlayer.AudioClip != null) {
+                this._jumpAudioPlayer.Stop();
+                this._jumpAudioPlayer.Play();
+            }
+
             this._currentStance.EnterStance(frameTime);
         }
 
@@ -140,6 +166,9 @@
             this._physicsModule = this.Scene.GetModule<SimplePhysicsModule>();
             this._inputManager = this.Scene.GetModule<InputManager>();
             this._spriteAnimator = this.GetChild<SpriteAnimationComponent>();
+            this._jumpAudioPlayer = this.FindComponentInChildren("JumpPlayer") as AudioPlayer;
+            this._crunchAudioPlayer = this.FindComponentInChildren("CrunchPlayer") as AudioPlayer;
+            this._creatures.AddRange(this.Scene.GetAllComponentsOfType<CreatureComponent>());
 
             if (this._physicsModule == null && this.Scene.AddModule(new SimplePhysicsModule())) {
                 this._physicsModule = this.Scene.GetModule<SimplePhysicsModule>();
