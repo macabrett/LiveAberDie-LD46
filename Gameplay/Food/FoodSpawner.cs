@@ -10,7 +10,7 @@
 
     public sealed class FoodSpawner : BaseComponent, IUpdateableComponent {
         private const float FoodMinFallSpeed = 3f;
-        private const float SecondsBetweenFruitDrops = 2f;
+        private const float SecondsBetweenFruitDrops = 1.2f;
         private const int SpawnWidth = 12;
         private readonly Queue<FoodComponent> _foodQueue = new Queue<FoodComponent>();
         private readonly Random _random = new Random();

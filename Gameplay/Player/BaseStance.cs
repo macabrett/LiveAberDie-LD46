@@ -2,7 +2,6 @@
 
     using Macabre2D.Framework;
     using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Input;
     using System;
 
     public abstract class BaseStance {
@@ -26,14 +25,14 @@
             return;
         }
 
-        public abstract void Update(FrameTime frameTime, KeyboardState keyboardState);
+        public abstract void Update(FrameTime frameTime, InputManager inputManager);
 
         // TODO: need to make this generic for gamepads/keyboards/user settings
-        protected float CalculateHorizontalVelocity(FrameTime frameTime, KeyboardState keyboardState) {
+        protected float CalculateHorizontalVelocity(FrameTime frameTime, InputManager inputManager) {
             var horizontalVelocity = this.PlayerComponent.Velocity.X;
             var movingDirection = HorizontalDirection.Neutral;
 
-            if (keyboardState.IsKeyDown(Keys.D)) {
+            if (inputManager.HorizontalAxis > 0f) {
                 var newVelocity = horizontalVelocity + PlayerMovementValues.GetHorizontalAcceleration(this.PlayerComponent.State) * (float)frameTime.SecondsPassed;
                 if (this.PlayerComponent.Velocity.X >= 0f) {
                     horizontalVelocity = Math.Max(newVelocity, PlayerMovementValues.MaximumHorizontalVelocity * 0.5f);
@@ -52,7 +51,7 @@
                 }
             }
 
-            if (keyboardState.IsKeyDown(Keys.A)) {
+            if (inputManager.HorizontalAxis < 0f) {
                 var newVelocity = horizontalVelocity - PlayerMovementValues.GetHorizontalAcceleration(this.PlayerComponent.State) * (float)frameTime.SecondsPassed;
                 if (this.PlayerComponent.Velocity.X <= 0f) {
                     horizontalVelocity = Math.Min(newVelocity, -PlayerMovementValues.MaximumHorizontalVelocity * 0.5f);

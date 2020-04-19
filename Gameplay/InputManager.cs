@@ -20,6 +20,7 @@
 
         public float HorizontalAxis { get; private set; }
 
+        public bool IsJumpHeld { get; private set; }
         public bool IsJumpPressed { get; private set; }
 
         public override void PostUpdate(FrameTime frameTime) {
@@ -33,19 +34,19 @@
             this._previousGamePadState = this._currentGamePadState;
             this._currentGamePadState = GamePad.GetState(PlayerIndex.One);
 
+            this.IsJumpHeld = this._currentKeyboardState.IsKeyDown(Keys.Space) || (this._currentGamePadState.IsConnected && this._currentGamePadState.IsButtonDown(Buttons.A));
             this.IsJumpPressed = this.GetIsJumpPressed();
             this.HorizontalAxis = this.GetHorizontalAxis();
         }
 
         private float GetHorizontalAxis() {
             var result = 0f;
-
-            if (this._currentGamePadState.DPad.Left == ButtonState.Pressed || this._currentGamePadState.ThumbSticks.Left.X < -DeadZone || this._currentKeyboardState.IsKeyDown(Keys.A)) {
+            if (this._currentKeyboardState.IsKeyDown(Keys.A) || (this._currentGamePadState.IsConnected && (this._currentGamePadState.DPad.Left == ButtonState.Pressed || this._currentGamePadState.ThumbSticks.Left.X < -DeadZone))) {
                 result = -1f;
             }
 
-            if (this._currentGamePadState.DPad.Right == ButtonState.Pressed || this._currentGamePadState.ThumbSticks.Right.X < -DeadZone || this._currentKeyboardState.IsKeyDown(Keys.D)) {
-                result += 1f;
+            if (this._currentKeyboardState.IsKeyDown(Keys.D) || (this._currentGamePadState.IsConnected && (this._currentGamePadState.DPad.Right == ButtonState.Pressed || this._currentGamePadState.ThumbSticks.Left.X > DeadZone))) {
+                result = 1f;
             }
 
             return result;
@@ -54,7 +55,7 @@
         private bool GetIsJumpPressed() {
             var result = false;
             if (!this._previousKeyboardState.IsKeyDown(Keys.Space) && !this._previousGamePadState.IsButtonDown(Buttons.A)) {
-                result = this._currentKeyboardState.IsKeyDown(Keys.Space) || this._currentGamePadState.IsButtonDown(Buttons.A);
+                result = this.IsJumpHeld;
             }
 
             return result;

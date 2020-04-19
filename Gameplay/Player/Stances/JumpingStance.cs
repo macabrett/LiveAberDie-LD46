@@ -2,7 +2,6 @@
 
     using Macabre2D.Framework;
     using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Input;
 
     public sealed class JumpingStance : BaseStance {
         private const float JumpHoldLength = 0.175f;
@@ -21,18 +20,18 @@
             this._elapsedSeconds = 0f;
         }
 
-        public override void Update(FrameTime frameTime, KeyboardState keyboardState) {
+        public override void Update(FrameTime frameTime, InputManager inputManager) {
             var verticalVelocity = PlayerMovementValues.JumpVelocity;
             this._elapsedSeconds += (float)frameTime.SecondsPassed;
             if (this.CheckIfHitCeiling(frameTime, verticalVelocity)) {
                 verticalVelocity = 0f;
                 this.PlayerComponent.ChangeStance(PlayerStance.Falling, frameTime);
             }
-            else if (!keyboardState.IsKeyDown(Keys.Space) || this._elapsedSeconds > JumpHoldLength) {
+            else if (!inputManager.IsJumpHeld || this._elapsedSeconds > JumpHoldLength) {
                 this.PlayerComponent.ChangeStance(PlayerStance.Falling, frameTime);
             }
 
-            var horitonzalVelocity = this.CalculateHorizontalVelocity(frameTime, keyboardState);
+            var horitonzalVelocity = this.CalculateHorizontalVelocity(frameTime, inputManager);
             this.PlayerComponent.Velocity = new Vector2(horitonzalVelocity, verticalVelocity);
         }
     }

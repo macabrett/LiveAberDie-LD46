@@ -2,7 +2,6 @@
 
     using Macabre2D.Framework;
     using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Input;
     using System;
     using System.Linq;
     using System.Reflection;
@@ -12,6 +11,7 @@
         private readonly BaseStance[] _stances;
         private PlayerAnimation _currentAnimation = PlayerAnimation.None;
         private BaseStance _currentStance;
+        private InputManager _inputManager;
         private HorizontalDirection _movingDirection = HorizontalDirection.Neutral;
         private SimplePhysicsModule _physicsModule;
         private SpriteAnimationComponent _spriteAnimator;
@@ -88,7 +88,7 @@
         public Layers WallLayer { get; private set; } = Layers.Layer02;
 
         public void Update(FrameTime frameTime) {
-            this._currentStance.Update(frameTime, Keyboard.GetState());
+            this._currentStance.Update(frameTime, this._inputManager);
             this.State = new PlayerState(this._currentStance.Stance, this.WorldTransform.Position, this.Velocity);
             this.ChangeAnimation();
             this.LocalPosition += this.Velocity * (float)frameTime.SecondsPassed;
@@ -118,6 +118,7 @@
         protected override void Initialize() {
             this.State = new PlayerState(this._currentStance.Stance, this.WorldTransform.Position, Vector2.Zero);
             this._physicsModule = this.Scene.GetModule<SimplePhysicsModule>();
+            this._inputManager = this.Scene.GetModule<InputManager>();
             this._spriteAnimator = this.GetChild<SpriteAnimationComponent>();
 
             if (this._physicsModule == null && this.Scene.AddModule(new SimplePhysicsModule())) {

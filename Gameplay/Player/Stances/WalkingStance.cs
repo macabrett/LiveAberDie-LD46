@@ -2,7 +2,6 @@
 
     using Macabre2D.Framework;
     using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Input;
 
     public sealed class WalkingStance : GroundedStance {
 
@@ -15,15 +14,15 @@
             }
         }
 
-        public override void Update(FrameTime frameTime, KeyboardState keyboardState) {
-            var horizontalVelocity = this.CalculateHorizontalVelocity(frameTime, keyboardState);
+        public override void Update(FrameTime frameTime, InputManager inputManager) {
+            var horizontalVelocity = this.CalculateHorizontalVelocity(frameTime, inputManager);
             var verticalVelocity = 0f;
 
             if (!this.CheckIfStillGrounded(out _)) {
                 verticalVelocity = -PlayerMovementValues.Gravity * (float)frameTime.SecondsPassed;
                 this.PlayerComponent.ChangeStance(PlayerStance.Falling, frameTime);
             }
-            else if (keyboardState.IsKeyDown(Keys.Space)) {
+            else if (inputManager.IsJumpPressed) {
                 verticalVelocity = PlayerMovementValues.JumpVelocity;
                 this.PlayerComponent.ChangeStance(PlayerStance.Jumping, frameTime);
             }

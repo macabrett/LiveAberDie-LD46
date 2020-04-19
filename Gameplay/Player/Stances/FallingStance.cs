@@ -2,7 +2,6 @@
 
     using Macabre2D.Framework;
     using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Input;
     using System;
 
     public sealed class FallingStance : BaseStance {
@@ -16,7 +15,7 @@
             }
         }
 
-        public override void Update(FrameTime frameTime, KeyboardState keyboardState) {
+        public override void Update(FrameTime frameTime, InputManager inputManager) {
             var verticalVelocity = this.PlayerComponent.Velocity.Y;
             if (verticalVelocity < 0f && this.CheckIfHitGround(frameTime, verticalVelocity, out var hit)) {
                 this.PlayerComponent.SetWorldPosition(new Vector2(this.PlayerComponent.WorldTransform.Position.X, hit.ContactPoint.Y + PlayerMovementValues.PlayerHalfWidth));
@@ -31,7 +30,7 @@
                 verticalVelocity -= PlayerMovementValues.Gravity * (float)frameTime.SecondsPassed;
             }
 
-            var horitonzalVelocity = this.CalculateHorizontalVelocity(frameTime, keyboardState);
+            var horitonzalVelocity = this.CalculateHorizontalVelocity(frameTime, inputManager);
             this.PlayerComponent.Velocity = new Vector2(horitonzalVelocity, verticalVelocity);
         }
 

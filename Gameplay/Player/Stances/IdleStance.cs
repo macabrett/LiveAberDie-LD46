@@ -2,7 +2,6 @@
 
     using Macabre2D.Framework;
     using Microsoft.Xna.Framework;
-    using Microsoft.Xna.Framework.Input;
 
     public sealed class IdleStance : BaseStance {
 
@@ -19,8 +18,8 @@
             this.PlayerComponent.Velocity = Vector2.Zero;
         }
 
-        public override void Update(FrameTime frameTime, KeyboardState keyboardState) {
-            var horizontalVelocity = this.CalculateHorizontalVelocity(frameTime, keyboardState);
+        public override void Update(FrameTime frameTime, InputManager inputManager) {
+            var horizontalVelocity = this.CalculateHorizontalVelocity(frameTime, inputManager);
 
             if (horizontalVelocity != 0f) {
                 this.PlayerComponent.ChangeStance(PlayerStance.Walking, frameTime);
