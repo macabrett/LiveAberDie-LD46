@@ -33,6 +33,7 @@
             }
 #else
             RunGame();
+            Environment.Exit(0);
 #endif
         }
     }

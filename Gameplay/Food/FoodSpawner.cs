@@ -8,10 +8,11 @@
     using System.Linq;
     using System.Runtime.Serialization;
 
-    public sealed class FoodSpawner : BaseComponent, IUpdateableComponent {
+    public sealed class FoodSpawner : BaseComponent, IResetable, IUpdateableComponent {
         private const float FoodMinFallSpeed = 3f;
         private const float SecondsBetweenFruitDrops = 1.2f;
         private const int SpawnWidth = 12;
+        private readonly List<FoodComponent> _allFoods = new List<FoodComponent>();
         private readonly Queue<FoodComponent> _foodQueue = new Queue<FoodComponent>();
         private readonly Random _random = new Random();
 
@@ -30,6 +31,14 @@
         private SpriteAnimation _plumAnimation;
 
         private double _timePassed;
+
+        public void Reset() {
+            this._timePassed = 0f;
+            this._foodQueue.Clear();
+            foreach (var food in this._allFoods.Shuffle()) {
+                this.Food_Destroyed(food, null);
+            }
+        }
 
         public void Update(FrameTime frameTime) {
             this._timePassed += frameTime.SecondsPassed;
@@ -58,7 +67,6 @@
         protected override void Initialize() {
             this._camera = this.Scene.GetAllComponentsOfType<Camera>().First();
 
-            var foodList = new List<FoodComponent>();
             for (var i = 1; i <= 8; i++) {
                 var food = new FoodComponent();
                 if (i % 4 == 0) {
@@ -76,10 +84,10 @@
 
                 food.DrawOrder = 1;
                 food.Destroyed += this.Food_Destroyed;
-                foodList.Add(food);
+                this._allFoods.Add(food);
             }
 
-            foreach (var food in foodList.Shuffle()) {
+            foreach (var food in this._allFoods.Shuffle()) {
                 this._foodQueue.Enqueue(food);
             }
         }

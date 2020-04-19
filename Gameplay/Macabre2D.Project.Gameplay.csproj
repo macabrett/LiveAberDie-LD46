@@ -93,6 +93,7 @@
     <Compile Include="Player\Stances\JumpingStance.cs" />
     <Compile Include="Player\Stances\WalkingStance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartMenuComponent.cs" />
     <Compile Include="TimerComponent.cs" />
   </ItemGroup>
   <ItemGroup>

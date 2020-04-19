@@ -22,6 +22,7 @@
 
         public bool IsJumpHeld { get; private set; }
         public bool IsJumpPressed { get; private set; }
+        public bool IsUpOrDownPressed { get; private set; }
 
         public override void PostUpdate(FrameTime frameTime) {
             return;
@@ -37,6 +38,7 @@
             this.IsJumpHeld = this._currentKeyboardState.IsKeyDown(Keys.Space) || (this._currentGamePadState.IsConnected && this._currentGamePadState.IsButtonDown(Buttons.A));
             this.IsJumpPressed = this.GetIsJumpPressed();
             this.HorizontalAxis = this.GetHorizontalAxis();
+            this.IsUpOrDownPressed = this.GetIsUpOrDownPressed();
         }
 
         private float GetHorizontalAxis() {
@@ -56,6 +58,23 @@
             var result = false;
             if (!this._previousKeyboardState.IsKeyDown(Keys.Space) && !this._previousGamePadState.IsButtonDown(Buttons.A)) {
                 result = this.IsJumpHeld;
+            }
+
+            return result;
+        }
+
+        private bool GetIsUpOrDownPressed() {
+            var result = false;
+            if (!this._previousKeyboardState.IsKeyDown(Keys.W) && (!this._previousGamePadState.IsConnected || (this._currentGamePadState.DPad.Up != ButtonState.Pressed && !(this._previousGamePadState.ThumbSticks.Left.Y > DeadZone)))) {
+                if (this._currentKeyboardState.IsKeyDown(Keys.W) || (this._currentGamePadState.IsConnected && (this._currentGamePadState.DPad.Up == ButtonState.Pressed || this._currentGamePadState.ThumbSticks.Left.Y > DeadZone))) {
+                    result = true;
+                }
+            }
+
+            if (!result && !this._previousKeyboardState.IsKeyDown(Keys.S) && (!this._previousGamePadState.IsConnected || (this._currentGamePadState.DPad.Down != ButtonState.Pressed && !(this._previousGamePadState.ThumbSticks.Left.Y < -DeadZone)))) {
+                if (this._currentKeyboardState.IsKeyDown(Keys.S) || (this._currentGamePadState.IsConnected && (this._currentGamePadState.DPad.Down == ButtonState.Pressed || this._currentGamePadState.ThumbSticks.Left.Y < -DeadZone))) {
+                    result = true;
+                }
             }
 
             return result;

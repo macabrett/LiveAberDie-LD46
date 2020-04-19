@@ -94,9 +94,9 @@
             this.State = this._startState;
             this.Velocity = this.State.Velocity;
             this.SetWorldPosition(this.State.Position);
-            this._currentStance = this._stances.First(x => x.Stance == PlayerStance.Idle);
-            this._spriteAnimator.IsVisible = true;
-            this._spriteAnimator.Play(this.IdleAnimation, true);
+            this.IsDead = false;
+            this.ChangeStance(this.State.Stance, new FrameTime());
+            this.ChangeAnimation();
         }
 
         public void Update(FrameTime frameTime) {
@@ -108,7 +108,7 @@
 
                 if (this.IsOutOfBounds()) {
                     this.IsDead = true;
-                    this._spriteAnimator.IsVisible = false;
+                    this._spriteAnimator.Stop(true);
                 }
             }
         }
