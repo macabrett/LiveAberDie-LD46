@@ -7,7 +7,7 @@
     using System.Reflection;
     using System.Runtime.Serialization;
 
-    public sealed class PlayerComponent : BaseComponent, IBoundable, IUpdateableComponent {
+    public sealed class PlayerComponent : BaseComponent, IBoundable, IResetable, IUpdateableComponent {
         private readonly BaseStance[] _stances;
         private PlayerAnimation _currentAnimation = PlayerAnimation.None;
         private BaseStance _currentStance;
@@ -15,6 +15,7 @@
         private HorizontalDirection _movingDirection = HorizontalDirection.Neutral;
         private SimplePhysicsModule _physicsModule;
         private SpriteAnimationComponent _spriteAnimator;
+        private PlayerState _startState;
         private Vector2 _velocity;
 
         public PlayerComponent() : base() {
@@ -39,6 +40,8 @@
 
         [DataMember(Order = 0)]
         public SpriteAnimation IdleAnimation { get; private set; }
+
+        public bool IsDead { get; private set; }
 
         [DataMember(Order = 3)]
         public SpriteAnimation JumpAnimation { get; private set; }
@@ -87,11 +90,27 @@
         [DataMember(Name = "Wall Layer", Order = 6)]
         public Layers WallLayer { get; private set; } = Layers.Layer02;
 
+        public void Reset() {
+            this.State = this._startState;
+            this.Velocity = this.State.Velocity;
+            this.SetWorldPosition(this.State.Position);
+            this._currentStance = this._stances.First(x => x.Stance == PlayerStance.Idle);
+            this._spriteAnimator.IsVisible = true;
+            this._spriteAnimator.Play(this.IdleAnimation, true);
+        }
+
         public void Update(FrameTime frameTime) {
-            this._currentStance.Update(frameTime, this._inputManager);
-            this.State = new PlayerState(this._currentStance.Stance, this.WorldTransform.Position, this.Velocity);
-            this.ChangeAnimation();
-            this.LocalPosition += this.Velocity * (float)frameTime.SecondsPassed;
+            if (!this.IsDead) {
+                this._currentStance.Update(frameTime, this._inputManager);
+                this.State = new PlayerState(this._currentStance.Stance, this.WorldTransform.Position, this.Velocity);
+                this.ChangeAnimation();
+                this.LocalPosition += this.Velocity * (float)frameTime.SecondsPassed;
+
+                if (this.IsOutOfBounds()) {
+                    this.IsDead = true;
+                    this._spriteAnimator.IsVisible = false;
+                }
+            }
         }
 
         internal void ChangeStance(PlayerStance newStance, FrameTime frameTime) {
@@ -117,6 +136,7 @@
 
         protected override void Initialize() {
             this.State = new PlayerState(this._currentStance.Stance, this.WorldTransform.Position, Vector2.Zero);
+            this._startState = this.State;
             this._physicsModule = this.Scene.GetModule<SimplePhysicsModule>();
             this._inputManager = this.Scene.GetModule<InputManager>();
             this._spriteAnimator = this.GetChild<SpriteAnimationComponent>();
@@ -183,6 +203,11 @@
             }
 
             return stances;
+        }
+
+        private bool IsOutOfBounds() {
+            var worldTransform = this.WorldTransform;
+            return worldTransform.Position.Y < -1f || Math.Abs(worldTransform.Position.X) > 10f;
         }
 
         private bool IsSliding() {
