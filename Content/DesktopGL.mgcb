@@ -9,9 +9,9 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\Gameplay\bin\Debug\Newtonsoft.Json.dll
-/reference:..\Gameplay\bin\Debug\Macabre2D.Framework.dll
-/reference:..\Gameplay\bin\Debug\Macabre2D.Project.Gameplay.dll
+/reference:..\..\Intermediary\DesktopGL\bin\Debug\Newtonsoft.Json.dll
+/reference:..\..\Intermediary\DesktopGL\bin\Debug\Macabre2D.Framework.dll
+/reference:..\..\Intermediary\DesktopGL\bin\Debug\Macabre2D.Project.Gameplay.dll
 
 #---------------------------------- Content ---------------------------------#
 

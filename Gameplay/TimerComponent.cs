@@ -3,7 +3,7 @@
     using Macabre2D.Framework;
     using System.Linq;
 
-    public sealed class TimerComponent : BaseComponent, IUpdateableComponent {
+    public sealed class TimerComponent : BaseComponent, IResetable, IUpdateableComponent {
         private const uint MaxTime = 999999;
         private const ushort NumberOfDigits = 6;
 
@@ -30,6 +30,11 @@
                     }
                 }
             }
+        }
+
+        public void Reset() {
+            this._timePassed = 0;
+            this._totalTimePassed = 0;
         }
 
         public void Update(FrameTime frameTime) {
