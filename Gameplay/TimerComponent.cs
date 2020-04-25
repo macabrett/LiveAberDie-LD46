@@ -34,7 +34,7 @@
 
         public void Reset() {
             this._timePassed = 0;
-            this._totalTimePassed = 0;
+            this.TotalTimePassed = 0;
         }
 
         public void Update(FrameTime frameTime) {

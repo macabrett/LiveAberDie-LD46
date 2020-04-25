@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('..\..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -72,9 +71,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Costura, Version=4.1.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Costura.Fody.4.1.0\lib\net40\Costura.dll</HintPath>
-    </Reference>
     <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\lib\net45\MonoGame.Framework.dll</HintPath>
     </Reference>
@@ -102,6 +98,27 @@
     <MonoGameContentReference Include="..\Content\DesktopGL.mgcb">
       <Link>Content\DesktopGL.mgcb</Link>
     </MonoGameContentReference>
+    <None Include="..\..\Binaries\DesktopGL\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\MonoGame.Framework.dll.config">
+      <Link>MonoGame.Framework.dll.config</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\x64\libopenal.so.1">
+      <Link>x64\libopenal.so.1</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\x64\libSDL2-2.0.so.0">
+      <Link>x64\libSDL2-2.0.so.0</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\x86\libopenal.so.1">
+      <Link>x86\libopenal.so.1</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\x86\libSDL2-2.0.so.0">
+      <Link>x86\libSDL2-2.0.so.0</Link>
+    </None>
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -132,7 +149,20 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FodyWeavers.xml" />
+    <None Include="..\..\Binaries\DesktopGL\x64\SDL2.dll">
+      <Link>x64\SDL2.dll</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\x64\soft_oal.dll">
+      <Link>x64\soft_oal.dll</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Binaries\DesktopGL\x86\SDL2.dll">
+      <Link>x86\SDL2.dll</Link>
+    </None>
+    <None Include="..\..\Binaries\DesktopGL\x86\soft_oal.dll">
+      <Link>x86\soft_oal.dll</Link>
+    </None>
   </ItemGroup>
   <Import Project="..\..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets" Condition="Exists('..\..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -140,8 +170,5 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\MonoGame.Framework.DesktopGL.3.7.1.189\build\MonoGame.Framework.DesktopGL.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Fody.6.0.0\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Fody.6.0.0\build\Fody.targets'))" />
-    <Error Condition="!Exists('..\..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Costura.Fody.4.1.0\build\Costura.Fody.props'))" />
   </Target>
-  <Import Project="..\..\packages\Fody.6.0.0\build\Fody.targets" Condition="Exists('..\..\packages\Fody.6.0.0\build\Fody.targets')" />
 </Project>
